@@ -1,0 +1,41 @@
+{
+  "status": {
+    "money":  0,
+    "energy": 10
+  },
+
+  "questions": {
+
+    "start" : {
+      "text":  "do you want to take the yob?",
+      "image": "imgName.jpg",
+      "yes": {
+        "money":  5,
+        "energy": -2,
+        "next":   "question1"
+      },
+      "no": {
+        "money":  0,
+        "energy": 0,
+        "next":   false
+      }
+    },
+
+    "question1" : {
+      "text":  "do you want to \n read the contract?",
+      "image": "imgName.jpg",
+      "yes": {
+        "text":   "Yes of course",
+        "money":  0,
+        "energy": -2,
+        "next":   "question2"
+      },
+      "no": {
+        "text":   "I guess not",
+        "money":  0,
+        "energy": 2,
+        "next":   "winner"
+      }
+    }
+  }
+}

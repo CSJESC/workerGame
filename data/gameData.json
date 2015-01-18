@@ -76,7 +76,7 @@
         "text":   "look for a job somewhere else",
         "money":  0,
         "energy": 0,
-        "next":   "goinghome"
+        "next":   "start"
       },
       "a3": {
       }
@@ -266,7 +266,7 @@
       "text":  "Your body hurts, you are tired and you really need some rest.",
       "image": "imgName.jpg",
       "a1": {
-        "text":   "You finally arrive at the dorms and you just fall completly exhaused in your bed.",
+        "text":   "You finally arrive at the dorms and you just fall completly exhausted in your bed.",
         "money":  0,
         "energy": -1,
         "next":   "workbusy"
@@ -281,9 +281,9 @@
       "text":  "Your body hurts, you are tired and you really need some rest.",
       "image": "imgName.jpg",
       "a1": {
-        "text":   "You finally arrive at the dorms and you just fall completly exhaused in your bed.",
+        "text":   "You finally arrive at the dorms and you just fall completly exhausted in your bed.",
         "money":  0,
-        "energy": -1,
+        "energy": -2,
         "next":   "wage"
       },
       "a2": {

@@ -269,7 +269,7 @@
         "text":   "You finally arrive at the dorms and you just fall completly exhaused in your bed.",
         "money":  0,
         "energy": -1,
-        "next":   "wage"
+        "next":   "workbusy"
       },
       "a2": {
       },

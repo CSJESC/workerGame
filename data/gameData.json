@@ -226,7 +226,7 @@
         "text":   "You follow the obligation and stay and work (at least two hours) more.",
         "money":  0,
         "energy": 0,
-        "next":   "exhaused"
+        "next":   "exhausted"
       },
       "a3": {
       }

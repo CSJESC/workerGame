@@ -254,7 +254,7 @@
         "text":   "Worried, you go to bed.",
         "money":  -4.87,
         "energy": 0,
-        "next":   "workbusy"
+        "next":   "wage"
       },
       "a2": {
       },
@@ -329,7 +329,7 @@
         "text":   "You decide to stay longer.",
         "money":  0,
         "energy": 0,
-        "next":   "exhausedbusy"
+        "next":   "exhaustedbusy"
       },
       "a2": {
         "text":   "You go home with a bad feeling.",

@@ -24,9 +24,10 @@
       ,   $moneyElem     = $('.status-bar .money')
       ,   $energyElem    = $('.status-bar .energy')
       ,   $textElem      = $('.text')
-      ,   $yesButton     = $('.yes-button')
-      ,   $noButton      = $('.no-button')
-      ,   $bothButtons   = $yesButton.add($noButton)
+      ,   $a1Button     = $('.a1-button')
+      ,   $a2Button      = $('.a2-button')
+      ,   $a3Button      = $('.a3-button')
+      ,   $bothButtons   = $a1Button.add($a2Button).add($a3Button)
 
       var goToQuestion = function (question) {
         if (!question) {
@@ -47,18 +48,21 @@
         $textElem.html(nl2br(question.text))
         $moneyElem.text(status.money)
         $energyElem.text(status.energy)
-        // set button text if specified, if not use standard
-        $yesButton.text(question.yes.text || 'yes')
-        $noButton.text(question.no.text || 'no')
+        // set button text if specified, if a2t use standard
+        $a1Button.text(question.a1.text || '')
+        $a2Button.text(question.a2.text || '')
+        $a3Button.text(question.a3.text || '')
 
         // set actions for answers
         $bothButtons.unbind('click')
         $bothButtons.click(function(event) {
           var answer
-          if (event.target.dataset.answer == 'yes')
-            answer = question.yes
+          if (event.target.dataset.answer == 'a1')
+            answer = question.a1
+          else if (event.target.dataset.answer == 'a2')
+            answer = question.a2
           else
-            answer = question.no
+            answer = question.a3
 
           status.money  += answer.money
           status.energy += answer.energy
@@ -68,7 +72,7 @@
       }
 
       // setup initial view
-      goToQuestion(questions['start'])
+      goToQuestion(questions['index'])
     })
   })
 })()

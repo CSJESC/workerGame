@@ -1,41 +1,218 @@
 {
   "status": {
     "money":  0,
-    "energy": 10
+    "energy": 3
   },
 
   "questions": {
 
-    "start" : {
-      "text":  "do you want to take the yob?",
-      "image": "imgName.jpg",
-      "yes": {
-        "money":  5,
-        "energy": -2,
-        "next":   "question1"
-      },
-      "no": {
+    "index" : {
+      "text":  "This is a website on the working conditions in the economic supply chain. It’s a fictional story based on the report about HEG technologies by china labour watch (http://www.chinalaborwatch.org/report/98). \n You will be able to choose in the most situations. Your decisions will not only influence your story, but also your energy level and the money you have.",
+      "image": "layout-game.jpg",
+      "a1": {
+        "text":   "start",
         "money":  0,
         "energy": 0,
-        "next":   false
+        "next":   "start"
+      },
+      "a2": {
+      },
+      "a3": {
       }
     },
 
-    "question1" : {
-      "text":  "do you want to \n read the contract?",
+    "start" : {
+      "text":  "Your name is Mei. You decided to move to Huizhou, which is a city in the Guangdong province, to support your family. There is nothing to do for you at home and they need the money. Guangdong is very famous for factories producing hardware. \n You heard, one of the factories is hiring at the moment, so you want to apply there. You learn, that only people between 16 and 30 are hired, but since you are in the right age, you just have to fill in a form to apply.",
       "image": "imgName.jpg",
-      "yes": {
-        "text":   "Yes of course",
+      "a1": {
+        "text":   "don’t wait for the to call back, just go home",
         "money":  0,
-        "energy": -2,
-        "next":   "question2"
+        "energy": 0,
+        "next":   "goinghome"
       },
-      "no": {
-        "text":   "I guess not",
+      "a2": {
+        "text":   "wait for them to call back",
         "money":  0,
-        "energy": 2,
-        "next":   "winner"
+        "energy": 0,
+        "next":   "contract1"
+      },
+      "a3": {
+        "text":   "take the initiative and try to talk to someone with some influence, who will guarantee you a job", 
+        "money":  0,
+        "energy": 0,
+        "next":   "alone"
+      }
+    },
+
+   "contract1" : {
+      "text":  "You have a training session. You will be shown the circuit boards the factory produces for two big companies. The job looks very exhausting, especially because you need to stand on your feet all the time. \n The training is three days. On the third day, you have to write a test",
+      "image": "imgName.jpg",
+      "a1": {
+        "text":   "Test accomplished!",
+        "money":  0,
+        "energy": 0,
+        "next":   "test"
+      },
+      "a2": {
+        "text":   "Test failed!",
+        "money":  0,
+        "energy": 0,
+        "next":   false
+      },
+      "a3": {
+      }
+    },
+
+   "test" : {
+      "text":  "Congratulations, you passed!",
+      "image": "imgName.jpg",
+      "a1": {
+        "text":   "start working there",
+        "money":  0,
+        "energy": 0,
+        "next":   "contract2"
+      },
+      "a2": {
+        "text":   "look for a job somewhere else",
+        "money":  0,
+        "energy": 0,
+        "next":   "goinghome"
+      },
+      "a3": {
+      }
+    },
+
+    "contract2" : {
+      "text":  "you have to sign the contract. You are going with other new workers to one of the managers to sign. You don't really have time to read it but you are able to see that the contract period is limited to three years and the probation period to one month. \n If you want to resignate, you have to announce it one month in advance, otherwise they take one month' wage. \n There is no one to explain you the details of the contract, they just ask you to sign the first and the last page.",
+      "image": "imgName.jpg",
+      "a1": {
+        "text":   "This is unbearable. You don't sign it and go back home.",
+        "money":  0,
+        "energy": 0,
+        "next":   "goinghome"
+      },
+      "a2": {
+        "text":   "You don't really have any other option but signing it when you want to support your family. So you sign it.",
+        "money":  0,
+        "energy": 0,
+        "next":   "dorms"
+      },
+      "a3": {
+      }
+    },
+
+    "dorms" : {
+      "text":  "One of the other workers, An, shows you the way to your dormitory. She explains: There are different dormitories, but only one of them (the female-only one) is close to the factory. The one you have to go to is far away. You stay with 8 other people in one room. The rents are free, but we have to pay the facilities. \n You pay in advance 4$.",
+      "image": "imgName.jpg",
+      "a1": {
+        "text":   "After this exhausting day you just go to bed.",
+        "money":  -4,
+        "energy": 0,
+        "next":   "dorms-morning"
+      },
+      "a2": {
+      },
+      "a3": {
+      }
+    },
+
+    "dorms-morning" : {
+      "text":  "You wake up in your room. The others are still sleeping, but because it’s your first day, you are still excited. You get up and get dressed, trying not to wake the others up. Some of them worked the night shift and just went to bed or are even not there yet. \n You meet An outside your room and she tells you, you can take either the shuttle bus or the motorcycle taxi. They all try to take the bus, but it's up to you, as long as you're in time. She shows you, where both get off and leaves you there, because she has appointment with one of her friends.",
+      "image": "imgName.jpg",
+      "a1": {
+        "text":   "Take the bus with everyone else.",
+        "money":  0,
+        "energy": 0,
+        "next":   "bus"
+      },
+      "a2": {
+        "text":   "Take the taxi and see a bit more of Huizhou.",
+        "money":  0,
+        "energy": 0,
+        "next":   "taxi"
+      },
+      "a3": {
+      }
+    },
+    "bus" : {
+      "text":  "The bus is crowded, but it's fine. You have the opportunity to chat with some of your coworkers and get to know them a bit...",
+      "image": "imgName.jpg",
+      "a1": {
+        "text":   "You arrive!",
+        "money":  0,
+        "energy": 0,
+        "next":   "telefon"
+      },
+      "a2": {
+      },
+      "a3": {
+      }
+    },
+
+    "taxi" : {
+      "text":  "<iframe width=\"420\" height=\"315\" src=\"http:\/\/www.youtube.com/embed/vPR7RyTS8DY\" frameborder=\"0\" allowfullscreen><\/iframe>",
+      "image": "imgName.jpg",
+      "a1": {
+        "text":   "You arrive!",
+        "money":  0,
+        "energy": 0,
+        "next":   "telefon"
+      },
+      "a2": {
+      },
+      "a3": {
+      }
+    },
+
+    "telefon" : {
+      "text":  "You arrive at the factory. Your grandmother isn't feeling well so you promised to call her today. \n But soon after you entered the factory, one of the securities sees your phone and takes it from you.",
+      "image": "imgName.jpg",
+      "a1": {
+        "text":   "You ask him to give it back to you.",
+        "money":  0,
+        "energy": 0,
+        "next":   "advicetelefon"
+      },
+      "a2": {
+        "text":   "You just let him go. It's your first day and you don't want to cause trouble.",
+        "money":  0,
+        "energy": 0,
+        "next":   "givetelefon"
+      },
+      "a3": {
+      }
+    },
+
+    "advicetelefon" : {
+      "text":  "In the second you want to say something, there is someone grabbing your arm. One of the other workers tries to calm you. \n As the security worker walks away, An explains you that phones in the factory are not allowed and you have a nice short chat before you start working.",
+      "image": "imgName.jpg",
+      "a1": {
+        "text":   "start working",
+        "money":  0,
+        "energy": 0,
+        "next":   "firstday"
+      },
+      "a2": {
+      },
+      "a3": {
+      }
+    },
+
+    "givetelefon" : {
+      "text":  "",
+      "image": "imgName.jpg",
+      "a1": {
+        "text":   "You just hand him the telephone and he walks away.",
+        "money":  0,
+        "energy": 0,
+        "next":   "firstday"
+      },
+      "a2": {
+      },
+      "a3": {
       }
     }
+
+
   }
 }

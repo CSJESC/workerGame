@@ -1,0 +1,89 @@
+{
+  "status": {
+    "money":  0,
+    "energy": 10
+  },
+
+  "questions": {
+
+    "index" : {
+      "text":  "This is a website on the working conditions in the economic supply chain. It’s a fictional story based on the report about HEG technologies by china labour watch (http://www.chinalaborwatch.org/report/98). \n You will be able to choose in the most situations. Your decisions will not only influence your story, but also your energy level and the money you have.",
+      "image": "layout-game.jpg",
+      "a1": {
+        "text":   "start",
+        "money":  5,
+        "energy": -2,
+        "next":   "start"
+      },
+      "a2": {
+        "text":   "no", 
+        "money":  0,
+        "energy": 0,
+        "next":   false
+      },
+      "a3": {
+        "text":   "maybe", 
+        "money":  0,
+        "energy": 0,
+        "next":   "winner"
+      }
+    },
+
+    "start" : {
+      "text":  "Your name is Mei. You decided to move to Huizhou, which is a city in the Guangdong province, to support your family. There is nothing to do for you at home and they need the money. Guangdong is very famous for factories producing hardware. \n You heard, one of the factories is hiring at the moment, so you want to apply there. You learn, that only people between 16 and 30 are hired, but since you are in the right age, you just have to fill in a form to apply.",
+      "image": "imgName.jpg",
+      "a1": {
+        "text":   "don’t wait for the to call back, just go home",
+        "money":  0,
+        "energy": 0,
+        "next":   "goinghome"
+      },
+      "a2": {
+        "text":   "wait for them to call back",
+        "money":  0,
+        "energy": 0,
+        "next":   "contract1"
+      },
+      "a3": {
+        "text":   "take the initiative and try to talk to someone with some influence, who will guarantee you a job", 
+        "money":  0,
+        "energy": 0,
+        "next":   "alone"
+      }
+    },
+
+   "contract1" : {
+      "text":  "You have a training session. You will be shown the circuit boards the factory produces for two big companies. The job looks very exhausting, especially because you need to stand on your feet all the time. \n The training is three days. On the third day, you have to write a test",
+      "image": "imgName.jpg",
+      "a1": {
+        "text":   "Test accomplished!",
+        "money":  0,
+        "energy": 0,
+        "next":   "test"
+      },
+      "a2": {
+        "text":   "Test failed!",
+        "money":  0,
+        "energy": 0,
+        "next":   false
+      }
+    },
+
+   "test" : {
+      "text":  "Congratulations, you passed!",
+      "image": "imgName.jpg",
+      "a1": {
+        "text":   "start working there",
+        "money":  0,
+        "energy": 0,
+        "next":   "contract2"
+      },
+      "a2": {
+        "text":   "look for a job somewhere else",
+        "money":  0,
+        "energy": 0,
+        "next":   "goinghome"
+      }
+    }
+  }
+}

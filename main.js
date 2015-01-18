@@ -67,7 +67,12 @@
           status.money  += answer.money
           status.energy += answer.energy
 
-          goToQuestion(questions[answer.next])
+          if (status.energy <= 0) {
+            status.energy = 1 //should actually be 0 I guess, but is difficult with the if statement before
+            goToQuestion(questions['exhaustedquit'])  
+          }
+          else
+            goToQuestion(questions[answer.next])
         });
       }
 

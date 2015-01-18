@@ -211,8 +211,164 @@
       },
       "a3": {
       }
+    },
+
+   "firstday" : {
+      "text":  "The factory is huge and there are a lot of people around you. You are in charge of (???) of the circuit boards. You are allowed to take a break every two hours for ten minutes. You can’t really talk with your coworkers, you have to be really concentrated to not make mistakes. After eight hours, your feet hurt and your back, too. The other workers tell you, that you are supposed to work at least two hours more, over hours.",
+      "image": "imgName.jpg",
+      "a1": {
+        "text":   "You feel tired so you just decide to go back to the dorms.",
+        "money":  0,
+        "energy": 0,
+        "next":   "minus"
+      },
+      "a2": {
+        "text":   "You follow the obligation and stay and work (at least two hours) more.",
+        "money":  0,
+        "energy": 0,
+        "next":   "exhaused"
+      },
+      "a3": {
+      }
+    },
+
+   "minus" : {
+      "text":  "You leave earlier. People at the dorm seem to be surprised. They explain you, that you shouldn’t have left earlier. One of the reasons is the attendance award. The average wage, they earn is 448$, but this is including the awards you may earn. One of them is the attendance award. It’s 16.35 $, but every time you leave earlier,  4.87$ is deducted from it. If you leave earlier or come late three times, you can’t get the award at all.",
+      "image": "imgName.jpg",
+      "a1": {
+        "text":   "Worried, you go to bed.",
+        "money":  -4.87,
+        "energy": 0,
+        "next":   "workbusy"
+      },
+      "a2": {
+      },
+      "a3": {
+      }
+    },
+
+   "minusbusy" : {
+      "text":  "You leave earlier. People at the dorm seem to be surprised. They explain you, that you shouldn’t have left earlier. One of the reasons is the attendance award. The average wage, they earn is 448$, but this is including the awards you may earn. One of them is the attendance award. It’s 16.35 $, but every time you leave earlier,  4.87$ is deducted from it. If you leave earlier or come late three times, you can’t get the award at all.",
+      "image": "imgName.jpg",
+      "a1": {
+        "text":   "Worried, you go to bed.",
+        "money":  -4.87,
+        "energy": 0,
+        "next":   "workbusy"
+      },
+      "a2": {
+      },
+      "a3": {
+      }
+    },
+
+   "exhausted" : {
+      "text":  "Your body hurts, you are tired and you really need some rest.",
+      "image": "imgName.jpg",
+      "a1": {
+        "text":   "You finally arrive at the dorms and you just fall completly exhaused in your bed.",
+        "money":  0,
+        "energy": -1,
+        "next":   "wage"
+      },
+      "a2": {
+      },
+      "a3": {
+      }
+    },
+
+       "exhaustedbusy" : {
+      "text":  "Your body hurts, you are tired and you really need some rest.",
+      "image": "imgName.jpg",
+      "a1": {
+        "text":   "You finally arrive at the dorms and you just fall completly exhaused in your bed.",
+        "money":  0,
+        "energy": -1,
+        "next":   "wage"
+      },
+      "a2": {
+      },
+      "a3": {
+      }
+    },
+
+   "exhaustedquit" : {
+      "text":  "",
+      "image": "imgName.jpg",
+      "a1": {
+        "text":   "There is no way, you could work tomorrow again, so you decide to leave the factory.",
+        "money":  0,
+        "energy": 0,
+        "next":   "quit"
+      },
+      "a2": {
+      },
+      "a3": {
+      }
+    },
+
+   "quit" : {
+      "text":  "",
+      "image": "imgName.jpg",
+      "a1": {
+        "text":   " When you try to resign, they make it so hard for you, it's practically impossible. So you just leave without getting paid for the time you worked there. You return to your family. You spent more of their money then you were able to earn.",
+        "money":  0,
+        "energy": 0,
+        "next":   false
+      },
+      "a2": {
+      },
+      "a3": {
+      }
+    },
+
+   "workbusy" : {
+      "text":  "The next day, you are back to work. An tells you, that it's one of those busy days and you need to produce a lot more today, because they are supposed to deliver today. (????) Your work is exhausting and you can't imagine that they would ask you for more over hours. But after you worked ten hours already, someone approaches you and asks you to stay even longer, because it's very busy today.",
+      "image": "imgName.jpg",
+      "a1": {
+        "text":   "You decide to stay longer.",
+        "money":  0,
+        "energy": 0,
+        "next":   "exhausedbusy"
+      },
+      "a2": {
+        "text":   "You go home with a bad feeling.",
+        "money":  0,
+        "energy": 0,
+        "next":   "minusbusy"
+      },
+      "a3": {
+      }
+    },
+
+   "wage" : {
+      "text":  "After working almost a month, you ask An when you will get your wage. She tells you, it will be paid on the 20th of the next month. Twenty days later, they pay you. Since you are still in your probation period, you earn $211 and the rest of the attendance award. After the probation period your wage will be $228.",
+      "image": "imgName.jpg",
+      "a1": {
+        "text":   "Now you are finally able to send some money back home!",
+        "money":  227.35,
+        "energy": 0,
+        "next":   "drinking"
+      },
+      "a2": {
+      },
+      "a3": {
+      }
+    },
+
+   "drinking" : {
+      "text":  "Slowly, you start to know the rules of the factory by heart. But one of the things that's the most exhausting is to not be allowed to drink while working. You have breaks, but still you are often thirsty while working.",
+      "image": "imgName.jpg",
+      "a1": {
+        "text":   "More text is needed",
+        "money":  0,
+        "energy": 0,
+        "next":   "winner"
+      },
+      "a2": {
+      },
+      "a3": {
+      }
     }
-
-
   }
 }

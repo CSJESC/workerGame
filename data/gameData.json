@@ -357,10 +357,93 @@
     },
 
    "drinking" : {
-      "text":  "Slowly, you start to know the rules of the factory by heart. But one of the things that's the most exhausting is to not be allowed to drink while working. You have breaks, but still you are often thirsty while working.",
+      "text":  "Slowly, you start to know the rules of the factory by heart. But one of the things that's the most exhausting is to not be allowed to drink while working. You have breaks, but still you are often thirsty while working. If you want to go to the restroom, you need to get a pass, otherwise you are not allowed to use the restroom.  \n You talk one day with the people using the acid to make the circuit boards, you are working on. They were never trained to use them correctly and safely neither taught about the health risks. ",
       "image": "imgName.jpg",
       "a1": {
-        "text":   "More text is needed",
+        "text":   "That makes you feel confused. Did you really understand what this job means for your health?",
+        "money":  0,
+        "energy": 0,
+        "next":   "studentsintro"
+      },
+      "a2": {
+      },
+      "a3": {
+      }
+    },
+
+   "studentsintro" : {
+      "text":  "One of these days, you get to know a group of students. They are mostly from three different provinces; Hubei, Hunan and Guizhou province. You talk with Yong, one of the students you meet on the way back to the dorms after work. He studies at a technical school and signed a three month contract at a labor dispatch company. They were not trained before the work, they don't get paid for over hours or subsidy for night shift. Yong tells you, they are either freshmen or junior students at college.",
+      "image": "imgName.jpg",
+      "a1": {
+        "text":   "You are worried to hear how hard these young college students work.",
+        "money":  0,
+        "energy": 0,
+        "next":   "studentsadvice"
+      },
+      "a2": {
+      },
+      "a3": {
+      }
+    },
+
+   "studentsadvice" : {
+      "text":  "After a month, Yong approaches you to ask for your advice. He says the work is much too difficult for him and a lot of other students. He spoke with almost 50 students, who said they couldn't tolerate the harsh conditions any longer. On the other side he spoke with the supervisor already told him he would not allow the students too leave, no matter how many of them would quit together. He asks you for advice.",
+      "image": "imgName.jpg",
+      "a1": {
+        "text":   "Tell him to take care of himself and quit.",
+        "money":  0,
+        "energy": 0,
+        "next":   "studentsunpaid"
+      },
+      "a2": {
+        "text":   "Tell him to be responsible and keep the job- it's only two month left anyway.",
+        "money":  0,
+        "energy": 0,
+        "next":   "studentsexhausted"
+      },
+      "a3": {
+      }
+    },
+
+   "studentsunpaid" : {
+      "text":  "The students around Yong decide to take your advice and quit the next day. They seems to be released at first but then the struggle starts: The supervisor as he said denies them to leave and doesn't accept their resignations. So the don't get paid there wages for the whole time and not even get paid for the way back home. You give Yong and two, three other students the money for the bus back home and heavy-hearted you say good bye to them.",
+      "image": "imgName.jpg",
+      "a1": {
+        "text":   "It's time to get back to work.",
+        "money":  -8,
+        "energy": 0,
+        "next":   "samsung"
+      },
+      "a2": {
+      },
+      "a3": {
+      }
+    },
+
+   "studentsexhausted" : {
+      "text":  "The students around Yong stay at the factory. They are extremely exhausted in the evenings and you try to cover from them from time to time but still, it's just too hard for them. You feel how your energy shrinks by seeing them this way.",
+      "image": "imgName.jpg",
+      "a1": {
+        "text":   "Tell them to take care of themselves and quit.",
+        "money":  0,
+        "energy": 0,
+        "next":   "studentsunpaid"
+      },
+      "a2": {
+        "text":   "It's none of your business. It's time to get back to work!",
+        "money":  0,
+        "energy": -1,
+        "next":   "samsung"
+      },
+      "a3": {
+      }
+    },
+
+   "samsung" : {
+      "text":  "There is text missing here. More to come!",
+      "image": "imgName.jpg",
+      "a1": {
+        "text":   "We need moar texts!",
         "money":  0,
         "energy": 0,
         "next":   "winner"
@@ -370,5 +453,7 @@
       "a3": {
       }
     }
+
+
   }
 }

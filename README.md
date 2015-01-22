@@ -14,3 +14,4 @@ ______
 - more and corrected content
 - add missing sites (goinghome, alone)
 - in main.js impove check for energy
+- check chrome compatability

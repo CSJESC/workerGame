@@ -45,35 +45,35 @@
     },
 
    "contract1" : {
-      "text":  "You have a training session. You will be shown the circuit boards the factory produces for two big companies. The job looks very exhausting, especially because you need to stand on your feet all the time. \n The training is three days. On the third day, you have to write a test",
+      "text":  "You have a training session. You are be shown the circuit boards the factory produces for two big companies. The job looks very exhausting, especially because you are required to stand on your feet all day long.",
       "image": "imgName.jpg",
       "a1": {
-        "text":   "Test accomplished!",
+        "text":   "Start working there.",
         "money":  0,
         "energy": 0,
         "next":   "test"
       },
       "a2": {
-        "text":   "Test failed!",
+        "text":   "Look for a job somewhere else.",
         "money":  0,
         "energy": 0,
-        "next":   false
+        "next":   "start"
       },
       "a3": {
       }
     },
 
    "test" : {
-      "text":  "Congratulations, you passed!",
+      "text":  "The introductory training lasts three days and concludes with a short exam.",
       "image": "imgName.jpg",
       "a1": {
-        "text":   "start working there",
+        "text":   "Sign the contract.",
         "money":  0,
         "energy": 0,
         "next":   "contract2"
       },
       "a2": {
-        "text":   "look for a job somewhere else",
+        "text":   "",
         "money":  0,
         "energy": 0,
         "next":   "start"
@@ -83,7 +83,7 @@
     },
 
     "contract2" : {
-      "text":  "you have to sign the contract. You are going with other new workers to one of the managers to sign. You don't really have time to read it but you are able to see that the contract period is limited to three years and the probation period to one month. \n If you want to resignate, you have to announce it one month in advance, otherwise they take one month' wage. \n There is no one to explain you the details of the contract, they just ask you to sign the first and the last page.",
+      "text":  "It's time to sign the employment contract. You and a dozen of your new possible colleagues meet with one of the plant managers, you get barely time to skim through the contract before you are asked to place your signature on multiple pages.",
       "image": "imgName.jpg",
       "a1": {
         "text":   "This is unbearable. You don't sign it and go back home.",
@@ -102,7 +102,7 @@
     },
 
     "dorms" : {
-      "text":  "One of the other workers, An, shows you the way to your dormitory. She explains: There are different dormitories, but only one of them (the female-only one) is close to the factory. The one you have to go to is far away. You stay with 8 other people in one room. The rents are free, but we have to pay the facilities. \n You pay in advance 4$.",
+      "text":  "One of the other workers, Jiayi, shows you the way to your dormitory. She explains to you that there are multiple dormitories of which only one is near the factory and unfortunately, yours is relatively far away - but at least the rent is free of charge. However, the showers and bathrooms come with a monthly fee. You pay 4$ in advance.",
       "image": "imgName.jpg",
       "a1": {
         "text":   "After this exhausting day you just go to bed.",
@@ -117,7 +117,7 @@
     },
 
     "dorms-morning" : {
-      "text":  "You wake up in your room. The others are still sleeping, but because it’s your first day, you are still excited. You get up and get dressed, trying not to wake the others up. Some of them worked the night shift and just went to bed or are even not there yet. \n You meet An outside your room and she tells you, you can take either the shuttle bus or the motorcycle taxi. They all try to take the bus, but it's up to you, as long as you're in time. She shows you, where both get off and leaves you there, because she has appointment with one of her friends.",
+      "text":  "You wake up in your room. The others are still sleeping, but because it’s your first day, you are still excited. You get up and get dressed, trying not to wake the others up. Some of them worked the night shift and just went to bed or are even not there yet. \n You meet Jiayi outside your room and she tells you, you can take either the shuttle bus or the motorcycle taxi. They all try to take the bus, but it's up to you, as long as you're in time. She shows you, where both get off and leaves you there, because she has appointment with one of her friends.",
       "image": "imgName.jpg",
       "a1": {
         "text":   "Take the bus with everyone else.",
@@ -184,7 +184,7 @@
     },
 
     "advicetelefon" : {
-      "text":  "In the second you want to say something, there is someone grabbing your arm. One of the other workers tries to calm you. \n As the security worker walks away, An explains you that phones in the factory are not allowed and you have a nice short chat before you start working.",
+      "text":  "The second you want to speak up, Jiayi grabs your arm and asks you to calm down and let it go. She explains to you that it is a factory rule and that you really cannot do anything about it.",
       "image": "imgName.jpg",
       "a1": {
         "text":   "start working",
@@ -323,7 +323,7 @@
     },
 
    "workbusy" : {
-      "text":  "The next day, you are back to work. An tells you, that it's one of those busy days and you need to produce a lot more today, because they are supposed to deliver today. (????) Your work is exhausting and you can't imagine that they would ask you for more over hours. But after you worked ten hours already, someone approaches you and asks you to stay even longer, because it's very busy today.",
+      "text":  "The next day, you are back to work. Jiayi tells you, that it's one of those busy days and you need to produce a lot more today, because they are supposed to deliver today. (????) Your work is exhausting and you can't imagine that they would ask you for more over hours. But after you worked ten hours already, someone approaches you and asks you to stay even longer, because it's very busy today.",
       "image": "imgName.jpg",
       "a1": {
         "text":   "You decide to stay longer.",
@@ -342,7 +342,7 @@
     },
 
    "wage" : {
-      "text":  "After working almost a month, you ask An when you will get your wage. She tells you, it will be paid on the 20th of the next month. Twenty days later, they pay you. Since you are still in your probation period, you earn $211 and the rest of the attendance award. After the probation period your wage will be $228.",
+      "text":  "After working almost a month, you ask Jiayi when you will get your wage. She tells you, it will be paid on the 20th of the next month. Twenty days later, they pay you. Since you are still in your probation period, you earn $211 and the rest of the attendance award. After the probation period your wage will be $228.",
       "image": "imgName.jpg",
       "a1": {
         "text":   "Now you are finally able to send some money back home!",
@@ -534,7 +534,7 @@
     },
 
    "work2" : {
-      "text":  "The next day, you are back to work. An tells you, that it's one of those busy days and you need to produce a lot more today, because they are supposed to deliver today. (????) Your work is exhausting and you can't imagine that they would ask you for more over hours. But after you worked ten hours already, someone approaches you and asks you to stay even longer, because it's very busy today.",
+      "text":  "The next day, you are back to work. Jiayi tells you, that it's one of those busy days and you need to produce a lot more today, because they are supposed to deliver today. (????) Your work is exhausting and you can't imagine that they would ask you for more over hours. But after you worked ten hours already, someone approaches you and asks you to stay even longer, because it's very busy today.",
       "image": "imgName.jpg",
       "a1": {
         "text":   "You decide to stay longer.",
@@ -553,7 +553,7 @@
     },
 
    "wagecircle" : {
-      "text":  "After working almost a month, you ask An when you will get your wage. She tells you, it will be paid on the 20th of the next month. Twenty days later, they pay you. Since you are still in your probation period, you earn $211 and the rest of the attendance award. After the probation period your wage will be $228.",
+      "text":  "After working almost a month, you ask Jiayi when you will get your wage. She tells you, it will be paid on the 20th of the next month. Twenty days later, they pay you. Since you are still in your probation period, you earn $211 and the rest of the attendance award. After the probation period your wage will be $228.",
       "image": "imgName.jpg",
       "a1": {
         "text":   "Now you are finally able to send some money back home!",

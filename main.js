@@ -62,7 +62,7 @@
                     status.money += answer.money;
                     status.energy += answer.energy;
 
-                    applyImageFilters(status.energy);
+                    applyEnergy(status.energy);
 
                     if (status.energy <= 0) {
                         status.energy = 1; //should actually be 0 I guess, but is difficult with the if statement before
@@ -74,7 +74,7 @@
                 });
             };
 
-            function applyImageFilters(energy) {
+            function applyEnergy(energy) {
                 var pixelArtElem = $('#pixelArt');
                 switch (energy) {
                     case 1:
@@ -86,6 +86,14 @@
                         pixelArtElem.css("-webkit-filter", "blur(1px) grayscale(0.3) hue-rotate(5deg)");
                         break;
                     case 3:
+                        pixelArtElem.css("filter", "none");
+                        pixelArtElem.css("-webkit-filter", "none");
+                        break;
+                    case 4:
+                        pixelArtElem.css("filter", "none");
+                        pixelArtElem.css("-webkit-filter", "none");
+                        break;
+                    case 5:
                         pixelArtElem.css("filter", "none");
                         pixelArtElem.css("-webkit-filter", "none");
                         break;

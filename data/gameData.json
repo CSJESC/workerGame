@@ -8,7 +8,7 @@
 
     "index" : {
       "text":  "This is a website on the working conditions in the economic supply chain. It’s a fictional story based on the report about HEG technologies by china labour watch (http://www.chinalaborwatch.org/report/98). \n You will be able to choose in the most situations. Your decisions will not only influence your story, but also your energy level and the money you have.",
-      "image": "layout-game.jpg",
+      "image": "leaWave.png",
       "a1": {
         "text":   "start",
         "money":  0,
@@ -23,7 +23,7 @@
 
     "start" : {
       "text":  "Your name is Mei. You decided to move to Huizhou, which is a city in the Guangdong province, to support your family. There is nothing to do for you at home and they need the money. Guangdong is very famous for factories producing hardware. \n You heard, one of the factories is hiring at the moment, so you want to apply there. You learn, that only people between 16 and 30 are hired, but since you are in the right age, you just have to fill in a form to apply.",
-      "image": "imgName.jpg",
+      "image": "leaMask.png",
       "a1": {
         "text":   "don’t wait for the to call back, just go home",
         "money":  0,
@@ -46,7 +46,7 @@
 
    "contract1" : {
       "text":  "You have a training session. You are be shown the circuit boards the factory produces for two big companies. The job looks very exhausting, especially because you are required to stand on your feet all day long.",
-      "image": "imgName.jpg",
+      "image": "leaWave.png",
       "a1": {
         "text":   "Start working there.",
         "money":  0,
@@ -65,7 +65,7 @@
 
    "test" : {
       "text":  "The introductory training lasts three days and concludes with a short exam.",
-      "image": "imgName.jpg",
+      "image": "leaWave.png",
       "a1": {
         "text":   "Sign the contract.",
         "money":  0,
@@ -84,7 +84,7 @@
 
     "contract2" : {
       "text":  "It's time to sign the employment contract. You and a dozen of your new possible colleagues meet with one of the plant managers, you get barely time to skim through the contract before you are asked to place your signature on multiple pages.",
-      "image": "imgName.jpg",
+      "image": "leaMask.png",
       "a1": {
         "text":   "This is unbearable. You don't sign it and go back home.",
         "money":  0,
@@ -103,7 +103,7 @@
 
     "dorms" : {
       "text":  "One of the other workers, Jiayi, shows you the way to your dormitory. She explains to you that there are multiple dormitories of which only one is near the factory and unfortunately, yours is relatively far away - but at least the rent is free of charge. However, the showers and bathrooms come with a monthly fee. You pay 4$ in advance.",
-      "image": "imgName.jpg",
+      "image": "leaMask.png",
       "a1": {
         "text":   "After this exhausting day you just go to bed.",
         "money":  -4,
@@ -118,7 +118,7 @@
 
     "dorms-morning" : {
       "text":  "You wake up in your room. The others are still sleeping, but because it’s your first day, you are still excited. You get up and get dressed, trying not to wake the others up. Some of them worked the night shift and just went to bed or are even not there yet. \n You meet Jiayi outside your room and she tells you, you can take either the shuttle bus or the motorcycle taxi. They all try to take the bus, but it's up to you, as long as you're in time. She shows you, where both get off and leaves you there, because she has appointment with one of her friends.",
-      "image": "imgName.jpg",
+      "image": "leaMask.png",
       "a1": {
         "text":   "Take the bus with everyone else.",
         "money":  0,
@@ -136,7 +136,7 @@
     },
     "bus" : {
       "text":  "The bus is crowded, but it's fine. You have the opportunity to chat with some of your coworkers and get to know them a bit...",
-      "image": "imgName.jpg",
+      "image": "leaMask.png",
       "a1": {
         "text":   "You arrive!",
         "money":  0,
@@ -151,7 +151,7 @@
 
     "taxi" : {
       "text":  "<iframe width=\"420\" height=\"315\" src=\"http:\/\/www.youtube.com/embed/vPR7RyTS8DY\" frameborder=\"0\" allowfullscreen><\/iframe>",
-      "image": "imgName.jpg",
+      "image": "leaMask.png",
       "a1": {
         "text":   "You arrive!",
         "money":  0,
@@ -166,7 +166,7 @@
 
     "telefon" : {
       "text":  "You arrive at the factory. Your grandmother isn't feeling well so you promised to call her today. \n But soon after you entered the factory, one of the securities sees your phone and takes it from you.",
-      "image": "imgName.jpg",
+      "image": "leaMask.png",
       "a1": {
         "text":   "You ask him to give it back to you.",
         "money":  0,
@@ -185,7 +185,7 @@
 
     "advicetelefon" : {
       "text":  "The second you want to speak up, Jiayi grabs your arm and asks you to calm down and let it go. She explains to you that it is a factory rule and that you really cannot do anything about it.",
-      "image": "imgName.jpg",
+      "image": "leaMask.png",
       "a1": {
         "text":   "start working",
         "money":  0,
@@ -200,7 +200,7 @@
 
     "givetelefon" : {
       "text":  "",
-      "image": "imgName.jpg",
+      "image": "leaMask.png",
       "a1": {
         "text":   "You just hand him the telephone and he walks away.",
         "money":  0,
@@ -215,7 +215,7 @@
 
    "firstday" : {
       "text":  "The factory is huge and there are a lot of people around you. You are in charge of (???) of the circuit boards. You are allowed to take a break every two hours for ten minutes. You can’t really talk with your coworkers, you have to be really concentrated to not make mistakes. After eight hours, your feet hurt and your back, too. The other workers tell you, that you are supposed to work at least two hours more, over hours.",
-      "image": "imgName.jpg",
+      "image": "leaMask.png",
       "a1": {
         "text":   "You feel tired so you just decide to go back to the dorms.",
         "money":  0,
@@ -234,7 +234,7 @@
 
    "minus" : {
       "text":  "You leave earlier. People at the dorm seem to be surprised. They explain you, that you shouldn’t have left earlier. One of the reasons is the attendance award. The average wage, they earn is 448$, but this is including the awards you may earn. One of them is the attendance award. It’s 16.35 $, but every time you leave earlier,  4.87$ is deducted from it. If you leave earlier or come late three times, you can’t get the award at all.",
-      "image": "imgName.jpg",
+      "image": "leaMask.png",
       "a1": {
         "text":   "Worried, you go to bed.",
         "money":  -4.87,
@@ -249,7 +249,7 @@
 
    "minusbusy" : {
       "text":  "You leave earlier. People at the dorm seem to be surprised. They explain you, that you shouldn’t have left earlier. One of the reasons is the attendance award. The average wage, they earn is 448$, but this is including the awards you may earn. One of them is the attendance award. It’s 16.35 $, but every time you leave earlier,  4.87$ is deducted from it. If you leave earlier or come late three times, you can’t get the award at all.",
-      "image": "imgName.jpg",
+      "image": "leaMask.png",
       "a1": {
         "text":   "Worried, you go to bed.",
         "money":  -4.87,
@@ -264,7 +264,7 @@
 
    "exhausted" : {
       "text":  "Your body hurts, you are tired and you really need some rest.",
-      "image": "imgName.jpg",
+      "image": "leaMask.png",
       "a1": {
         "text":   "You finally arrive at the dorms and you just fall completly exhausted in your bed.",
         "money":  0,
@@ -279,7 +279,7 @@
 
        "exhaustedbusy" : {
       "text":  "Your body hurts, you are tired and you really need some rest.",
-      "image": "imgName.jpg",
+      "image": "leaMask.png",
       "a1": {
         "text":   "You finally arrive at the dorms and you just fall completly exhausted in your bed.",
         "money":  0,
@@ -294,7 +294,7 @@
 
    "exhaustedquit" : {
       "text":  "",
-      "image": "imgName.jpg",
+      "image": "leaMask.png",
       "a1": {
         "text":   "There is no way, you could work tomorrow again, so you decide to leave the factory.",
         "money":  0,
@@ -309,7 +309,7 @@
 
    "quit" : {
       "text":  "",
-      "image": "imgName.jpg",
+      "image": "leaMask.png",
       "a1": {
         "text":   " When you try to resign, they make it so hard for you, it's practically impossible. So you just leave without getting paid for the time you worked there. You return to your family. You spent more of their money then you were able to earn.",
         "money":  0,
@@ -324,7 +324,7 @@
 
    "workbusy" : {
       "text":  "The next day, you are back to work. Jiayi tells you, that it's one of those busy days and you need to produce a lot more today, because they are supposed to deliver today. (????) Your work is exhausting and you can't imagine that they would ask you for more over hours. But after you worked ten hours already, someone approaches you and asks you to stay even longer, because it's very busy today.",
-      "image": "imgName.jpg",
+      "image": "leaMask.png",
       "a1": {
         "text":   "You decide to stay longer.",
         "money":  0,
@@ -343,7 +343,7 @@
 
    "wage" : {
       "text":  "After working almost a month, you ask Jiayi when you will get your wage. She tells you, it will be paid on the 20th of the next month. Twenty days later, they pay you. Since you are still in your probation period, you earn $211 and the rest of the attendance award. After the probation period your wage will be $228.",
-      "image": "imgName.jpg",
+      "image": "leaMask.png",
       "a1": {
         "text":   "Now you are finally able to send some money back home!",
         "money":  227.35,
@@ -358,7 +358,7 @@
 
    "drinking" : {
       "text":  "Slowly, you start to know the rules of the factory by heart. But one of the things that's the most exhausting is to not be allowed to drink while working. You have breaks, but still you are often thirsty while working. If you want to go to the restroom, you need to get a pass, otherwise you are not allowed to use the restroom.  \n You talk one day with the people using the acid to make the circuit boards, you are working on. They were never trained to use them correctly and safely neither taught about the health risks. ",
-      "image": "imgName.jpg",
+      "image": "leaMask.png",
       "a1": {
         "text":   "That makes you feel confused. Did you really understand what this job means for your health?",
         "money":  0,
@@ -373,7 +373,7 @@
 
    "studentsintro" : {
       "text":  "One of these days, you get to know a group of students. They are mostly from three different provinces; Hubei, Hunan and Guizhou province. You talk with Yong, one of the students you meet on the way back to the dorms after work. He studies at a technical school and signed a three month contract at a labor dispatch company. They were not trained before the work, they don't get paid for over hours or subsidy for night shift. Yong tells you, they are either freshmen or junior students at college.",
-      "image": "imgName.jpg",
+      "image": "leaMask.png",
       "a1": {
         "text":   "You are worried to hear how hard these young college students work.",
         "money":  0,
@@ -388,7 +388,7 @@
 
    "studentsadvice" : {
       "text":  "After a month, Yong approaches you to ask for your advice. He says the work is much too difficult for him and a lot of other students. He spoke with almost 50 students, who said they couldn't tolerate the harsh conditions any longer. On the other side he spoke with the supervisor already told him he would not allow the students too leave, no matter how many of them would quit together. He asks you for advice.",
-      "image": "imgName.jpg",
+      "image": "leaMask.png",
       "a1": {
         "text":   "Tell him to take care of himself and quit.",
         "money":  0,
@@ -407,7 +407,7 @@
 
    "studentsunpaid" : {
       "text":  "The students around Yong decide to take your advice and quit the next day. They seems to be released at first but then the struggle starts: The supervisor as he said denies them to leave and doesn't accept their resignations. So the don't get paid there wages for the whole time and not even get paid for the way back home. You give Yong and two, three other students the money for the bus back home and heavy-hearted you say good bye to them.",
-      "image": "imgName.jpg",
+      "image": "leaMask.png",
       "a1": {
         "text":   "It's time to get back to work.",
         "money":  -8,
@@ -422,7 +422,7 @@
 
    "studentsexhausted" : {
       "text":  "The students around Yong stay at the factory. They are extremely exhausted in the evenings and you try to cover from them from time to time but still, it's just too hard for them. You feel how your energy shrinks by seeing them this way.",
-      "image": "imgName.jpg",
+      "image": "leaMask.png",
       "a1": {
         "text":   "Tell them to take care of themselves and quit.",
         "money":  0,
@@ -441,7 +441,7 @@
 
    "samsung" : {
       "text":  "There is text missing here. More to come!",
-      "image": "imgName.jpg",
+      "image": "leaMask.png",
       "a1": {
         "text":   "We need moar texts!",
         "money":  0,
@@ -456,7 +456,7 @@
 
    "work1" : {
       "text":  "The factory is huge and there are a lot of people around you. You are in charge of (???) of the circuit boards. You are allowed to take a break every two hours for ten minutes. You can’t really talk with your coworkers, you have to be really concentrated to not make mistakes. After eight hours, your feet hurt and your back, too. The other workers tell you, that you are supposed to work at least two hours more, over hours.",
-      "image": "imgName.jpg",
+      "image": "leaMask.png",
       "a1": {
         "text":   "You feel tired so you just decide to go back to the dorms.",
         "money":  0,
@@ -475,7 +475,7 @@
 
    "minus1" : {
       "text":  "You leave earlier. People at the dorm seem to be surprised. They explain you, that you shouldn’t have left earlier. One of the reasons is the attendance award. The average wage, they earn is 448$, but this is including the awards you may earn. One of them is the attendance award. It’s 16.35 $, but every time you leave earlier,  4.87$ is deducted from it. If you leave earlier or come late three times, you can’t get the award at all.",
-      "image": "imgName.jpg",
+      "image": "leaMask.png",
       "a1": {
         "text":   "Worried, you go to bed.",
         "money":  -4.87,
@@ -490,7 +490,7 @@
 
    "minus2" : {
       "text":  "You leave earlier. People at the dorm seem to be surprised. They explain you, that you shouldn’t have left earlier. One of the reasons is the attendance award. The average wage, they earn is 448$, but this is including the awards you may earn. One of them is the attendance award. It’s 16.35 $, but every time you leave earlier,  4.87$ is deducted from it. If you leave earlier or come late three times, you can’t get the award at all.",
-      "image": "imgName.jpg",
+      "image": "leaMask.png",
       "a1": {
         "text":   "Worried, you go to bed.",
         "money":  -4.87,
@@ -505,7 +505,7 @@
 
    "exhausted1" : {
       "text":  "Your body hurts, you are tired and you really need some rest.",
-      "image": "imgName.jpg",
+      "image": "leaMask.png",
       "a1": {
         "text":   "You finally arrive at the dorms and you just fall completly exhausted in your bed.",
         "money":  0,
@@ -520,7 +520,7 @@
 
    "exhausted2" : {
       "text":  "Your body hurts, you are tired and you really need some rest.",
-      "image": "imgName.jpg",
+      "image": "leaMask.png",
       "a1": {
         "text":   "You finally arrive at the dorms and you just fall completly exhausted in your bed.",
         "money":  0,
@@ -535,7 +535,7 @@
 
    "work2" : {
       "text":  "The next day, you are back to work. Jiayi tells you, that it's one of those busy days and you need to produce a lot more today, because they are supposed to deliver today. (????) Your work is exhausting and you can't imagine that they would ask you for more over hours. But after you worked ten hours already, someone approaches you and asks you to stay even longer, because it's very busy today.",
-      "image": "imgName.jpg",
+      "image": "leaMask.png",
       "a1": {
         "text":   "You decide to stay longer.",
         "money":  0,
@@ -554,7 +554,7 @@
 
    "wagecircle" : {
       "text":  "After working almost a month, you ask Jiayi when you will get your wage. She tells you, it will be paid on the 20th of the next month. Twenty days later, they pay you. Since you are still in your probation period, you earn $211 and the rest of the attendance award. After the probation period your wage will be $228.",
-      "image": "imgName.jpg",
+      "image": "leaWave.png",
       "a1": {
         "text":   "Now you are finally able to send some money back home!",
         "money":  227.35,

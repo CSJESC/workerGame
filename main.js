@@ -75,7 +75,6 @@
             };
 
             function applyImageFilters(energy) {
-
                 var pixelArtElem = $('#pixelArt');
                 switch (energy) {
                     case 1:

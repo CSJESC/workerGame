@@ -21,7 +21,7 @@ body{
 header{
 	background-color: rgb(54,47,45);
 	color: rgb(255, 255, 255);
-	font-family: arial, helvetica, sans-serif;
+	font-family: 'Open Sans Condensed', sans-serif;
 	text-align:center;
 	min-height: 400px;
     padding:5px;
@@ -66,20 +66,20 @@ article {
     color: rgb(255, 255, 255);
     display: block;
     float: left;
-    font-family: arial,helvetica,sans-serif;
+    font-family: 'Open Sans Condensed', sans-serif;
     font-size: 20px;
     min-height: 200px;
     padding: 5px;
     position: relative;
     right: 70px;
     width: 65%;
-    text-align: justify;
+    /*text-align: justify;*/
 }
 
 aside{	
 	background-color: rgb(71,65,63);
 	color: rgb(255, 255, 255);
-	font-family: arial, helvetica, sans-serif;
+	font-family: 'Open Sans Condensed', sans-serif;
 	text-align:center;
 	float:right;
 	width: 25%;
@@ -94,7 +94,7 @@ footer{
 	clear: both;
 	background-color: rgb(54,47,45);
 	color: rgb(255, 255, 255);
-	font-family: arial, helvetica, sans-serif;
+	font-family: 'Open Sans Condensed', sans-serif;
 	text-align:right;
 	height: 7%; /*7% of the screen size*/
     padding:5px;

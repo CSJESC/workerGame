@@ -1,22 +1,15 @@
-.a1-button {
-	color: rgb(0, 0, 0);
-    display: block;
+.text {
+  font-size: 18px;
+  margin-bottom: 20px;
 }
-
-.a2-button {
-	color: rgb(0, 0, 0);;
-    display: block;
+.button {
+	 font-family: 'Open Sans Condensed', sans-serif;
+   display: block;
 }
-
-.a3-button {
-	color: rgb(0, 0, 0);
-    display: block;
-}
-
-a:hover {
-	background-color: rgb(71,65,63);
-	cursor: pointer;
-}
+  .button:hover {
+  	background-color: rgb(71,65,63);
+  	cursor: pointer;
+  }
 
 body{
 	background-color: rgb(54,47,45);
@@ -26,7 +19,7 @@ body{
 header{
 	background-color: rgb(54,47,45);
 	color: rgb(255, 255, 255);
-	font-family: 'Open Sans Condensed', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	text-align:center;
 	min-height: 400px;
     padding:5px;
@@ -71,7 +64,7 @@ article {
     color: rgb(255, 255, 255);
     display: block;
     float: left;
-    font-family: 'Open Sans Condensed', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 20px;
     min-height: 200px;
     padding: 5px;
@@ -84,7 +77,7 @@ article {
 aside{	
 	background-color: rgb(71,65,63);
 	color: rgb(255, 255, 255);
-	font-family: 'Open Sans Condensed', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	text-align:center;
 	float:right;
 	width: 25%;

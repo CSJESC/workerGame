@@ -85,28 +85,32 @@
             function applyEnergy(energy) {
                 var pixelArtElem = $('.imgContainer');
                 switch (energy) {
+                    case 0:
+                        pixelArtElem.css("filter", "blur(2px) grayscale(0.6) hue-rotate(40deg)");
+                        pixelArtElem.css("-webkit-filter", "blur(2px) grayscale(0.6) hue-rotate(40deg)");
+                        break;
                     case 1:
-                        pixelArtElem.css("filter", "blur(2px) grayscale(0.6) hue-rotate(10deg)");
-                        pixelArtElem.css("-webkit-filter", "blur(2px) grayscale(0.6) hue-rotate(10deg)");
+                        pixelArtElem.css("filter", "blur(2px) grayscale(0.6) hue-rotate(20deg)");
+                        pixelArtElem.css("-webkit-filter", "blur(2px) grayscale(0.6) hue-rotate(20deg)");
                         break;
                     case 2:
+                        pixelArtElem.css("filter", "blur(1px) grayscale(0.3) hue-rotate(10deg)");
+                        pixelArtElem.css("-webkit-filter", "blur(1px) grayscale(0.3) hue-rotate(10deg)");
+                        break;
+                    case 3:
                         pixelArtElem.css("filter", "blur(1px) grayscale(0.3) hue-rotate(5deg)");
                         pixelArtElem.css("-webkit-filter", "blur(1px) grayscale(0.3) hue-rotate(5deg)");
                         break;
-                    case 3:
-                        pixelArtElem.css("filter", "none");
-                        pixelArtElem.css("-webkit-filter", "none");
-                        break;
                     case 4:
-                        pixelArtElem.css("filter", "none");
-                        pixelArtElem.css("-webkit-filter", "none");
+                        pixelArtElem.css("filter", "blur(1px) grayscale(0.3) hue-rotate(2deg)");
+                        pixelArtElem.css("-webkit-filter", "blur(1px) grayscale(0.3) hue-rotate(2deg)");
                         break;
                     case 5:
                         pixelArtElem.css("filter", "none");
                         pixelArtElem.css("-webkit-filter", "none");
                         break;
                     default:
-                        alert('Halp everything is broken I am not good with computas.'); //what to do with this??
+                        alert('There is something wrong with the blur!'); 
                         break;
                 }
             }

@@ -70,6 +70,10 @@
                     status.money += answer.money;
                     status.energy += answer.energy;
 
+                    if (status.energy < 0) {
+                        status.energy = 0;
+                    }
+
                     applyEnergy(status.energy);
 
                     if (!alreadyExausted && status.energy <= 0) {

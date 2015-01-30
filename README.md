@@ -14,5 +14,5 @@ ______
 - style (rename style-test.css (was only there for testing stuff))
 - more and corrected content
 - add missing sites (goinghome, alone)
-- in main.js impove check for energy
+- add images for energy and money!!
 - check chrome compatability

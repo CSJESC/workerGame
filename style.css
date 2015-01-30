@@ -106,7 +106,7 @@ footer{
 	
 }
 
-#pixelArt {transition: filter 0.5s, -webkit-filter 0.5s;}
+.imgContainer {transition: filter 0.5s, -webkit-filter 0.5s;}
 
 #wrapper {
     margin: 0 auto;

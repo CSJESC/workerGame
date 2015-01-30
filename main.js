@@ -11,6 +11,8 @@
     var status;
     var questions;
 
+    var alreadyExausted = false;
+
     // get the data
     $.getJSON("data/gameData.json", function (data) {
         status = data.status;
@@ -39,7 +41,13 @@
                 }
 
                 // update view
-                $('#pixelArt').attr('src', 'image/' + question.image);
+                if(question.video){
+                    $('.imgContainer').html(question.video); //append?
+                } else {
+                    var $img = $('<img height="400" alt="pixel art"/>');
+                    $img.attr('src', 'image/' + question.image);
+                    $('.imgContainer').html($img);
+                }
                 $textElem.html(nl2br(question.text));
                 $moneyElem.text(status.money);
                 $energyElem.text(status.energy);
@@ -62,10 +70,14 @@
                     status.money += answer.money;
                     status.energy += answer.energy;
 
+                    if (status.energy < 0) {
+                        status.energy = 0;
+                    }
+
                     applyEnergy(status.energy);
 
-                    if (status.energy <= 0) {
-                        status.energy = 1; //should actually be 0 I guess, but is difficult with the if statement before
+                    if (!alreadyExausted && status.energy <= 0) {
+                        alreadyExausted = true;
                         goToQuestion(questions['exhaustedquit'])
                     }
                     else {
@@ -75,30 +87,34 @@
             };
 
             function applyEnergy(energy) {
-                var pixelArtElem = $('#pixelArt');
+                var pixelArtElem = $('.imgContainer');
                 switch (energy) {
+                    case 0:
+                        pixelArtElem.css("filter", "blur(2px) grayscale(0.6) hue-rotate(40deg)");
+                        pixelArtElem.css("-webkit-filter", "blur(2px) grayscale(0.6) hue-rotate(40deg)");
+                        break;
                     case 1:
-                        pixelArtElem.css("filter", "blur(2px) grayscale(0.6) hue-rotate(10deg)");
-                        pixelArtElem.css("-webkit-filter", "blur(2px) grayscale(0.6) hue-rotate(10deg)");
+                        pixelArtElem.css("filter", "blur(2px) grayscale(0.6) hue-rotate(20deg)");
+                        pixelArtElem.css("-webkit-filter", "blur(2px) grayscale(0.6) hue-rotate(20deg)");
                         break;
                     case 2:
+                        pixelArtElem.css("filter", "blur(1px) grayscale(0.3) hue-rotate(10deg)");
+                        pixelArtElem.css("-webkit-filter", "blur(1px) grayscale(0.3) hue-rotate(10deg)");
+                        break;
+                    case 3:
                         pixelArtElem.css("filter", "blur(1px) grayscale(0.3) hue-rotate(5deg)");
                         pixelArtElem.css("-webkit-filter", "blur(1px) grayscale(0.3) hue-rotate(5deg)");
                         break;
-                    case 3:
-                        pixelArtElem.css("filter", "none");
-                        pixelArtElem.css("-webkit-filter", "none");
-                        break;
                     case 4:
-                        pixelArtElem.css("filter", "none");
-                        pixelArtElem.css("-webkit-filter", "none");
+                        pixelArtElem.css("filter", "blur(1px) grayscale(0.3) hue-rotate(2deg)");
+                        pixelArtElem.css("-webkit-filter", "blur(1px) grayscale(0.3) hue-rotate(2deg)");
                         break;
                     case 5:
                         pixelArtElem.css("filter", "none");
                         pixelArtElem.css("-webkit-filter", "none");
                         break;
                     default:
-                        alert('Halp everything is broken I am not good with computas.');
+                        alert('There is something wrong with the blur!'); 
                         break;
                 }
             }

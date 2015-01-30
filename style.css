@@ -21,7 +21,7 @@ header{
 	color: rgb(255, 255, 255);
 	font-family: 'Open Sans', sans-serif;
 	text-align:center;
-	min-height: 400px;
+	min-height: 300px;
     padding:5px;
 }
 
@@ -99,7 +99,7 @@ footer{
 	
 }
 
-#pixelArt {transition: filter 0.5s, -webkit-filter 0.5s;}
+.imgContainer {transition: filter 0.5s, -webkit-filter 0.5s;}
 
 #wrapper {
     margin: 0 auto;

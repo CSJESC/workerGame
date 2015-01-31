@@ -112,10 +112,6 @@ footer{
     -webkit-filter: blur(1px) grayscale(0.3) hue-rotate(10deg);
 }
 .energylvl4 {
-    filter: blur(1px) grayscale(0.2) hue-rotate(5deg);
-    -webkit-filter: blur(1px) grayscale(0.2) hue-rotate(5deg);
-}
-.energylvl5 {
     filter: none;
     -webkit-filter: none;
 }

@@ -144,6 +144,7 @@
 
     "goinghome2" : {
       "text": "whew, that was very scary. Good thing you got away. Now what are you going to do?",
+      "image": "leaMask.png",
       "a1": {
       },
       "a2": {

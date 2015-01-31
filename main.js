@@ -103,7 +103,7 @@
                         break;
                     case 1:
                         imgBlock.attr('class', 'energylvl1');
-                        energyElem.attr('src', 'image/energy/red.png');
+                        energyElem.attr('src', 'image/energy/orange.png');
                         break;
                     case 2:
                         imgBlock.attr('class', 'energylvl2');

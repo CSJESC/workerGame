@@ -474,7 +474,7 @@
         "text":   "You know it’s common to have children working even though it is illegal, but there is not much you can do about it.",
         "money":  0,
         "energy": 0,
-        "next":   "childworker"
+        "next":   "studentsadvice"
       },
       "a2": {
       },

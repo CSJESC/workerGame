@@ -1,7 +1,7 @@
 {
   "status": {
     "money":  0,
-    "energy": 5
+    "energy": 4
   },
 
   "questions": {
@@ -152,7 +152,7 @@
 
     "taxi" : {
       "text":  "",
-      "video": "<iframe width=\"700\" height=\"400\" src=\"http:\/\/www.youtube.com/embed/vPR7RyTS8DY\" frameborder=\"0\" allowfullscreen><\/iframe>",
+      "video": "<iframe width=\"700\" height=\"400\" src=\"http:\/\/www.youtube.com/embed/vPR7RyTS8DY?autoplay=1\" frameborder=\"0\" allowfullscreen><\/iframe>",
       "a1": {
         "text":   "You arrive!",
         "money":  0,
@@ -310,9 +310,9 @@
 
    "quit" : {
       "text":  "",
-      "image": "leaMask.png",
+      "image": "arrivingBackAtHome.gif",
       "a1": {
-        "text":   " When you try to resign, they make it so hard for you, it's practically impossible. So you just leave without getting paid for the time you worked there. You return to your family. You spent more of their money then you were able to earn.",
+        "text":   "When you try to resign, they make it so hard for you, it's practically impossible. So you just leave without getting paid for the time you worked there. You return to your family. You spent more of their money then you were able to earn.",
         "money":  0,
         "energy": 0,
         "next":   false

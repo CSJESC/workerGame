@@ -26,31 +26,38 @@
         // when dom is ready
         $(function () {
             // find the dom elements
-            var $containerElem = $('.container'), $moneyElem = $('.status-bar .money'), $energyElem = $('.status-bar .energy'), $textElem = $('.text'), $a1Button = $('.a1-button'), $a2Button = $('.a2-button'), $a3Button = $('.a3-button'), $bothButtons = $a1Button.add($a2Button).add($a3Button)
+            var $containerElem = $('.container'), $textElem = $('.text'), $a1Button = $('.a1-button'), $a2Button = $('.a2-button'), $a3Button = $('.a3-button'), $bothButtons = $a1Button.add($a2Button).add($a3Button)
+            var imgBlock = $('.imgContainer img');
+            var videoBlock = $('#videoBlock');
+            var moneyImgElem = $('#moneyBlock img');
+            var moneyElem = $('#money');
+            var energyElem = $('#energyBlock img');
 
             var goToQuestion = function (question) {
                 if (!question) {
                     // add code to handle game over
-                    alert('game over')
+                    alert('game over');
                     return
                 }
                 if (question.isWinner) {
                     // add code to handle winner
-                    alert('winner!')
+                    alert('winner!');
                     return
                 }
 
                 // update view
                 if(question.video){
-                    $('.imgContainer').html(question.video); //append?
+                    imgBlock.css('display', 'none');
+                    videoBlock.css('display', 'inline');
+                    videoBlock.html(question.video);
+
                 } else {
-                    var $img = $('<img height="400" alt="pixel art"/>');
-                    $img.attr('src', 'image/' + question.image);
-                    $('.imgContainer').html($img);
+                    videoBlock.css('display', 'none');
+                    videoBlock.html('');
+                    imgBlock.css('display', 'inline');
+                    imgBlock.attr('src', 'image/' + question.image);
                 }
                 $textElem.html(nl2br(question.text));
-                $moneyElem.text(status.money);
-                $energyElem.text(status.energy);
                 // set button text if specified, if a2t use standard
                 $a1Button.text(question.a1.text || '');
                 $a2Button.text(question.a2.text || '');
@@ -67,14 +74,16 @@
                     else
                         answer = question.a3;
 
-                    status.money += answer.money;
+                    status.money += Math.round(answer.money);
                     status.energy += answer.energy;
+
 
                     if (status.energy < 0) {
                         status.energy = 0;
                     }
 
                     applyEnergy(status.energy);
+                    applyMoney(status.money);
 
                     if (!alreadyExausted && status.energy <= 0) {
                         alreadyExausted = true;
@@ -87,36 +96,50 @@
             };
 
             function applyEnergy(energy) {
-                var pixelArtElem = $('.imgContainer');
                 switch (energy) {
                     case 0:
-                        pixelArtElem.css("filter", "blur(2px) grayscale(0.6) hue-rotate(40deg)");
-                        pixelArtElem.css("-webkit-filter", "blur(2px) grayscale(0.6) hue-rotate(40deg)");
+                        imgBlock.attr('class', 'energylvl0');
+                        energyElem.attr('src', 'image/energy/red.png');
                         break;
                     case 1:
-                        pixelArtElem.css("filter", "blur(2px) grayscale(0.6) hue-rotate(20deg)");
-                        pixelArtElem.css("-webkit-filter", "blur(2px) grayscale(0.6) hue-rotate(20deg)");
+                        imgBlock.attr('class', 'energylvl1');
+                        energyElem.attr('src', 'image/energy/red.png');
                         break;
                     case 2:
-                        pixelArtElem.css("filter", "blur(1px) grayscale(0.3) hue-rotate(10deg)");
-                        pixelArtElem.css("-webkit-filter", "blur(1px) grayscale(0.3) hue-rotate(10deg)");
+                        imgBlock.attr('class', 'energylvl2');
+                        energyElem.attr('src', 'image/energy/yellow.png');
                         break;
                     case 3:
-                        pixelArtElem.css("filter", "blur(1px) grayscale(0.3) hue-rotate(5deg)");
-                        pixelArtElem.css("-webkit-filter", "blur(1px) grayscale(0.3) hue-rotate(5deg)");
+                        imgBlock.attr('class', 'energylvl3');
+                        energyElem.attr('src', 'image/energy/lightGreen.png');
                         break;
                     case 4:
-                        pixelArtElem.css("filter", "blur(1px) grayscale(0.3) hue-rotate(2deg)");
-                        pixelArtElem.css("-webkit-filter", "blur(1px) grayscale(0.3) hue-rotate(2deg)");
-                        break;
-                    case 5:
-                        pixelArtElem.css("filter", "none");
-                        pixelArtElem.css("-webkit-filter", "none");
+                        imgBlock.attr('class', 'energylvl4');
+                        energyElem.attr('src', 'image/energy/green.png');
                         break;
                     default:
-                        alert('There is something wrong with the blur!'); 
+                        alert('There is something wrong with the blur! REMOVE THIS BEFORE GOING LIVE! RAHHHHHHH!!!!!');
                         break;
                 }
+            }
+
+            function applyMoney(money) {
+                if (money < 0) {
+                    moneyImgElem.attr('src','image/money/moneyDebt.png');
+                } else if (money < 5) {
+                    moneyImgElem.attr('src','image/money/money0.png');
+                } else if (money < 100) {
+                    moneyImgElem.attr('src','image/money/money1.png');
+                } else if (money < 200) {
+                    moneyImgElem.attr('src','image/money/money2.png');
+                } else if (money < 300) {
+                    moneyImgElem.attr('src','image/money/money3.png');
+                } else if (money < 400) {
+                    moneyImgElem.attr('src','image/money/money5.png');
+                } else { // https://www.youtube.com/watch?v=sdl658l5TTQ
+                    moneyImgElem.attr('src','image/money/money5.png');
+                }
+                moneyElem.html (money + ' USD / ' + (money * 6.25) + ' Yuan');
             }
 
             // setup initial view

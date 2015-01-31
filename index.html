@@ -11,27 +11,22 @@
 <div id="wrapper">
     <header>
         <div class="imgContainer">
-
             <img id="pixelArt" height="300" src="image/leaWave.png" alt="pixel art"/>
-
+            <div id="videoBlock"></div>
         </div>
     </header>
     <section>
         <div class="group">
-            <div class="container">
-                <aside>
-                    <ul class="status-bar">
-                        <li class="energy"></li>
-                        <li class="money"></li>
-                    </ul>
-                </aside>
-                <article>
-                    <div class="text"></div>
-                    <a class="a1-button button" data-answer="a1"></a>
-                    <a class="a2-button button" data-answer="a2"></a>
-                    <a class="a3-button button" data-answer="a3"></a>
-                </article>
-            </div>
+            <aside id="statusBlock">
+                <div id="energyBlock"><img src="image/energy/green.png"></div>
+                <div id="moneyBlock"><img src="image/money/money0.png"><span id="money">0 USD / 0 Yuan</span></div>
+            </aside>
+            <article>
+                <div class="text"></div>
+                <a class="a1-button button" data-answer="a1"></a>
+                <a class="a2-button button" data-answer="a2"></a>
+                <a class="a3-button button" data-answer="a3"></a>
+            </article>
         </div>
     </section>
     <footer>

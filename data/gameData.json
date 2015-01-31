@@ -61,6 +61,7 @@
 
     "goinghome" : {
       "text": "Ahhh its nice to be back home. But your parents are out of money after paying your bus fare.",
+      "image": "leaMask.png",
       "a1": {
         "text":   "You feel guilty and start looking for a job again.",
         "money":  0,
@@ -73,8 +74,9 @@
       }
     },
 
-    "aone" : {
+    "alone" : {
       "text": "AThere is none you know here. Whom should you ask?",
+      "image": "leaMask.png",
       "a1": {
         "text":   "You better just wait for them to call you!",
         "money":  0,

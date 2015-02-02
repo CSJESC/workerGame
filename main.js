@@ -80,6 +80,8 @@
 
                     if (status.energy < 0) {
                         status.energy = 0;
+                    } else if (status.energy > 4) {
+                        status.energy = 4;
                     }
 
                     applyEnergy(status.energy);

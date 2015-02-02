@@ -37,23 +37,23 @@
     },
 
     "start2" : {
-      "text":  "You heard one of the factories is hiring workers aged 16 to 30. Since you meet these qualifications, you decide to apply. You just have to fill in a form and decide:",
+      "text":  "After you rent a room for 40$ you hear one of the factories is hiring workers aged 16 to 30. Since you meet these qualifications, you decide to apply. You just have to fill in a form and decide:",
       "image": "leaMask.png",
       "a1": {
         "text":   "not to wait for the call back, just go home",
-        "money":  0,
+        "money":  -40,
         "energy": 0,
         "next":   "goinghome"
       },
       "a2": {
         "text":   "wait for them to call back",
-        "money":  0,
+        "money":  -40,
         "energy": 0,
         "next":   "contract1"
       },
       "a3": {
         "text":   "to take initiative and talk to someone with some influence, who might guarantee you a job", 
-        "money":  0,
+        "money":  -40,
         "energy": 0,
         "next":   "alone"
       }
@@ -205,6 +205,7 @@
       "a3": {
       }
     },
+
     "bus" : {
       "text":  "The bus is crowded, but it's fine. You have the opportunity to chat with some of your coworkers and get to know them a bit...",
       "image": "leaMask.png",
@@ -439,19 +440,53 @@
     },
 
     "health" : {
-      "text": "You talk with coworkers who use acid to make the circuit boards you are working on. It seems they were never trained for safety hazards or potential health risks.",
+      "text": "You talk with coworkers who use acid to make the circuit boards you are working on. It seems they were never trained for safety hazards or potential health risks. \n That makes you feel confused about whether or not you really understand what potential risks this job poses for your health.",
         "image": "leaMask.png",
       "a1": {
-        "text":   "That makes you feel confused about whether or not you really understand what potential risks this job poses for your health.",
+        "text":   "You decide to complain to your superior, since you do not want to take any risks concerning your health.",
+        "money":  0,
+        "energy": 0,
+        "next":   "complainhealth"
+      },
+      "a2": {
+        "text":   "You ignore your gut feeling and just continue your day.",
         "money":  0,
         "energy": 0,
         "next":   "studentsintro"
+      },
+      "a3": {
+      }
+      },
+
+    "complainhealth" : {
+      "text": "You raise your concerns to your supervisor and ask for better safety equipment. He tells you not to worry and to get back to work.",
+        "image": "leaMask.png",
+      "a1": {
+        "text":   "You insist on having the matter looked into.",
+        "money":  0,
+        "energy": 0,
+        "next":   "firedhealth"
+      },
+      "a2": {
+        "text":   "You follow his orders and go back to work.",
+        "money":  0,
+        "energy": 0,
+        "next":   "studentsintro"
+      },
+      "a3": {
+      }
+    },
+
+    "firedhealth" : {
+      "text": "The supervisor becomes angry and tells you to mind your own business. He fires you on the spot.",
+        "image": "leaMask.png",
+      "a1": {
       },
       "a2": {
       },
       "a3": {
       }
-      },
+    },
 
    "studentsintro" : {
       "text":  "You get to know a group of students from three different provinces: Hubei, Hunan and Guizhou. You talk with Yong, one of the students you meet on the way back to the dorms after work. He studies at a technical school and signed a three month contract at a labor dispatch company. They were not trained before starting work, they don't get paid for over hours or subsidy for the night shift. Yong tells you they are freshmen and junior students at college.",

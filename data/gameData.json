@@ -126,7 +126,7 @@
 
     "goinghome2" : {
       "text": "whew, that was very scary. Good thing you got away. Now what are you going to do?",
-      "image": "filler.png",
+      "image": "goinghome2.png",
       "a1": {
       },
       "a2": {
@@ -571,6 +571,7 @@
       "a3": {
       }
     },
+
 
    "granny" : {
       "text":  "Your parents are telling you that your grandmother is sick and she cannot afford her health care, they are asking if you could send them some money to help her pay for her medication.",

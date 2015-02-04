@@ -52,6 +52,7 @@
         "next":   "contract1"
       },
       "a3": {
+	  }
     },
 
     "goinghome" : {
@@ -421,13 +422,8 @@
     },
 
     "health" : {
-<<<<<<< HEAD
-      "text": "You talk with coworkers who use acid to make the circuit boards you are working on. It seems they were never trained for safety hazards or potential health risks.",
-        "image": "health.png",
-=======
       "text": "You talk with coworkers who use acid to make the circuit boards you are working on. It seems they were never trained for safety hazards or potential health risks. \n That makes you feel confused about whether or not you really understand what potential risks this job poses for your health.",
-        "image": "leaMask.png",
->>>>>>> bf8e5e58f4a7ba96d62c9df9b427be028ff41cf8
+        "image": "health.png",
       "a1": {
         "text":   "You decide to complain to your superior, since you do not want to take any risks concerning your health.",
         "money":  0,

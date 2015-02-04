@@ -206,7 +206,7 @@
                 } else { // https://www.youtube.com/watch?v=sdl658l5TTQ
                     moneyImgElem.attr('src','image/money/money5.png');
                 }
-                moneyElem.html (money + ' USD / ' + (money * 6.25) + ' Yuan');
+                moneyElem.html (money + ' $ / ' + (money * 6.25) + ' ¥');
             }
 
             // setup initial view

@@ -38,7 +38,7 @@
 
     "start2" : {
       "text":  "After you rent a room for 40$ you hear one of the factories is hiring workers aged 16 to 30. Since you meet these qualifications, you decide to apply. You just have to fill in a form and decide:",
-      "image": "filler.png",
+      "image": "start2.png",
       "a1": {
         "text":   "not to wait for the call back, just go home",
         "money":  -40,
@@ -52,11 +52,7 @@
         "next":   "contract1"
       },
       "a3": {
-        "text":   "to take initiative and talk to someone with some influence, who might guarantee you a job", 
-        "money":  -40,
-        "energy": 0,
-        "next":   "alone"
-      }
+	  }
     },
 
     "goinghome" : {
@@ -74,21 +70,7 @@
       }
     },
 
-    "alone" : {
-      "text": "There is no one you know here. Whom should you ask?",
-      "image": "filler.png",
-      "a1": {
-        "text":   "You better just wait for them to call you!",
-        "money":  0,
-        "energy": 0,
-        "next":   "contract1"
-      },
-      "a2": {
-      },
-      "a3": {
-      }
-    },
-
+    
    "contract1" : {
       "text":  "You are called back and invited to have a training session. You are shown circuit boards that the factory produces for two big companies. The job seems very exhausting, especially because you are required to stand on your feet all day long. You decide:",
       "image": "contract1.png",
@@ -441,7 +423,7 @@
 
     "health" : {
       "text": "You talk with coworkers who use acid to make the circuit boards you are working on. It seems they were never trained for safety hazards or potential health risks. \n That makes you feel confused about whether or not you really understand what potential risks this job poses for your health.",
-        "image": "leaMask.png",
+        "image": "health.png",
       "a1": {
         "text":   "You decide to complain to your superior, since you do not want to take any risks concerning your health.",
         "money":  0,

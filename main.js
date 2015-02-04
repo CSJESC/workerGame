@@ -94,6 +94,9 @@
                     else if (question === questions["fillenergy"] || question === questions["fillenergy2"] ) {
                         leavingcounter++;
                     }
+                    else if (question === questions["granny"]) {
+                        wage = false;
+                    }
 
 
                     status.money += Math.round(answer.money);
@@ -112,7 +115,7 @@
                         alreadyExausted = true;
                         goToQuestion(questions['exhaustedquit']);
                     }      
-                    else if ((question === questions["minuscircle2"] || question === questions["exhaustedcircle2"] || question === questions["fillenergy2"]) && !wage){
+                    else if ((question === questions["workcircle2"]) && !wage){
                         wage = true;
                        goToQuestion(questions['wagecircle']);
                     }

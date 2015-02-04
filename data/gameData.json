@@ -578,7 +578,7 @@
       "image": "filler.png",
       "a1": {
         "text":   "You send them $100.",
-        "money":  0,
+        "money":  -100,
         "energy": 0,
         "next":   "workcircle"
       },
@@ -590,7 +590,7 @@
       },
       "a3": {
         "text":   "You send them $200.",
-        "money":  0,
+        "money":  -200,
         "energy": 0,
         "next":   "workcircle"
       }

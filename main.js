@@ -13,6 +13,12 @@
 
     var alreadyExausted = false;
 
+    var workhard = false;
+
+    var grannydead = false;
+
+    var leavingcounter = 0;
+
     // get the data
     $.getJSON("data/gameData.json", function (data) {
         status = data.status;
@@ -72,11 +78,23 @@
                     else if (event.target.dataset.answer == 'a2')
                         answer = question.a2;
                     else
-                        answer = question.a3;
+                        answer = question.a3; 
+
+
+                    if (question == "decisionwork" ) {//&& answer == 'a1') {
+                        workhard = true;
+                        alert("this works");
+                    } 
+                    else if ((question == "exhaustedcicle" || question == "exhaustedcicle2") && workhard == true) {
+                            answer.energy = answer.energy * 2;
+                    }
+                    else if (question == "grannydead") {
+                        grannydead = true;
+                    }
+
 
                     status.money += Math.round(answer.money);
                     status.energy += answer.energy;
-
 
                     if (status.energy < 0) {
                         status.energy = 0;
@@ -89,7 +107,13 @@
 
                     if (!alreadyExausted && status.energy <= 0) {
                         alreadyExausted = true;
-                        goToQuestion(questions['exhaustedquit'])
+                        goToQuestion(questions['exhaustedquit']);
+                    }               
+                    else if (question == "exhaustedcicle2" && grannydead == true || question == "minuscircle2" && grannydead == true) {
+                        goToQuestion(questions['helpparents']);
+                    }
+                    else if (question == "workcircle2" && answer == 'a2' && grannydead == true) {
+                        goToQuestion(questions['helpparents']);
                     }
                     else {
                         goToQuestion(questions[answer.next])

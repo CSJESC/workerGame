@@ -1,7 +1,7 @@
 {
   "status": {
     "money":  0,
-    "energy": 4
+    "energy": 10
   },
 
   "questions": {
@@ -347,11 +347,11 @@
     },
 
    "exhaustedquit" : {
-      "text":  "",
+      "text":  "You collapse. You can barely see and your whole body hurts. Jiayi brings you to the hospital since there is no way you could go on your own.",
       "image": "exhausted.png",
       "a1": {
-        "text":   "Your body hurts, you are tired and you really need some rest. There is no way you could imagine working tomorrow again, so you decide to leave the factory.",
-        "money":  0,
+        "text": "Since the company doesn’t cover your health insurance, you have to pay $150.",
+        "money":  -150,
         "energy": 0,
         "next":   "quit"
       },
@@ -526,7 +526,7 @@
         "text":   "You give Yong and two other students money for the bus back home and heavy-hearted you say good bye to them.",
         "money":  -40,
         "energy": 0,
-        "next":   "samsung"
+        "next":   "decisionwork"
       },
       "a2": {
       },
@@ -553,67 +553,57 @@
       }
     },
 
-   "samsung" : {
+   "decisionwork" : {
       "text":  "You’ve worked at this factory for quite some time already. You often feel very tired but have not lost site of the goal of sending some money back home. \n Jiayi passes by at your dorm after work. You are happy to see her because you haven't seen her in days! You tell her about the students and the many other things since you have last seen her Finally you ask her why she has been away. She explains she is working for a different company now. She earns a little more but the conditions are worse. She isn’t allowed to have the 10 minutes break every 2 hours that you have. In fact, she has no breaks at all. She also works more over time. She asks you if you want to join her as there is an open position at her company. You decide:",
       "image": "filler.png",
       "a1": {
         "text":   "to go work with her.",
         "money":  0,
         "energy": 0,
-        "next":   "work1"
+        "next":   "granny"
       },
       "a2": {
         "text":   "to stay at your company. The extra money is not worth the grueling conditions.",
         "money":  0,
         "energy": 0,
-        "next":   "work1"
+        "next":   "granny"
       },
       "a3": {
       }
     },
 
-   "work1" : {
-      "text":  "The factory is huge and there are a lot of people around you. You are in charge of (???) of the circuit boards. You are allowed to take a break every two hours for ten minutes. You can’t really talk with your coworkers, you have to be really concentrated to not make mistakes. After eight hours, your feet hurt and your back, too. The other workers tell you, that you are supposed to work at least two hours more, over hours.",
-      "image": "work1.png",
-      "a1": {
-        "text":   "You feel tired so you just decide to go back to the dorms.",
-        "money":  0,
-        "energy": 0,
-        "next":   "minus1"
-      },
-      "a2": {
-        "text":   "You follow the obligation and stay and work (at least two hours) more.",
-        "money":  0,
-        "energy": 0,
-        "next":   "exhausted1"
-      },
-      "a3": {
-      }
-    },
 
-   "minus1" : {
-      "text":  "You leave early. Your coworkers are surprised and explain to you the attendance award: the average wage they earn is 448$, but this is including any awards you may earn such as the attendance award. Every time you leave early,  4.87$ is deducted from a possible 16.34$. If you leave early or come late three times, you forfeit the award entirely.",
+   "granny" : {
+      "text":  "Your parents are telling you that your grandmother is sick and she cannot afford her health care, they are asking if you could send them some money to help her pay for her medication.",
       "image": "filler.png",
       "a1": {
-        "text":   "Worried, you go to bed.",
-        "money":  -4.87,
-        "energy": 1,
-        "next":   "work2"
+        "text":   "You send them $100.",
+        "money":  0,
+        "energy": 0,
+        "next":   "workcircle"
       },
       "a2": {
+        "text":   "You send them nothing.",
+        "money":  0,
+        "energy": 0,
+        "next":   "grannydead"
       },
       "a3": {
+        "text":   "You send them $200.",
+        "money":  0,
+        "energy": 0,
+        "next":   "workcircle"
       }
     },
 
-   "minus2" : {
-      "text":  "You leave early. Your coworkers are surprised and explain to you the attendance award: the average wage they earn is 448$, but this is including any awards you may earn such as the attendance award. Every time you leave early,  4.87$ is deducted from a possible 16.34$. If you leave early or come late three times, you forfeit the award entirely.",
+    "grannydead" : {
+      "text":  "Your grandmother wasn’t able to afford the medicamentation on her own. Since you weren’t able to help she died.",
       "image": "filler.png",
       "a1": {
-        "text":   "Worried, you go to bed.",
-        "money":  -4.87,
-        "energy": 1,
-        "next":   "wagecircle"
+        "text":   "There is no time for grieve, you have to go back to work!",
+        "money":  0,
+        "energy": 0,
+        "next":   "workcircle"
       },
       "a2": {
       },
@@ -621,14 +611,67 @@
       }
     },
 
-   "exhausted1" : {
+   "workcircle" : {
+      "text":  "It’s always the same. Standing on the assembly line and attach this thing to the circuit board. Again and again. As everyday, you have to decided:",
+      "image": "workbusy.png",
+      "a1": {
+        "text":   "to do overtime (2 hours)",
+        "money":  0,
+        "energy": 0,
+        "next":   "exhaustedcircle"
+      },
+      "a2": {
+        "text":   "to leave now and stay at home tomorrow to  fill up your energy.",
+        "money":  0,
+        "energy": 9,
+        "next":   "workcircle2"
+      },
+      "a3": {
+        "text":   "to leave earlier.",
+        "money":  0,
+        "energy": 0,
+        "next":   "minuscircle"
+      }
+    },
+
+   "minuscircle" : {
+      "text":  "You leave early, even though you know you could use the extra money.", 
+      "image": "filler.png",
+      "a1": {
+        "text":   "You are tired and go to bed early.",
+        "money":  -4.87,
+        "energy": 1,
+        "next":   "workcircle2"
+      },
+      "a2": {
+      },
+      "a3": {
+      }
+    },
+
+   "minuscircle2" : {
+      "text":  "You leave early, even though you know you could use the extra money.", 
+      "image": "filler.png",
+      "a1": {
+        "text":   "You are tired and go to bed early.",
+        "money":  -4.87,
+        "energy": 1,
+        "next":   "granny"
+      },
+      "a2": {
+      },
+      "a3": {
+      }
+    },
+
+   "exhaustedcircle" : {
       "text":  "Your body hurts, you are tired and you really need some rest.",
       "image": "firstday.png",
       "a1": {
-        "text":   "You finally arrive at the dorms and you just fall completly exhausted in your bed.",
+        "text": "YWhen you finally arrive at the dorms you collapse from exhaustion.",
         "money":  0,
         "energy": -1,
-        "next":   "work2"
+        "next":   "workcircle2"
       },
       "a2": {
       },
@@ -636,14 +679,14 @@
       }
     },
 
-   "exhausted2" : {
-      "text":  "Your body hurts, you are tired and you really need some rest.",
+   "exhaustedcircle2" : {
+      "text": "Your body hurts, you are tired and you really need some rest. When you finally arrive at the dorms you collapse from exhaustion.",
       "image": "exhausted.png",
       "a1": {
-        "text":   "You finally arrive at the dorms and you just fall completly exhausted in your bed.",
+        "text": "When you finally arrive at the dorms you collapse from exhaustion.",
         "money":  0,
         "energy": -2,
-        "next":   "wagecircle"
+        "next":   "granny"
       },
       "a2": {
       },
@@ -651,22 +694,75 @@
       }
     },
 
-   "work2" : {
-      "text":  "The next day, you are back to work. Jiayi tells you, that it's one of those busy days and you need to produce a lot more today, because they are supposed to deliver today. (????) Your work is exhausting and you can't imagine that they would ask you for more over hours. But after you worked ten hours already, someone approaches you and asks you to stay even longer, because it's very busy today.",
-      "image": "work2.png",
+    "fillenergy": {
+      "text":  "You spend the day relaxing and catching up with your family on the phone",
+      "image": "workbusy.png",
       "a1": {
-        "text":   "You decide to stay longer.",
+        "text":   "and at the end of the day you already feel much better.",
         "money":  0,
-        "energy": 0,
-        "next":   "exhausted2"
+        "energy": 9,
+        "next":   "workcircle2"
       },
       "a2": {
+      },
+      "a3": {
+      }
+    },
+
+    "fillenergy2": {
+      "text":  "You spend the day relaxing and catching up with your family on the phone",
+      "image": "workbusy.png",
+      "a1": {
+        "text":   "and at the end of the day you already feel much better.",
+        "money":  0,
+        "energy": 9,
+        "next":   "granny"
+      },
+      "a2": {
+      },
+      "a3": {
+      }
+    },
+
+    "helpparents" : {
+      "text": "Your parents ask you to help them financially. Your grandmother used to bring some money in by the little work she was doing. You feel sorry for them, so:",
+      "image": "exhausted.png",
+      "a1": {
+        "text": "you send them $50.",
+        "money":  -50,
+        "energy": 0,
+        "next":   "workcircle"
+      },
+      "a2": {
+        "text": "you send them $100.",
+        "money":  -100,
+        "energy": 0,
+        "next":   "workcircle"
+      },
+      "a3": {
+      }
+    },
+
+   "workcircle2" : {
+      "text":  "It’s always the same. Standing on the assembly line and attach this thing to the circuit board. Again and again. As everyday, you have to decided:",
+      "image": "workbusy.png",
+      "a1": {
+        "text":   "to do overtime (4 hours)",
+        "money":  0,
+        "energy": 0,
+        "next":   "exhaustedcircle2"
+      },
+      "a2": {
+        "text":   "to leave now and stay at home tomorrow to fill up your energy.",
+        "money":  0,
+        "energy": 0,
+        "next":   "fillenergy2"
+      },
+      "a3": {
         "text":   "You go home with a bad feeling.",
         "money":  0,
         "energy": 0,
-        "next":   "minus2"
-      },
-      "a3": {
+        "next":   "minuscircle2"
       }
     },
 

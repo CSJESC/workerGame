@@ -13,6 +13,12 @@
 
     var alreadyExausted = false;
 
+    var workhard = false;
+
+    var grannydead = false;
+
+    var leavingcounter = 0;
+
     // get the data
     $.getJSON("data/gameData.json", function (data) {
         status = data.status;
@@ -72,16 +78,26 @@
                     else if (event.target.dataset.answer == 'a2')
                         answer = question.a2;
                     else
-                        answer = question.a3;
+                        answer = question.a3; 
+
+                    if (question === questions["decisionwork"] && answer == 'a1') {
+                        workhard = true;
+                    } 
+                    else if ((question === questions["exhaustedcicle"] || question === questions["exhaustedcicle2"]) && workhard == true) {
+                            answer.energy = answer.energy * 2;
+                    }
+                    else if (question == questions["grannydead"]) {
+                       grannydead = true;
+                    }
+
 
                     status.money += Math.round(answer.money);
                     status.energy += answer.energy;
 
-
                     if (status.energy < 0) {
                         status.energy = 0;
-                    } else if (status.energy > 4) {
-                        status.energy = 4;
+                    } else if (status.energy > 10) {
+                        status.energy = 10;
                     }
 
                     applyEnergy(status.energy);
@@ -89,10 +105,20 @@
 
                     if (!alreadyExausted && status.energy <= 0) {
                         alreadyExausted = true;
-                        goToQuestion(questions['exhaustedquit'])
+                        goToQuestion(questions['exhaustedquit']);
+                    }               
+                    else if (question === questions["minuscircle2"] && grannydead == true) {
+                        goToQuestion(questions['helpparents']);
+                    }
+                    else if(question === questions["exhaustedcircle2"] && grannydead == true) {
+                        goToQuestion(questions['helpparents']);
+                    }
+                    else if (question === questions["fillenergy2"] && grannydead == true) {
+                        goToQuestion(questions['helpparents']);
                     }
                     else {
-                        goToQuestion(questions[answer.next])
+                        goToQuestion(questions[answer.next]);
+
                     }
                 });
             };
@@ -101,23 +127,47 @@
                 switch (energy) {
                     case 0:
                         imgBlock.attr('class', 'energylvl0');
-                        energyElem.attr('src', 'image/energy/red.png');
+                        energyElem.attr('src', 'image/energy/e00.png');
                         break;
                     case 1:
                         imgBlock.attr('class', 'energylvl1');
-                        energyElem.attr('src', 'image/energy/orange.png');
+                        energyElem.attr('src', 'image/energy/e01.png');
                         break;
                     case 2:
                         imgBlock.attr('class', 'energylvl2');
-                        energyElem.attr('src', 'image/energy/yellow.png');
+                        energyElem.attr('src', 'image/energy/e02.png');
                         break;
                     case 3:
                         imgBlock.attr('class', 'energylvl3');
-                        energyElem.attr('src', 'image/energy/lightGreen.png');
+                        energyElem.attr('src', 'image/energy/e03.png');
                         break;
                     case 4:
                         imgBlock.attr('class', 'energylvl4');
-                        energyElem.attr('src', 'image/energy/green.png');
+                        energyElem.attr('src', 'image/energy/e04.png');
+                        break;
+                    case 5:
+                        imgBlock.attr('class', 'energylvl5');
+                        energyElem.attr('src', 'image/energy/e05.png');
+                        break;
+                    case 6:
+                        imgBlock.attr('class', 'energylvl6');
+                        energyElem.attr('src', 'image/energy/e06.png');
+                        break;
+                    case 7:
+                        imgBlock.attr('class', 'energylvl7');
+                        energyElem.attr('src', 'image/energy/e07.png');
+                        break;
+                    case 8:
+                        imgBlock.attr('class', 'energylvl8');
+                        energyElem.attr('src', 'image/energy/e08.png');
+                        break;
+                    case 9:
+                        imgBlock.attr('class', 'energylvl9');
+                        energyElem.attr('src', 'image/energy/e09.png');
+                        break;
+                    case 10:
+                        imgBlock.attr('class', 'energylvl10');
+                        energyElem.attr('src', 'image/energy/e10.png');
                         break;
                     default:
                         alert('There is something wrong with the blur! REMOVE THIS BEFORE GOING LIVE! RAHHHHHHH!!!!!');

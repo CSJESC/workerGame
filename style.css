@@ -74,46 +74,11 @@ article {
     right: -12px;
     text-align: center;
     width: 25%;
-    margin-top: -6px;
+    margin-top: 25px;
 }
 
-footer{
-	clear: both;
-	background-color: rgb(54,47,45);
-	color: rgb(255, 255, 255);
-	font-family: 'Open Sans Condensed', sans-serif;
-	text-align:right;
-	height: 7%; /*7% of the screen size*/
-    padding:5px;
-	
-}
-
-.imgContainer {transition: filter 0.5s, -webkit-filter 0.5s;}
-
-#wrapper {
-    margin: 0 auto;
-    width: 1200px;
-}
-
-.energylvl0 {
-    filter: blur(2px) grayscale(0.6) hue-rotate(40deg);
-    -webkit-filter: blur(2px) grayscale(0.6) hue-rotate(40deg);
-}
-.energylvl1 {
-    filter: blur(2px) grayscale(0.6) hue-rotate(25deg);
-    -webkit-filter: blur(2px) grayscale(0.6) hue-rotate(25deg);
-}
-.energylvl2 {
-    filter: blur(1px) grayscale(0.3) hue-rotate(15deg);
-    -webkit-filter: blur(1px) grayscale(0.3) hue-rotate(15deg);
-}
-.energylvl3 {
-    filter: blur(1px) grayscale(0.3) hue-rotate(10deg);
-    -webkit-filter: blur(1px) grayscale(0.3) hue-rotate(10deg);
-}
-.energylvl4 {
-    filter: none;
-    -webkit-filter: none;
+#moneyBlock {
+  margin-top: 25px;
 }
 
 #videoBlock {
@@ -124,4 +89,70 @@ footer{
     display: block;
     font-size: 20px;
     line-height: 35px;
+    font-family: "Open Sans",sans-serif
+}
+
+footer{
+	clear: both;
+	background-color: rgb(54,47,45);
+	color: rgb(255, 255, 255);
+	font-family: 'Open Sans Condensed', sans-serif;
+	text-align:right;
+	height: 7%; /*7% of the screen size*/
+  padding:5px;
+	
+}
+
+.imgContainer {transition: filter 0.5s, -webkit-filter 0.5s;}
+
+#wrapper {
+    margin: 0 auto;
+    width: 1200px;
+}
+
+
+
+.energylvl0 {
+    filter: blur(2px) grayscale(0.6) hue-rotate(50deg);
+    -webkit-filter: blur(3px) grayscale(0.6) hue-rotate(50deg);
+}
+.energylvl1 {
+    filter: blur(2px) grayscale(0.6) hue-rotate(45deg);
+    -webkit-filter: blur(3px) grayscale(0.6) hue-rotate(45deg);
+}
+.energylvl2 {
+    filter: blur(1px) grayscale(0.4) hue-rotate(40deg);
+    -webkit-filter: blur(2px) grayscale(0.4) hue-rotate(40deg);
+}
+.energylvl3 {
+    filter: blur(1px) grayscale(0.4) hue-rotate(35deg);
+    -webkit-filter: blur(2px) grayscale(0.4) hue-rotate(35deg);
+}
+.energylvl4 {
+    filter: blur(2px) grayscale(0.3) hue-rotate(30deg);
+    -webkit-filter: blur(2px) grayscale(0.3) hue-rotate(30deg);
+}
+.energylvl5 {
+    filter: blur(2px) grayscale(0.3) hue-rotate(25deg);
+    -webkit-filter: blur(2px) grayscale(0.3) hue-rotate(25deg);
+}
+.energylvl6 {
+    filter: blur(1px) grayscale(0.2) hue-rotate(20deg);
+    -webkit-filter: blur(1px) grayscale(0.2) hue-rotate(20deg);
+}
+.energylvl7 {
+    filter: blur(1px) grayscale(0.2) hue-rotate(15deg);
+    -webkit-filter: blur(1px) grayscale(0.2) hue-rotate(15deg);
+}
+.energylvl8 {
+  filter: blur(2px) grayscale(0.1) hue-rotate(10deg);
+    -webkit-filter: blur(1px) grayscale(0.1) hue-rotate(10deg);
+}
+.energylvl9 {
+    filter: blur(2px) grayscale(0.1) hue-rotate(5deg);
+    -webkit-filter: blur(1px) grayscale(0.1) hue-rotate(5deg);
+}
+.energylvl10 {
+    filter: none;
+    -webkit-filter: none;
 }

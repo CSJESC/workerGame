@@ -1,7 +1,7 @@
 {
   "status": {
     "money":  0,
-    "energy": 4
+    "energy": 10
   },
 
   "questions": {
@@ -693,6 +693,36 @@
       }
     },
 
+    "fillenergy": {
+      "text":  "You spend the day relaxing and catching up with your family on the phone",
+      "image": "workbusy.png",
+      "a1": {
+        "text":   "and at the end of the day you already feel much better.",
+        "money":  0,
+        "energy": 9,
+        "next":   "workcircle2"
+      },
+      "a2": {
+      },
+      "a3": {
+      }
+    },
+
+    "fillenergy2": {
+      "text":  "You spend the day relaxing and catching up with your family on the phone",
+      "image": "workbusy.png",
+      "a1": {
+        "text":   "and at the end of the day you already feel much better.",
+        "money":  0,
+        "energy": 9,
+        "next":   "granny"
+      },
+      "a2": {
+      },
+      "a3": {
+      }
+    },
+
     "helpparents" : {
       "text": "Your parents ask you to help them financially. Your grandmother used to bring some money in by the little work she was doing. You feel sorry for them, so:",
       "image": "exhausted.png",
@@ -722,10 +752,10 @@
         "next":   "exhaustedcircle2"
       },
       "a2": {
-        "text":   "to leave now and stay at home tomorrow to  fill up your energy.",
+        "text":   "to leave now and stay at home tomorrow to fill up your energy.",
         "money":  0,
-        "energy": 9,
-        "next":   "granny"
+        "energy": 0,
+        "next":   "fillenergy2"
       },
       "a3": {
         "text":   "You go home with a bad feeling.",

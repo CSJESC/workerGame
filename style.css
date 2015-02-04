@@ -95,23 +95,49 @@ footer{
     width: 1200px;
 }
 
+
+
 .energylvl0 {
-    filter: blur(2px) grayscale(0.6) hue-rotate(40deg);
-    -webkit-filter: blur(2px) grayscale(0.6) hue-rotate(40deg);
+    filter: blur(2px) grayscale(0.6) hue-rotate(50deg);
+    -webkit-filter: blur(3px) grayscale(0.6) hue-rotate(50deg);
 }
 .energylvl1 {
-    filter: blur(2px) grayscale(0.6) hue-rotate(25deg);
-    -webkit-filter: blur(2px) grayscale(0.6) hue-rotate(25deg);
+    filter: blur(2px) grayscale(0.6) hue-rotate(45deg);
+    -webkit-filter: blur(3px) grayscale(0.6) hue-rotate(45deg);
 }
 .energylvl2 {
-    filter: blur(1px) grayscale(0.3) hue-rotate(15deg);
-    -webkit-filter: blur(1px) grayscale(0.3) hue-rotate(15deg);
+    filter: blur(1px) grayscale(0.4) hue-rotate(40deg);
+    -webkit-filter: blur(2px) grayscale(0.4) hue-rotate(40deg);
 }
 .energylvl3 {
-    filter: blur(1px) grayscale(0.3) hue-rotate(10deg);
-    -webkit-filter: blur(1px) grayscale(0.3) hue-rotate(10deg);
+    filter: blur(1px) grayscale(0.4) hue-rotate(35deg);
+    -webkit-filter: blur(2px) grayscale(0.4) hue-rotate(35deg);
 }
 .energylvl4 {
+    filter: blur(2px) grayscale(0.3) hue-rotate(30deg);
+    -webkit-filter: blur(2px) grayscale(0.3) hue-rotate(30deg);
+}
+.energylvl5 {
+    filter: blur(2px) grayscale(0.3) hue-rotate(25deg);
+    -webkit-filter: blur(2px) grayscale(0.3) hue-rotate(25deg);
+}
+.energylvl6 {
+    filter: blur(1px) grayscale(0.2) hue-rotate(20deg);
+    -webkit-filter: blur(1px) grayscale(0.2) hue-rotate(20deg);
+}
+.energylvl7 {
+    filter: blur(1px) grayscale(0.2) hue-rotate(15deg);
+    -webkit-filter: blur(1px) grayscale(0.2) hue-rotate(15deg);
+}
+.energylvl8 {
+  filter: blur(2px) grayscale(0.1) hue-rotate(10deg);
+    -webkit-filter: blur(1px) grayscale(0.1) hue-rotate(10deg);
+}
+.energylvl9 {
+    filter: blur(2px) grayscale(0.1) hue-rotate(5deg);
+    -webkit-filter: blur(1px) grayscale(0.1) hue-rotate(5deg);
+}
+.energylvl10 {
     filter: none;
     -webkit-filter: none;
 }

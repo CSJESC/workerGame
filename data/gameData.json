@@ -156,7 +156,7 @@
 
     "dorms" : {
       "text":  "Your colleague Jiayi shows you the way to your dormitory. She explains: there are different dormitories, but only one is close to the factory. Yours, unfortunately, is far away. You stay with 8 other people in one room. The rent is free, but you have to pay 4$ for facilities in advance.",
-      "image": "filler.png",
+      "image": "dorms.png",
       "a1": {
         "text":   "You’ve had an exhausting day and go to bed.",
         "money":  -4,
@@ -612,7 +612,7 @@
     },
 
    "workcircle" : {
-      "text":  "It’s always the same. Standing on the assembly line and attach this thing to the circuit board. Again and again. As everyday, you have to decided:",
+      "text":  "It’s always the same. Standing on the assembly line and attach this thing to the circuit board. Again and again. As everyday, you have to decide:",
       "image": "workbusy.png",
       "a1": {
         "text":   "to do overtime (2 hours)",
@@ -724,17 +724,6 @@
       }
     },
 
-    "firedfill": {
-      "text":  "You haven't been to work on three occasions. The company has had enough and fired you. You don't receive this month wage. What will you do next?",
-      "image": "workbusy.png",
-      "a1": {
-      },
-      "a2": {
-      },
-      "a3": {
-      }
-    },
-
     "helpparents" : {
       "text": "Your parents ask you to help them financially. Your grandmother used to bring some money in by the little work she was doing. You feel sorry for them, so:",
       "image": "exhausted.png",
@@ -755,7 +744,7 @@
     },
 
    "workcircle2" : {
-      "text":  "It’s always the same. Standing on the assembly line and attach this thing to the circuit board. Again and again. As everyday, you have to decided:",
+      "text":  "It’s always the same. Standing on the assembly line and attach this thing to the circuit board. Again and again. As everyday, you have to decide:",
       "image": "workbusy.png",
       "a1": {
         "text":   "to do overtime (4 hours)",

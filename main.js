@@ -19,6 +19,8 @@
 
     var leavingcounter = 0;
 
+    var wage = true;
+
     // get the data
     $.getJSON("data/gameData.json", function (data) {
         status = data.status;
@@ -110,16 +112,23 @@
                         alreadyExausted = true;
                         goToQuestion(questions['exhaustedquit']);
                     }      
+                    else if ((question === questions["minuscircle2"] || question === questions["exhaustedcircle2"] || question === questions["fillenergy2"]) && !wage){
+                        wage = true;
+                       goToQuestion(questions['wagecircle']);
+                    }
                     else if (leavingcounter >= 3) {
                         goToQuestion(questions['firedfill']);
                     }         
-                    else if (question === questions["minuscircle2"] && grannydead == true) {
+                    else if (question === questions["minuscircle2"] && grannydead == true && wage == true) {
+                        wage = false;
                         goToQuestion(questions['helpparents']);
                     }
-                    else if(question === questions["exhaustedcircle2"] && grannydead == true) {
+                    else if(question === questions["exhaustedcircle2"] && grannydead == true && wage == true) {
+                        wage = false;
                         goToQuestion(questions['helpparents']);
                     }
-                    else if (question === questions["fillenergy2"] && grannydead == true) {
+                    else if (question === questions["fillenergy2"] && grannydead == true && wage == true) {
+                        wage = false;
                         goToQuestion(questions['helpparents']);
                     }
                     else {

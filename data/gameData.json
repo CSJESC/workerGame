@@ -126,7 +126,7 @@
 
     "goinghome2" : {
       "text": "whew, that was very scary. Good thing you got away. Now what are you going to do?",
-      "image": "filler.png",
+      "image": "goinghome2.png",
       "a1": {
       },
       "a2": {
@@ -574,7 +574,7 @@
 
    "work1" : {
       "text":  "The factory is huge and there are a lot of people around you. You are in charge of (???) of the circuit boards. You are allowed to take a break every two hours for ten minutes. You can’t really talk with your coworkers, you have to be really concentrated to not make mistakes. After eight hours, your feet hurt and your back, too. The other workers tell you, that you are supposed to work at least two hours more, over hours.",
-      "image": "workbusy.png",
+      "image": "work1.png",
       "a1": {
         "text":   "You feel tired so you just decide to go back to the dorms.",
         "money":  0,
@@ -653,7 +653,7 @@
 
    "work2" : {
       "text":  "The next day, you are back to work. Jiayi tells you, that it's one of those busy days and you need to produce a lot more today, because they are supposed to deliver today. (????) Your work is exhausting and you can't imagine that they would ask you for more over hours. But after you worked ten hours already, someone approaches you and asks you to stay even longer, because it's very busy today.",
-      "image": "workbusy.png",
+      "image": "work2.png",
       "a1": {
         "text":   "You decide to stay longer.",
         "money":  0,

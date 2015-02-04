@@ -723,6 +723,17 @@
       }
     },
 
+    "firedfill": {
+      "text":  "You haven't been to work on three occasions. The company has had enough and fired you. You don't receive this month wage. What will you do next?",
+      "image": "workbusy.png",
+      "a1": {
+      },
+      "a2": {
+      },
+      "a3": {
+      }
+    },
+
     "helpparents" : {
       "text": "Your parents ask you to help them financially. Your grandmother used to bring some money in by the little work she was doing. You feel sorry for them, so:",
       "image": "exhausted.png",

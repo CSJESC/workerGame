@@ -86,8 +86,11 @@
                     else if ((question === questions["exhaustedcicle"] || question === questions["exhaustedcicle2"]) && workhard == true) {
                             answer.energy = answer.energy * 2;
                     }
-                    else if (question == questions["grannydead"]) {
+                    else if (question === questions["grannydead"]) {
                        grannydead = true;
+                    }
+                    else if (question === questions["fillenergy"] || question === questions["fillenergy2"] ) {
+                        leavingcounter++;
                     }
 
 
@@ -106,7 +109,10 @@
                     if (!alreadyExausted && status.energy <= 0) {
                         alreadyExausted = true;
                         goToQuestion(questions['exhaustedquit']);
-                    }               
+                    }      
+                    else if (leavingcounter >= 3) {
+                        goToQuestion(questions['firedfill']);
+                    }         
                     else if (question === questions["minuscircle2"] && grannydead == true) {
                         goToQuestion(questions['helpparents']);
                     }

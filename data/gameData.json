@@ -137,7 +137,7 @@
 
     "id" : {
       "text":  "The manager asks you for your ID. You feel very uncomfortable handing it over to someone else, but they insist on it. You know they are probably not going to give it back to you until you resign. So you:",
-      "image": "filler.png",
+      "image": "ID.png",
       "a1": {
         "text":   "give them your ID anyway. You really need the job.",
         "money":  0,

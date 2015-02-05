@@ -287,7 +287,7 @@
     },
 
    "minus" : {
-      "text":  "You leave early. Your coworkers are surprised and explain to you the attendance award: the average wage they earn is 448$, but this is including any awards you may earn such as the attendance award. Every time you leave early,  4.87$ is deducted from a possible 16.34$. If you leave early or come late three times, you forfeit the award entirely.",
+      "text":  "You leave early. Your coworkers are surprised and explain to you the attendance award: the average wage they earn is 448$, but this is including any awards you may earn such as the attendance award. Every time you leave early, 4.87$ is deducted from a possible 16.34$. If you leave early or come late three times, you forfeit the award entirely.",
       "image": "filler.png",
       "a1": {
         "text":   "Worried, you go to bed.",

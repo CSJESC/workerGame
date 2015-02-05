@@ -5,10 +5,15 @@
 .text {
   font-size: 18px;
   margin-bottom: 20px;
+  padding-top: 30px;
+  padding-right: 30px;
+  padding-left: 30px;
 }
 .button {
 	 font-family: 'Open Sans Condensed', sans-serif;
    display: block;
+   padding-right: 30px;
+   padding-left: 30px;
 }
   .button:hover {
   	background-color: rgb(71,65,63);
@@ -22,7 +27,6 @@ body{
 
 header{
 	background-color: rgb(54,47,45);
-	font-family: 'Open Sans', sans-serif;
 	text-align:center;
 	min-height: 300px;
     padding:5px;

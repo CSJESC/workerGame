@@ -19,6 +19,8 @@
 
     var leavingcounter = 0;
 
+    var wage = true;
+
     // get the data
     $.getJSON("data/gameData.json", function (data) {
         status = data.status;
@@ -92,6 +94,9 @@
                     else if (question === questions["fillenergy"] || question === questions["fillenergy2"] ) {
                         leavingcounter++;
                     }
+                    else if (question === questions["granny"]) {
+                        wage = false;
+                    }
 
 
                     status.money += Math.round(answer.money);
@@ -110,16 +115,23 @@
                         alreadyExausted = true;
                         goToQuestion(questions['exhaustedquit']);
                     }      
+                    else if ((question === questions["workcircle2"]) && !wage){
+                        wage = true;
+                       goToQuestion(questions['wagecircle']);
+                    }
                     else if (leavingcounter >= 3) {
                         goToQuestion(questions['firedfill']);
                     }         
-                    else if (question === questions["minuscircle2"] && grannydead == true) {
+                    else if (question === questions["minuscircle2"] && grannydead == true && wage == true) {
+                        wage = false;
                         goToQuestion(questions['helpparents']);
                     }
-                    else if(question === questions["exhaustedcircle2"] && grannydead == true) {
+                    else if(question === questions["exhaustedcircle2"] && grannydead == true && wage == true) {
+                        wage = false;
                         goToQuestion(questions['helpparents']);
                     }
-                    else if (question === questions["fillenergy2"] && grannydead == true) {
+                    else if (question === questions["fillenergy2"] && grannydead == true && wage == true) {
+                        wage = false;
                         goToQuestion(questions['helpparents']);
                     }
                     else {
@@ -197,7 +209,7 @@
                 } else { // https://www.youtube.com/watch?v=sdl658l5TTQ
                     moneyImgElem.attr('src','image/money/money5.png');
                 }
-                moneyElem.html (money + ' USD / ' + (money * 6.25) + ' Yuan');
+                moneyElem.html (money + ' $ / ' + (money * 6.25) + ' ¥');
             }
 
             // setup initial view

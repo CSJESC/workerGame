@@ -110,15 +110,22 @@ footer{
 	color: rgb(255, 255, 255);
 	font-family: 'Open Sans Condensed', sans-serif;
 	height: 7%; /*7% of the screen size*/
-  padding:5px;
+    padding:5px;
+    position:relative;
 }
 
 footer #report {
   text-align: left;
 }
-footer #right {
-  text-align:right;
+footer .right {
+    position: absolute;
+    right: 0;
 }
+footer .left {
+    left: 0;
+    position: absolute;
+}
+
 
 .imgContainer {transition: filter 0.5s, -webkit-filter 0.5s;}
 

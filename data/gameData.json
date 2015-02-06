@@ -506,7 +506,7 @@
         "next":   "studentsunpaid"
       },
       "a2": {
-        "text":   "to be responsible and keep the job- it's only two month left anyway.",
+        "text":   "to be responsible and keep the job - it's only two months left anyway.",
         "money":  0,
         "energy": 0,
         "next":   "studentsexhausted"
@@ -531,16 +531,16 @@
     },
 
    "studentsexhausted" : {
-      "text":  "Yong and the others stay at the factory. They are extremely exhausted in the evenings and you try to cover from them from time to time but still, it's just too hard for them. You feel how your energy shrinks by seeing them this way.",
+      "text":  "Yong and the others stay at the factory. They are extremely exhausted in the evenings and you try to cover their shift for them as often as you can. It is pretty exhausting for you.",
       "image": "filler.png",
       "a1": {
-        "text":   "Tell them to take care of themselves and quit.",
+        "text":   "You try to convince them to leave their jobs, kids their age should not be working.",
         "money":  0,
-        "energy": 0,
+        "energy": -1,
         "next":   "studentsunpaid"
       },
       "a2": {
-        "text":   "It's none of your business. It's time to get back to work!",
+        "text":   "You worry about the students but you know they need to make ends meet, so you tell them to just try and get as much work done as possible.",
         "money":  0,
         "energy": -1,
         "next":   "work1"

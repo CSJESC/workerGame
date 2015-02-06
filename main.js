@@ -87,6 +87,7 @@
                     } 
                     else if ((question === questions["exhaustedcicle"] || question === questions["exhaustedcicle2"]) && workhard == true) {
                             answer.energy = answer.energy * 2;
+							
                     }
                     else if (question === questions["grannydead"]) {
                        grannydead = true;

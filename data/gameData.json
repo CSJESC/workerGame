@@ -613,7 +613,7 @@
 
    "workcircle" : {
       "text":  "It’s always the same. Standing on the assembly line and attach this thing to the circuit board. Again and again. As everyday, you have to decide:",
-      "image": "workbusy.png",
+      "image": "work1.png",
       "a1": {
         "text":   "to do overtime (2 hours)",
         "money":  0,
@@ -756,7 +756,7 @@
 
    "workcircle2" : {
       "text":  "It’s always the same. Standing on the assembly line and attach this thing to the circuit board. Again and again. As everyday, you have to decide:",
-      "image": "workbusy.png",
+      "image": "work2.png",
       "a1": {
         "text":   "to do overtime (4 hours)",
         "money":  0,

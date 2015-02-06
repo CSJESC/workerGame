@@ -137,7 +137,7 @@
 
     "id" : {
       "text":  "The manager asks you for your ID. You feel very uncomfortable handing it over to someone else, but they insist on it. You know they are probably not going to give it back to you until you resign. So you:",
-      "video": "<iframe width=\"700\" height=\"300\" src=\"https://www.youtube.com/embed/kSvT02q4h40?start=51&end=69&version=3&rel=0&autoplay=1\" frameborder=\"0\" allowfullscreen></iframe>",
+      "image": "<iframe width=\"700\" height=\"300\" src=\"https://www.youtube.com/embed/kSvT02q4h40?start=51&end=69&version=3&rel=0&autoplay=1\" frameborder=\"0\" allowfullscreen></iframe>",
       "a1": {
         "text":   "give them your ID anyway. You really need the job.",
         "money":  0,
@@ -694,6 +694,47 @@
       }
     },
 
+    "fillenergy": {
+      "text":  "You spend the day relaxing and catching up with your family on the phone and at the end of the day you already feel much better.",
+      "image": "workbusy.png",
+      "a1": {
+        "text":   "$30 are deducted from your wage.",
+        "money":  -30,
+        "energy": 3,
+        "next":   "workcircle2"
+      },
+      "a2": {
+      },
+      "a3": {
+      }
+    },
+
+    "fillenergy2": {
+      "text":  "You spend the day relaxing and catching up with your family on the phone and at the end of the day you already feel much better.",
+      "image": "workbusy.png",
+      "a1": {
+        "text":   "$30 are deducted from your wage.",
+        "money":  -30,
+        "energy": 3,
+        "next":   "granny"
+      },
+      "a2": {
+      },
+      "a3": {
+      }
+    },
+
+    "firedfill": {
+      "text": "You haven't been to work on three occasions. The company has had enough and fired you. You don't receive this month wage. What will you do next?",
+      "image": "workbusy.png",
+      "a1": {
+      },
+      "a2": {
+      },
+      "a3": {
+      }
+    },
+
     "helpparents" : {
       "text": "Your parents ask you to help them financially. Your grandmother used to bring some money in by the little work she was doing. You feel sorry for them, so:",
       "image": "exhausted.png",
@@ -723,6 +764,10 @@
         "next":   "exhaustedcircle2"
       },
       "a2": {
+        "text":   "to leave now and stay at home tomorrow to fill up your energy.",
+        "money":  0,
+        "energy": 0,
+        "next":   "fillenergy2"
       },
       "a3": {
         "text":   "You go home with a bad feeling.",

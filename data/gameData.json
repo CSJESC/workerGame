@@ -374,7 +374,7 @@
 
    "workbusy" : {
       "text":  "The next day you are back to work. Jiayi tells you it is a busy day, it is delivery day and you have to perform accordingly. Your work is exhausting and after working ten hours you are asked to stay longer. ",
-      "image": "workbusy.png",
+      "video": "<iframe width=\"700\" height=\"300\" src=\"https://www.youtube.com/embed/kSvT02q4h40?start=13&end=31&version=3&rel=0&autoplay=1\" frameborder=\"0\" allowfullscreen></iframe>",
       "a1": {
         "text":   "You decide to stay longer.",
         "money":  0,
@@ -717,6 +717,17 @@
         "money":  0,
         "energy": 9,
         "next":   "granny"
+      },
+      "a2": {
+      },
+      "a3": {
+      }
+    },
+
+    "firedfill": {
+      "text": "You haven't been to work on three occasions. The company has had enough and fired you. You don't receive this month wage. What will you do next?",
+      "image": "workbusy.png",
+      "a1": {
       },
       "a2": {
       },

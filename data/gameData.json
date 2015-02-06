@@ -155,7 +155,7 @@
     },
 
     "dorms" : {
-      "text":  "Your colleague Jiayi shows you the way to your dormitory. She explains: there are different dormitories, but only one is close to the factory. Yours, unfortunately, is far away. You stay with 8 other people in one room. The rent is free, but you have to pay 4$ for facilities in advance.",
+      "text":  "Your colleague Li Yan shows you the way to your dormitory. She explains: there are different dormitories, but only one is close to the factory. Yours, unfortunately, is far away. You stay with 8 other people in one room. The rent is free, but you have to pay 4$ for facilities in advance.",
       "image": "dorms.png",
       "a1": {
         "text":   "You’ve had an exhausting day and go to bed.",
@@ -170,7 +170,7 @@
     },
 
     "dorms-morning" : {
-      "text":  "On your first day you awake before the others and get dressed quietly.Some of them worked the night shift and just went to bed while others have not yet returned. You meet Jiayi outside your room and she tells you to take either the shuttle bus or the motorcycle taxi. They all try to take the bus, but it's up to you as long as you're on time. You decide:",
+      "text":  "On your first day you awake before the others and get dressed quietly.Some of them worked the night shift and just went to bed while others have not yet returned. You meet Li Yan outside your room and she tells you to take either the shuttle bus or the motorcycle taxi. They all try to take the bus, but it's up to you as long as you're on time. You decide:",
       "image": "dorms-morning.png",
       "a1": {
         "text":   "to take the bus with everyone else.",
@@ -238,7 +238,7 @@
     },
 
     "advicetelefon" : {
-      "text":  "As the security guard walks away, Jiayi explains to you that phones in the factory are not allowed. ",
+      "text":  "As the security guard walks away, Li Yan explains to you that phones in the factory are not allowed. ",
       "image": "advicetelefon.png",
       "a1": {
         "text":   "start working",
@@ -347,7 +347,7 @@
     },
 
    "exhaustedquit" : {
-      "text":  "You collapse. You can barely see and your whole body hurts. Jiayi brings you to the hospital since there is no way you could go on your own.",
+      "text":  "You collapse. You can barely see and your whole body hurts. Li Yan brings you to the hospital since there is no way you could go on your own.",
       "image": "exhausted.png",
       "a1": {
         "text": "Since the company doesn’t cover your health insurance, you have to pay $150.",
@@ -373,7 +373,7 @@
     },
 
    "workbusy" : {
-      "text":  "The next day you are back to work. Jiayi tells you it is a busy day, it is delivery day and you have to perform accordingly. Your work is exhausting and after working ten hours you are asked to stay longer. ",
+      "text":  "The next day you are back to work. Li Yan tells you it is a busy day, it is delivery day and you have to perform accordingly. Your work is exhausting and after working ten hours you are asked to stay longer. ",
       "video": "<iframe width=\"700\" height=\"300\" src=\"https://www.youtube.com/embed/kSvT02q4h40?start=13&end=31&version=3&rel=0&autoplay=1\" frameborder=\"0\" allowfullscreen></iframe>",
       "a1": {
         "text":   "You decide to stay longer.",
@@ -392,7 +392,7 @@
     },
 
    "wage" : {
-      "text":  "After working almost a month, Jiayi tells you your wage will be paid on the 20th of the following month. Since you are still in your probation period, you earn $211 and the rest of the attendance award twenty days later.",
+      "text":  "After working almost a month, Li Yan tells you your wage will be paid on the 20th of the following month. Since you are still in your probation period, you earn $211 and the rest of the attendance award twenty days later.",
       "image": "wage.png",
       "a1": {
         "text":   "After the probation period your wage will be $228 when you will finally be able to send some money back home!",
@@ -408,7 +408,7 @@
 
    "drinking" : {
       "text":  "As you slowly adjust to your working conditions, one thing is still hard to get used to: you are not allowed to drink while working. You have breaks, but are still often thirsty. If you want to go to the restroom, you need to get a pass.",
-      "image": "filler.png",
+      "image": "drinking.png",
       "a1": {
         "text":   "Otherwise you are not allowed to use the restroom.",
         "money":  0,
@@ -472,7 +472,7 @@
 
    "studentsintro" : {
       "text":  "You get to know a group of students from three different provinces: Hubei, Hunan and Guizhou. You talk with Yong, one of the students you meet on the way back to the dorms after work. He studies at a technical school and signed a three month contract at a labor dispatch company. They were not trained before starting work, they don't get paid for over hours or subsidy for the night shift. Yong tells you they are freshmen and junior students at college.",
-      "image": "filler.png",
+      "image": "studentsintro.png",
       "a1": {
         "text":   "You are astonished at how hard these young college students work.",
         "money":  0,
@@ -554,7 +554,7 @@
     },
 
    "decisionwork" : {
-      "text":  "You’ve worked at this factory for quite some time already. You often feel very tired but have not lost site of the goal of sending some money back home. \n Jiayi passes by at your dorm after work. You are happy to see her because you haven't seen her in days! You tell her about the students and the many other things since you have last seen her Finally you ask her why she has been away. She explains she is working for a different company now. She earns a little more but the conditions are worse. She isn’t allowed to have the 10 minutes break every 2 hours that you have. In fact, she has no breaks at all. She also works more over time. She asks you if you want to join her as there is an open position at her company. You decide:",
+      "text":  "You’ve worked at this factory for quite some time already. You often feel very tired but have not lost site of the goal of sending some money back home. \n Li Yan passes by at your dorm after work. You are happy to see her because you haven't seen her in days! You tell her about the students and the many other things since you have last seen her Finally you ask her why she has been away. She explains she is working for a different company now. She earns a little more but the conditions are worse. She isn’t allowed to have the 10 minutes break every 2 hours that you have. In fact, she has no breaks at all. She also works more over time. She asks you if you want to join her as there is an open position at her company. You decide:",
       "image": "filler.png",
       "a1": {
         "text":   "to go work with her.",
@@ -778,7 +778,7 @@
     },
 
    "wagecircle" : {
-      "text":  "After working almost a month, you ask Jiayi when you will get your wage. She tells you, it will be paid on the 20th of the next month. Twenty days later, they pay you. Since you are still in your probation period, you earn $211 and the rest of the attendance award. After the probation period your wage will be $228.",
+      "text":  "After working almost a month, you ask L when you will get your wage. She tells you, it will be paid on the 20th of the next month. Twenty days later, they pay you. Since you are still in your probation period, you earn $211 and the rest of the attendance award. After the probation period your wage will be $228.",
       "image": "wagecircle.png",
       "a1": {
         "text":   "Now you are finally able to send some money back home!",

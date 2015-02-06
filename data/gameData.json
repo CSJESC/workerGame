@@ -534,7 +534,7 @@
       "text":  "Yong and the others stay at the factory. They are extremely exhausted in the evenings and you try to cover their shift for them as often as you can. It is pretty exhausting for you.",
       "image": "filler.png",
       "a1": {
-        "text":   "You try to convince them to leave their jobs, kids their age should not be working.",
+        "text":   "You try to convince them to leave their jobs, the students should not be working that much.",
         "money":  0,
         "energy": -1,
         "next":   "studentsunpaid"
@@ -550,16 +550,16 @@
     },
 
    "decisionwork" : {
-      "text":  "You’ve worked at this factory for quite some time already. You often feel very tired but have not lost site of the goal of sending some money back home. \n Li Yan passes by at your dorm after work. You are happy to see her because you haven't seen her in days! You tell her about the students and the many other things since you have last seen her Finally you ask her why she has been away. She explains she is working for a different company now. She earns a little more but the conditions are worse. She isn’t allowed to have the 10 minutes break every 2 hours that you have. In fact, she has no breaks at all. She also works more over time. She asks you if you want to join her as there is an open position at her company. You decide:",
+      "text":  "It has been a few months since you have started working at the factory. It is a tiring job, but you have not lost sight of sending money back home.\nLi Yan passes by at your dorm after walk and you have a chat. She recently switched over to a different department and earns a bit more than before, but tells you that the working conditions are worse. She has no breaks at all and her overtime is much longer than yours. She mentions that the department is hiring and asks you if you were interested in applying.",
       "image": "filler.png",
       "a1": {
-        "text":   "to go work with her.",
+        "text":   "You decide to switch over to her department as well.",
         "money":  0,
         "energy": 0,
         "next":   "granny"
       },
       "a2": {
-        "text":   "to stay at your company. The extra money is not worth the grueling conditions.",
+        "text":   "You decide stay at your department. The extra money is not worth the grueling conditions.",
         "money":  0,
         "energy": 0,
         "next":   "granny"

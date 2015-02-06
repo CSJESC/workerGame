@@ -125,46 +125,46 @@ footer{
 
 
 .energylvl0 {
-    filter: blur(2px) grayscale(0.6) hue-rotate(50deg);
-    -webkit-filter: blur(3px) grayscale(0.6) hue-rotate(50deg);
+  filter: blur(4px) grayscale(0.6) hue-rotate(60deg);
+  -webkit-filter: blur(3px) grayscale(0.6) hue-rotate(60deg);
 }
 .energylvl1 {
-    filter: blur(2px) grayscale(0.6) hue-rotate(45deg);
-    -webkit-filter: blur(3px) grayscale(0.6) hue-rotate(45deg);
+  filter: blur(3px) grayscale(0.6) hue-rotate(50deg);
+  -webkit-filter: blur(3px) grayscale(0.6) hue-rotate(50deg);
 }
 .energylvl2 {
-    filter: blur(1px) grayscale(0.4) hue-rotate(40deg);
-    -webkit-filter: blur(2px) grayscale(0.4) hue-rotate(40deg);
+  filter: blur(2px) grayscale(0.5) hue-rotate(30deg);
+  -webkit-filter: blur(2px) grayscale(0.5) hue-rotate(30deg);
 }
 .energylvl3 {
-    filter: blur(1px) grayscale(0.4) hue-rotate(35deg);
-    -webkit-filter: blur(2px) grayscale(0.4) hue-rotate(35deg);
+  filter: blur(2px) grayscale(0.4) hue-rotate(30deg);
+  -webkit-filter: blur(2px) grayscale(0.4) hue-rotate(30deg);
 }
 .energylvl4 {
-    filter: blur(2px) grayscale(0.3) hue-rotate(30deg);
-    -webkit-filter: blur(2px) grayscale(0.3) hue-rotate(30deg);
+  filter: blur(2px) grayscale(0.3) hue-rotate(20deg);
+  -webkit-filter: blur(2px) grayscale(0.3) hue-rotate(20deg);
 }
 .energylvl5 {
-    filter: blur(2px) grayscale(0.3) hue-rotate(25deg);
-    -webkit-filter: blur(2px) grayscale(0.3) hue-rotate(25deg);
+  filter: blur(2px) grayscale(0.1) hue-rotate(10deg);
+  -webkit-filter: blur(2px) grayscale(0.1) hue-rotate(10deg);
 }
 .energylvl6 {
-    filter: blur(1px) grayscale(0.2) hue-rotate(20deg);
-    -webkit-filter: blur(1px) grayscale(0.2) hue-rotate(20deg);
+  filter: blur(1px) grayscale(0) hue-rotate(5deg);
+  -webkit-filter: blur(1px) grayscale(0) hue-rotate(5deg);
 }
 .energylvl7 {
-    filter: blur(1px) grayscale(0.2) hue-rotate(15deg);
-    -webkit-filter: blur(1px) grayscale(0.2) hue-rotate(15deg);
+  filter: blur(0.6px) grayscale(0) hue-rotate(0deg);
+  -webkit-filter: blur(0.6px) grayscale(0) hue-rotate(0deg);
 }
 .energylvl8 {
-  filter: blur(2px) grayscale(0.1) hue-rotate(10deg);
-    -webkit-filter: blur(1px) grayscale(0.1) hue-rotate(10deg);
+  filter: none;
+  -webkit-filter: none;
 }
 .energylvl9 {
-    filter: blur(2px) grayscale(0.1) hue-rotate(5deg);
-    -webkit-filter: blur(1px) grayscale(0.1) hue-rotate(5deg);
+  filter: none;
+  -webkit-filter: none;
 }
 .energylvl10 {
-    filter: none;
-    -webkit-filter: none;
+  filter: none;
+  -webkit-filter: none;
 }

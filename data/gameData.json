@@ -92,7 +92,7 @@
 
    "test" : {
       "text":  "The introductory training lasts three days and concludes with a short exam.",
-      "video": "<iframe width=\"700\" height=\"400\" src=\"https://www.youtube.com/embed/kSvT02q4h40?start=74&end=104&version=3&rel=0&autoplay=1\" frameborder=\"0\" allowfullscreen></iframe>",
+      "video": "<iframe width=\"700\" height=\"300\" src=\"https://www.youtube.com/embed/kSvT02q4h40?start=74&end=104&version=3&rel=0&autoplay=1\" frameborder=\"0\" allowfullscreen></iframe>",
       "a1": {
         "text":   "You pass.",
         "money":  0,
@@ -205,7 +205,7 @@
 
     "taxi" : {
       "text":  "",
-      "video": "<iframe width=\"700\" height=\"400\" src=\"http:\/\/www.youtube.com/embed/vPR7RyTS8DY?autoplay=1&rel=0\" frameborder=\"0\" allowfullscreen><\/iframe>",
+      "video": "<iframe width=\"700\" height=\"300\" src=\"http:\/\/www.youtube.com/embed/vPR7RyTS8DY?autoplay=1&rel=0\" frameborder=\"0\" allowfullscreen><\/iframe>",
       "a1": {
         "text":   "You arrive!",
         "money":  0,

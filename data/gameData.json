@@ -773,7 +773,7 @@
         "text":   "Now you are finally able to send some money back home!",
         "money":  227.35,
         "energy": 0,
-        "next":   "work1"
+        "next":   "workcircle"
       },
       "a2": {
       },

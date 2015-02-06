@@ -63,7 +63,15 @@
                     videoBlock.css('display', 'none');
                     videoBlock.html('');
                     imgBlock.css('display', 'inline');
-                    imgBlock.attr('src', 'image/' + question.image);
+                    if (question === questions["workcircle"] && workhard == true){
+                        imgBlock.attr('src', 'image/work2.png');
+                    }
+                    else if (question === questions["workcircle2"] && workhard == true) {
+                        imgBlock.attr('src', 'image/work3.png');
+                    }
+                    else {
+                        imgBlock.attr('src', 'image/' + question.image);
+                    }
                 }
                 $textElem.html(nl2br(question.text));
                 // set button text if specified, if a2t use standard
@@ -82,13 +90,9 @@
                     else
                         answer = question.a3; 
 
-                    if (question === questions["decisionwork"] && answer == 'a1') {
+                    if (question === questions["decisionwork"] && answer == question.a1) {
                         workhard = true;
                     } 
-                    else if ((question === questions["exhaustedcicle"] || question === questions["exhaustedcicle2"]) && workhard == true) {
-                            answer.energy = answer.energy * 2;
-							
-                    }
                     else if (question === questions["grannydead"]) {
                        grannydead = true;
                     }
@@ -98,7 +102,9 @@
                     else if (question === questions["granny"]) {
                         wage = false;
                     }
-
+                    else if ((question === questions["exhaustedcircle"] || question === questions["exhaustedcircle2"]) && workhard == true) {
+                        answer.energy = answer.energy * 2;        
+                    }
 
                     status.money += Math.round(answer.money);
                     status.energy += answer.energy;

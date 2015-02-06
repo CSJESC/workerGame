@@ -12,8 +12,9 @@
 
 #answer {
   position: absolute;
-  top: 200px;
+  top: 185px;
   width: 97%;
+  line-height: 35px;
 }
 
 .button {
@@ -109,11 +110,23 @@ footer{
 	background-color: rgb(54,47,45);
 	color: rgb(255, 255, 255);
 	font-family: 'Open Sans Condensed', sans-serif;
-	text-align:right;
 	height: 7%; /*7% of the screen size*/
-  padding:5px;
-	
+    padding:5px;
+    position:relative;
 }
+
+footer #report {
+  text-align: left;
+}
+footer .right {
+    position: absolute;
+    right: 0;
+}
+footer .left {
+    left: 0;
+    position: absolute;
+}
+
 
 .imgContainer {transition: filter 0.5s, -webkit-filter 0.5s;}
 
@@ -125,46 +138,46 @@ footer{
 
 
 .energylvl0 {
-    filter: blur(2px) grayscale(0.6) hue-rotate(50deg);
-    -webkit-filter: blur(3px) grayscale(0.6) hue-rotate(50deg);
+  filter: blur(4px) grayscale(0.6) hue-rotate(60deg);
+  -webkit-filter: blur(3px) grayscale(0.6) hue-rotate(60deg);
 }
 .energylvl1 {
-    filter: blur(2px) grayscale(0.6) hue-rotate(45deg);
-    -webkit-filter: blur(3px) grayscale(0.6) hue-rotate(45deg);
+  filter: blur(3px) grayscale(0.6) hue-rotate(50deg);
+  -webkit-filter: blur(3px) grayscale(0.6) hue-rotate(50deg);
 }
 .energylvl2 {
-    filter: blur(1px) grayscale(0.4) hue-rotate(40deg);
-    -webkit-filter: blur(2px) grayscale(0.4) hue-rotate(40deg);
+  filter: blur(2px) grayscale(0.5) hue-rotate(30deg);
+  -webkit-filter: blur(2px) grayscale(0.5) hue-rotate(30deg);
 }
 .energylvl3 {
-    filter: blur(1px) grayscale(0.4) hue-rotate(35deg);
-    -webkit-filter: blur(2px) grayscale(0.4) hue-rotate(35deg);
+  filter: blur(2px) grayscale(0.4) hue-rotate(30deg);
+  -webkit-filter: blur(2px) grayscale(0.4) hue-rotate(30deg);
 }
 .energylvl4 {
-    filter: blur(2px) grayscale(0.3) hue-rotate(30deg);
-    -webkit-filter: blur(2px) grayscale(0.3) hue-rotate(30deg);
+  filter: blur(2px) grayscale(0.3) hue-rotate(20deg);
+  -webkit-filter: blur(2px) grayscale(0.3) hue-rotate(20deg);
 }
 .energylvl5 {
-    filter: blur(2px) grayscale(0.3) hue-rotate(25deg);
-    -webkit-filter: blur(2px) grayscale(0.3) hue-rotate(25deg);
+  filter: blur(2px) grayscale(0.1) hue-rotate(10deg);
+  -webkit-filter: blur(2px) grayscale(0.1) hue-rotate(10deg);
 }
 .energylvl6 {
-    filter: blur(1px) grayscale(0.2) hue-rotate(20deg);
-    -webkit-filter: blur(1px) grayscale(0.2) hue-rotate(20deg);
+  filter: blur(1px) grayscale(0) hue-rotate(5deg);
+  -webkit-filter: blur(1px) grayscale(0) hue-rotate(5deg);
 }
 .energylvl7 {
-    filter: blur(1px) grayscale(0.2) hue-rotate(15deg);
-    -webkit-filter: blur(1px) grayscale(0.2) hue-rotate(15deg);
+  filter: blur(0.6px) grayscale(0) hue-rotate(0deg);
+  -webkit-filter: blur(0.6px) grayscale(0) hue-rotate(0deg);
 }
 .energylvl8 {
-  filter: blur(2px) grayscale(0.1) hue-rotate(10deg);
-    -webkit-filter: blur(1px) grayscale(0.1) hue-rotate(10deg);
+  filter: none;
+  -webkit-filter: none;
 }
 .energylvl9 {
-    filter: blur(2px) grayscale(0.1) hue-rotate(5deg);
-    -webkit-filter: blur(1px) grayscale(0.1) hue-rotate(5deg);
+  filter: none;
+  -webkit-filter: none;
 }
 .energylvl10 {
-    filter: none;
-    -webkit-filter: none;
+  filter: none;
+  -webkit-filter: none;
 }

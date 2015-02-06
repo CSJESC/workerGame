@@ -56,13 +56,9 @@
     },
 
     "goinghome" : {
-      "text": "Ahhh its nice to be back home. But your parents are out of money after paying your bus fare.",
+      "text": "You return to your hometown without a job and you spent all the money your parents lent you to find a job. What are you going to do now?",
       "image": "goinghome.png",
       "a1": {
-        "text":   "You feel guilty and start looking for a job again.",
-        "money":  0,
-        "energy": 0,
-        "next":   "start2"
       },
       "a2": {
       },
@@ -125,7 +121,7 @@
     },
 
     "goinghome2" : {
-      "text": "whew, that was very scary. Good thing you got away. Now what are you going to do?",
+      "text": "You are back home without any money nor a job. So what do you do now?",
       "image": "goinghome2.png",
       "a1": {
       },
@@ -292,7 +288,7 @@
       "a1": {
         "text":   "Worried, you go to bed.",
         "money":  -4.87,
-        "energy": 1,
+        "energy": 0,
         "next":   "workbusy"
       },
       "a2": {
@@ -307,7 +303,7 @@
       "a1": {
         "text":   "Worried, you go to bed.",
         "money":  -4.87,
-        "energy": 1,
+        "energy": 0,
         "next":   "wage"
       },
       "a2": {
@@ -510,7 +506,7 @@
         "next":   "studentsunpaid"
       },
       "a2": {
-        "text":   "to be responsible and keep the job- it's only two month left anyway.",
+        "text":   "to be responsible and keep the job - it's only two months left anyway.",
         "money":  0,
         "energy": 0,
         "next":   "studentsexhausted"
@@ -535,16 +531,16 @@
     },
 
    "studentsexhausted" : {
-      "text":  "Yong and the others stay at the factory. They are extremely exhausted in the evenings and you try to cover from them from time to time but still, it's just too hard for them. You feel how your energy shrinks by seeing them this way.",
+      "text":  "Yong and the others stay at the factory. They are extremely exhausted in the evenings and you try to cover their shift for them as often as you can. It is pretty exhausting for you.",
       "image": "filler.png",
       "a1": {
-        "text":   "Tell them to take care of themselves and quit.",
+        "text":   "You try to convince them to leave their jobs, kids their age should not be working.",
         "money":  0,
-        "energy": 0,
+        "energy": -1,
         "next":   "studentsunpaid"
       },
       "a2": {
-        "text":   "It's none of your business. It's time to get back to work!",
+        "text":   "You worry about the students but you know they need to make ends meet, so you tell them to just try and get as much work done as possible.",
         "money":  0,
         "energy": -1,
         "next":   "work1"
@@ -640,7 +636,7 @@
       "a1": {
         "text":   "You are tired and go to bed early.",
         "money":  -4.87,
-        "energy": 1,
+        "energy": 0,
         "next":   "workcircle2"
       },
       "a2": {
@@ -655,7 +651,7 @@
       "a1": {
         "text":   "You are tired and go to bed early.",
         "money":  -4.87,
-        "energy": 1,
+        "energy": 0,
         "next":   "granny"
       },
       "a2": {
@@ -700,7 +696,7 @@
       "a1": {
         "text":   "$30 are deducted from your wage.",
         "money":  -30,
-        "energy": 3,
+        "energy": 2,
         "next":   "workcircle2"
       },
       "a2": {
@@ -715,7 +711,7 @@
       "a1": {
         "text":   "$30 are deducted from your wage.",
         "money":  -30,
-        "energy": 3,
+        "energy": 2,
         "next":   "granny"
       },
       "a2": {

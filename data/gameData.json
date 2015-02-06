@@ -487,7 +487,7 @@
 
     "childworker" : {
       "text": "Another issue that troubles you is that of the child workers. They work extremely hard too. They are also hired by a labor dispatch company and the management tries to make everyone believe that they are of legal age when clearly they are not.",
-      "image": "filler.png",
+      "image": "childworker.png",
       "a1": {
         "text":   "You know it’s common to have children working even though it is illegal, but there is not much you can do about it.",
         "money":  0,

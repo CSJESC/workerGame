@@ -75,9 +75,21 @@
                 }
                 $textElem.html(nl2br(question.text));
                 // set button text if specified, if a2t use standard
-                $a1Button.text(question.a1.text || '');
-                $a2Button.text(question.a2.text || '');
-                $a3Button.text(question.a3.text || '');
+                if(question.a1.text) {
+                    $a1Button.html('&bull; ' + question.a1.text);
+                } else {
+                    $a1Button.html('');
+                }
+                if(question.a2.text){
+                    $a2Button.html('&bull; ' + question.a2.text);
+                } else {
+                    $a2Button.html('');
+                }
+                if(question.a3.text){
+                    $a3Button.html('&bull; ' + question.a3.text);
+                } else {
+                    $a3Button.text('');
+                }
 
                 // set actions for answers
                 $bothButtons.unbind('click');

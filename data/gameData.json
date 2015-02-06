@@ -292,7 +292,7 @@
       "a1": {
         "text":   "Worried, you go to bed.",
         "money":  -4.87,
-        "energy": 1,
+        "energy": 0,
         "next":   "workbusy"
       },
       "a2": {
@@ -307,7 +307,7 @@
       "a1": {
         "text":   "Worried, you go to bed.",
         "money":  -4.87,
-        "energy": 1,
+        "energy": 0,
         "next":   "wage"
       },
       "a2": {
@@ -640,7 +640,7 @@
       "a1": {
         "text":   "You are tired and go to bed early.",
         "money":  -4.87,
-        "energy": 1,
+        "energy": 0,
         "next":   "workcircle2"
       },
       "a2": {
@@ -655,7 +655,7 @@
       "a1": {
         "text":   "You are tired and go to bed early.",
         "money":  -4.87,
-        "energy": 1,
+        "energy": 0,
         "next":   "granny"
       },
       "a2": {
@@ -700,7 +700,7 @@
       "a1": {
         "text":   "$30 are deducted from your wage.",
         "money":  -30,
-        "energy": 3,
+        "energy": 2,
         "next":   "workcircle2"
       },
       "a2": {
@@ -715,7 +715,7 @@
       "a1": {
         "text":   "$30 are deducted from your wage.",
         "money":  -30,
-        "energy": 3,
+        "energy": 2,
         "next":   "granny"
       },
       "a2": {

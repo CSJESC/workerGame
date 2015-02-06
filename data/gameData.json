@@ -282,9 +282,24 @@
       }
     },
 
+    "minusdesc" : {
+      "text":  "You leave early even though you know you could use the extra money..",
+      "image": "minus-reg.png",
+      "a1": {
+        "text":   "Worried, you go to bed.",
+        "money":  -4.87,
+        "energy": 0,
+        "next":   "workbusy"
+      },
+      "a2": {
+      },
+      "a3": {
+      }
+    },
+
    "minus" : {
-      "text":  "You leave early. Your coworkers are surprised and explain to you the attendance award: the average wage they earn is 448$, but this is including any awards you may earn such as the attendance award. Every time you leave early, 4.87$ is deducted from a possible 16.34$. If you leave early or come late three times, you forfeit the award entirely.",
-      "image": "minus.png",
+      "text":  "You leave early even though you know you could use the extra money..",
+      "image": "minus-reg.png",
       "a1": {
         "text":   "Worried, you go to bed.",
         "money":  -4.87,
@@ -298,8 +313,8 @@
     },
 
    "minusbusy" : {
-      "text":  "You leave early. Your coworkers are surprised and explain to you the attendance award: the average wage they earn is 448$, but this is including any awards you may earn such as the attendance award. Every time you leave early,  4.87$ is deducted from a possible 16.34$. If you leave early or come late three times, you forfeit the award entirely.",
-      "image": "minus.png",
+      "text":  "You leave early even though you know you could use the extra money.",
+      "image": "minus-reg.png",
       "a1": {
         "text":   "Worried, you go to bed.",
         "money":  -4.87,
@@ -632,7 +647,7 @@
 
    "minuscircle" : {
       "text":  "You leave early, even though you know you could use the extra money.", 
-      "image": "filler.png",
+      "image": "minus-reg.png",
       "a1": {
         "text":   "You are tired and go to bed early.",
         "money":  -4.87,
@@ -647,7 +662,7 @@
 
    "minuscircle2" : {
       "text":  "You leave early, even though you know you could use the extra money.", 
-      "image": "filler.png",
+      "image": "minus-reg.png",
       "a1": {
         "text":   "You are tired and go to bed early.",
         "money":  -4.87,

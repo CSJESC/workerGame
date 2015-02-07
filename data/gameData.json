@@ -789,10 +789,10 @@
     },
 
    "wagecircle" : {
-      "text":  "After working almost a month, you ask L when you will get your wage. She tells you, it will be paid on the 20th of the next month. Twenty days later, they pay you. Since you are still in your probation period, you earn $211 and the rest of the attendance award. After the probation period your wage will be $228.",
+      "text":  "",
       "image": "wagecircle.png",
       "a1": {
-        "text":   "Now you are finally able to send some money back home!",
+        "text":   "After a month and 20 days you finally receive your paycheck.",
         "money":  227.35,
         "energy": 0,
         "next":   "workcircle"

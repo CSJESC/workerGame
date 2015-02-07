@@ -71,6 +71,7 @@
                     else if ((question === questions["minus"] || question === questions["minusbusy"] || question === questions["minuscircle"] || question === questions["minuscircle2"]) && minusDesc == false) {
                         question.text = questions["minusdesc"].text;
                         imgBlock.attr('src', 'image/minus.png');  
+                        minusDesc = true;
                     }
                     else if (question === questions["workcircle2"] && workhard == true) {
                         imgBlock.attr('src', 'image/work3.png');
@@ -79,14 +80,8 @@
                         imgBlock.attr('src', 'image/' + question.image);
                     }
                 }
-                
-                if ((question === questions["minus"] || question === questions["minusbusy"] || question === questions["minuscircle"] || question === questions["minuscircle2"]) && minusDesc == false) {
-                        $textElem.html(nl2br(questions["minusdesc"].text));
-                        minusDesc = true;  
-                } 
-                else {
-                    $textElem.html(nl2br(question.text));
-                }   
+
+                $textElem.html(nl2br(question.text));
 
                 // set button text if specified, if a2t use standard
                 if(question.a1.text) {

@@ -234,7 +234,7 @@
     },
 
     "advicetelefon" : {
-      "text":  "As the security guard walks away, Li Yan explains to you that phones in the factory are not allowed. ",
+      "text":  "The security guard doesn’t listen to you and as he walks away, Li Yan explains to you that phones in the factory are not allowed.",
       "image": "advicetelefon.png",
       "a1": {
         "text":   "start working",
@@ -283,12 +283,12 @@
     },
 
     "minusdesc" : {
-      "text":  "You leave early even though you know you could use the extra money..",
+      "text":  "Every time you leave earlier, 4.87 will be deducted from your attandance award. You leave early even though you know you could use the extra money..",
       "image": "minus-reg.png",
       "a1": {
         "text":   "Worried, you go to bed.",
         "money":  -4.87,
-        "energy": 0,
+        "energy": 1,
         "next":   "workbusy"
       },
       "a2": {
@@ -303,7 +303,7 @@
       "a1": {
         "text":   "Worried, you go to bed.",
         "money":  -4.87,
-        "energy": 0,
+        "energy": 1,
         "next":   "workbusy"
       },
       "a2": {
@@ -318,7 +318,7 @@
       "a1": {
         "text":   "Worried, you go to bed.",
         "money":  -4.87,
-        "energy": 0,
+        "energy": 1,
         "next":   "wage"
       },
       "a2": {
@@ -453,7 +453,7 @@
 
     "complainhealth" : {
       "text": "You raise your concerns to your supervisor and ask for better safety equipment. He tells you not to worry and to get back to work.",
-        "image": "leaMask.png",
+        "image": "health.png",
       "a1": {
         "text":   "You insist on having the matter looked into.",
         "money":  0,
@@ -472,7 +472,7 @@
 
     "firedhealth" : {
       "text": "The supervisor becomes angry and tells you to mind your own business. He fires you on the spot.",
-        "image": "leaMask.png",
+        "image": "health.png",
       "a1": {
       },
       "a2": {
@@ -589,7 +589,7 @@
       "image": "filler.png",
       "a1": {
         "text":   "You send them $100.",
-        "money":  0,
+        "money":  -100,
         "energy": 0,
         "next":   "workcircle"
       },
@@ -601,7 +601,7 @@
       },
       "a3": {
         "text":   "You send them $200.",
-        "money":  0,
+        "money":  -200,
         "energy": 0,
         "next":   "workcircle"
       }
@@ -651,7 +651,7 @@
       "a1": {
         "text":   "You are tired and go to bed early.",
         "money":  -4.87,
-        "energy": 0,
+        "energy": 1,
         "next":   "workcircle2"
       },
       "a2": {
@@ -666,7 +666,7 @@
       "a1": {
         "text":   "You are tired and go to bed early.",
         "money":  -4.87,
-        "energy": 0,
+        "energy": 1,
         "next":   "granny"
       },
       "a2": {

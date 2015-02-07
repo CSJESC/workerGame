@@ -558,7 +558,7 @@
         "text":   "You worry about the students but you know they need to make ends meet, so you tell them to just try and get as much work done as possible.",
         "money":  0,
         "energy": -1,
-        "next":   "work1"
+        "next":   "decisionwork"
       },
       "a3": {
       }
@@ -566,7 +566,7 @@
 
    "decisionwork" : {
       "text":  "It has been a few months since you have started working at the factory. It is a tiring job, but you have not lost sight of sending money back home.\nLi Yan passes by at your dorm after work and you have a chat. She recently switched over to a different department and earns a bit more than before, but tells you that the working conditions are worse. She has no breaks at all and her overtime is much longer than yours. She mentions that the department is hiring and asks you if you were interested in applying.",
-      "image": "filler.png",
+      "image": "decisionwork.png",
       "a1": {
         "text":   "You decide to switch over to her department as well.",
         "money":  0,

@@ -241,7 +241,7 @@
             }
 
             // setup initial view
-            goToQuestion(questions['decisionwork'])
+            goToQuestion(questions['index'])
         })
     })
 })();

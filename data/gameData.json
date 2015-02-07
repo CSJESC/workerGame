@@ -634,8 +634,8 @@
       "a2": {
         "text":   "to leave now and stay at home tomorrow to  fill up your energy.",
         "money":  0,
-        "energy": 9,
-        "next":   "workcircle2"
+        "energy": 0,
+        "next":   "fillenergy"
       },
       "a3": {
         "text":   "to leave earlier.",
@@ -677,9 +677,9 @@
 
    "exhaustedcircle" : {
       "text":  "Your body hurts, you are tired and you really need some rest.",
-      "image": "firstday.png",
+      "image": "exhausted.png",
       "a1": {
-        "text": "YWhen you finally arrive at the dorms you collapse from exhaustion.",
+        "text": "When you finally arrive at the dorms you collapse from exhaustion.",
         "money":  0,
         "energy": -1,
         "next":   "workcircle2"
@@ -707,7 +707,7 @@
 
     "fillenergy": {
       "text":  "You spend the day relaxing and catching up with your family on the phone and at the end of the day you already feel much better.",
-      "image": "workbusy.png",
+      "image": "filler.png",
       "a1": {
         "text":   "$30 are deducted from your wage.",
         "money":  -30,
@@ -722,7 +722,7 @@
 
     "fillenergy2": {
       "text":  "You spend the day relaxing and catching up with your family on the phone and at the end of the day you already feel much better.",
-      "image": "workbusy.png",
+      "image": "filler.png",
       "a1": {
         "text":   "$30 are deducted from your wage.",
         "money":  -30,
@@ -737,7 +737,7 @@
 
     "firedfill": {
       "text": "You haven't been to work on three occasions. The company has had enough and fired you. You don't receive this month wage. What will you do next?",
-      "image": "workbusy.png",
+      "image": "filler.png",
       "a1": {
       },
       "a2": {

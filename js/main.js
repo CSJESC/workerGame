@@ -143,7 +143,7 @@
                         alreadyExausted = true;
                         goToQuestion(questions['exhaustedquit']);
                     }      
-                    else if ((question === questions["workcircle2"]) && !wage){
+                    else if ((question === questions["exhaustedcircle2"] || question === questions["minuscircle2"] || question === questions["fillenergy2"]) && !wage){
                         wage = true;
                        goToQuestion(questions['wagecircle']);
                     }
@@ -241,7 +241,7 @@
             }
 
             // setup initial view
-            goToQuestion(questions['index'])
+            goToQuestion(questions['decisionwork'])
         })
     })
 })();

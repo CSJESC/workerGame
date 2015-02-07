@@ -17,6 +17,8 @@
 
     var grannydead = false;
 
+    var grannymoney = 0;
+
     var leavingcounter = 0;
 
     var wage = true;
@@ -120,12 +122,18 @@
                     else if (question === questions["fillenergy"] || question === questions["fillenergy2"] ) {
                         leavingcounter++;
                     }
-                    else if (question === questions["granny"]) {
+                    else if (question === questions["granny"] && grannydead == false && answer == question.a2) {
+                        grannymoney += 1;
+                        wage = false;
+                    }
+                    else if (question === questions["granny"] && (answer == question.a1 || answer == question.a3)) {
                         wage = false;
                     }
                     else if ((question === questions["exhaustedcircle"] || question === questions["exhaustedcircle2"]) && workhard == true) {
                         answer.energy = answer.energy * 2;        
                     } 
+                    
+
 
                     status.money += Math.round(answer.money);
                     status.energy += answer.energy;
@@ -142,7 +150,10 @@
                     if (!alreadyExausted && status.energy <= 0) {
                         alreadyExausted = true;
                         goToQuestion(questions['exhaustedquit']);
-                    }      
+                    }   
+                    else if (grannydead == false && grannymoney >= 3) {
+                        goToQuestion(questions['grannydead']);
+                    }   
                     else if ((question === questions["exhaustedcircle2"] || question === questions["minuscircle2"] || question === questions["fillenergy2"]) && !wage){
                         wage = true;
                        goToQuestion(questions['wagecircle']);
@@ -241,7 +252,7 @@
             }
 
             // setup initial view
-            goToQuestion(questions['index'])
+            goToQuestion(questions['decisionwork'])
         })
     })
 })();

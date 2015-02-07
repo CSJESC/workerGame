@@ -155,7 +155,7 @@
       "image": "dorms.png",
       "a1": {
         "text":   "You’ve had an exhausting day and go to bed.",
-        "money":  -4,
+        "money":  -15,
         "energy": 0,
         "next":   "dorms-morning"
       },

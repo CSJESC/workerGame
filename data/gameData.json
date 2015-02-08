@@ -237,7 +237,7 @@
             "a1": {
                 "text": "You feel so tired and go back to the dorms.",
                 "money": -30,
-                "energy": 1,
+                "energy": 0,
                 "next": "minus"
             },
             "a2": {
@@ -320,7 +320,7 @@
             "a1": {
                 "text": "Since the company doesn’t cover your health insurance, you have to pay &yen;950.",
                 "money": -950,
-                "energy": 0,
+                "energy": 10,
                 "next": "quit"
             },
             "a2": {},
@@ -347,7 +347,7 @@
             "a2": {
                 "text": "You go home with a bad feeling.",
                 "money": -30,
-                "energy": 1,
+                "energy": 0,
                 "next": "minusbusy"
             },
             "a3": {}
@@ -359,6 +359,19 @@
             "a1": {
                 "text": "After the probation period your wage will be &yen;1400 when you will finally be able to send some money back home!",
                 "money": 1360,
+                "energy": 0,
+                "next": "billsstart"
+            },
+            "a2": {},
+            "a3": {}
+        },
+
+        "billsstart": {
+            "text": "You have to pay your monthly expenses of 400 &yen;.",
+            "image": "filler.png",
+            "a1": {
+                "text": "You pay the bills.",
+                "money": -400,
                 "energy": 0,
                 "next": "drinking"
             },
@@ -571,7 +584,7 @@
             "a3": {
                 "text": "to leave earlier.",
                 "money": -30,
-                "energy": 1,
+                "energy": 0,
                 "next": "minuscircle"
             }
         },
@@ -664,7 +677,7 @@
 
         "helpparents": {
             "text": "Your parents ask you to help them financially. Your grandmother used to bring some money in by the little work she was doing. You feel sorry for them, so:",
-            "image": "exhausted.png",
+            "image": "filler.png",
             "a1": {
                 "text": "you send them &yen;350.",
                 "money": -350,
@@ -703,7 +716,7 @@
             "a3": {
                 "text": "You go home with a bad feeling.",
                 "money": -30,
-                "energy": 1,
+                "energy": 0,
                 "next": "minuscircle2"
             }
         },
@@ -727,8 +740,8 @@
             "a1": {
                 "text": "You pay the bills.",
                 "money": "Random",
-                "random_min": -1400,
-                "random_max": -1000,
+                "random_min": -1000,
+                "random_max": -300,
                 "energy": 0,
                 "next": "workcircle"
             },

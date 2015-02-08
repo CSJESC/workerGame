@@ -113,7 +113,11 @@
                 } else {
                     $a2Button.html('');
                 }
-                if(question.a3.text){
+
+                if (question.a3.text && question === questions["helpparents"] && status.money >= 350) {
+                    $a3Button.text('');
+                }
+                else if(question.a3.text){
                     if (question.a3.money < 0 && ((status.money + question.a3.money) < 0)) {
                         extraText = '<span class="losing-money">' + question.a3.money + ' &#65509;</span>';
                         $a3Button.addClass('disabledButton');
@@ -158,6 +162,9 @@
                     }
                     else if ((question === questions["workcircle"] || question === questions["workcircle2"]) && answer == question.a1 && workhard == true) {
                         answer.energy = answer.energy * 2;
+                    }
+                    else if (question == questions["wagecircle"] && workhard == true) {
+                        answer.money += 300;
                     }
 
 
@@ -262,16 +269,16 @@
             function applyMoney(money) {
                 if (money < 0) {
                     moneyImgElem.attr('src','image/money/moneyDebt.png');
-                } else if (money < 5) {
+                } else if (money < 10) {
                     moneyImgElem.attr('src','image/money/money0.png');
                 } else if (money < 100) {
                     moneyImgElem.attr('src','image/money/money1.png');
-                } else if (money < 200) {
+                } else if (money < 500) {
                     moneyImgElem.attr('src','image/money/money2.png');
-                } else if (money < 300) {
+                } else if (money < 1000) {
                     moneyImgElem.attr('src','image/money/money3.png');
-                } else if (money < 400) {
-                    moneyImgElem.attr('src','image/money/money5.png');
+                } else if (money < 1500) {
+                    moneyImgElem.attr('src','image/money/money4.png');
                 } else { // https://www.youtube.com/watch?v=sdl658l5TTQ
                     moneyImgElem.attr('src','image/money/money5.png');
                 }

@@ -232,7 +232,7 @@
         },
 
         "firstday": {
-            "text": "The factory is huge and there are a lot of people around you. Since you are in charge of the circuit boards you are only allowed to take a break every two hours for ten minutes. You can’t really talk with coworkers, you have to concentrate as to not make mistakes. After eight hours, your feet and back hurt. Other workers notify you that you are supposed to work at least two more hours  over time.",
+            "text": "The factory is huge and there are a lot of people around you. Since you are in charge of the circuit boards you are only allowed to take a break every two hours for ten minutes. You can’t really talk with coworkers, you have to concentrate as to not make mistakes. After eight hours, your feet and back hurt. Other workers notify you that you are supposed to work at least two more hours over time.",
             "image": "filler.png",
             "a1": {
                 "text": "You feel so tired and go back to the dorms.",
@@ -723,7 +723,7 @@
 
         "bills": {
             "text": "You have to pay your monthly expenses of %s &yen;.",
-            "image": "filler.png",
+            "image": "bills.png",
             "a1": {
                 "text": "You pay the bills.",
                 "money": "Random",

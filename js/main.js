@@ -88,7 +88,7 @@
                 // set button text if specified, if a2t use standard
                 if(question.a1.text) {
                     if (question.a1.money < 0 && ((status.money + question.a1.money) < 0)) {
-                        extraText = '<span class="losing-money">' + Math.round((question.a1.money * 6.25)) + ' &#65509;</span>';
+                        extraText = '<span class="losing-money">' + question.a1.money + ' &#65509;</span>';
                         $a1Button.addClass('disabledButton');
                     } else {
                         extraText = '';
@@ -100,7 +100,7 @@
                 }
                 if(question.a2.text){
                     if (question.a2.money < 0 && ((status.money + question.a2.money) < 0)) {
-                        extraText = '<span class="losing-money">' + Math.round((question.a2.money * 6.25)) + ' &#65509;</span>';
+                        extraText = '<span class="losing-money">' + question.a2.money + ' &#65509;</span>';
                         $a2Button.addClass('disabledButton');
                     } else {
                         extraText = '';
@@ -112,7 +112,7 @@
                 }
                 if(question.a3.text){
                     if (question.a3.money < 0 && ((status.money + question.a3.money) < 0)) {
-                        extraText = '<span class="losing-money">' + Math.round((question.a3.money * 6.25)) + ' &#65509;</span>';
+                        extraText = '<span class="losing-money">' + question.a3.money + ' &#65509;</span>';
                         $a3Button.addClass('disabledButton');
                     } else {
                         extraText = '';
@@ -155,6 +155,9 @@
                     else if ((question === questions["workcircle"] || question === questions["workcircle2"]) && answer == question.a1 && workhard == true) {
                         answer.energy = answer.energy * 2;        
                     } 
+                    else if (question === questions["wagecircle"] && workhard == true) {
+                        answer.money += 100
+                    }
                     
 
 
@@ -275,7 +278,7 @@
             }
 
             // setup initial view
-            goToQuestion(questions['index'])
+            goToQuestion(questions['decisionwork'])
         })
     })
 })();

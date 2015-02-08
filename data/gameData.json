@@ -394,7 +394,7 @@
       },
       "a2": {
         "text":   "You go home with a bad feeling.",
-        "money": 30,
+        "money": -30,
         "energy": 1,
         "next":   "minusbusy"
       },
@@ -639,7 +639,7 @@
       },
       "a3": {
         "text":   "to leave earlier.",
-        "money":  30,
+        "money":  -30,
         "energy": 1,
         "next":   "minuscircle"
       }
@@ -782,7 +782,7 @@
       },
       "a3": {
         "text":   "You go home with a bad feeling.",
-        "money":  30,
+        "money":  -30,
         "energy": 1,
         "next":   "minuscircle2"
       }

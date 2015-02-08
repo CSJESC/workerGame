@@ -185,10 +185,11 @@ footer .left {
 .losing-money {
     color: #FF5555;
     float: right;
+    width: 3%;
 }
-
 
 .gaining-money {
     color: #55FF55;
     float: right;
+    width: 3%;
 }

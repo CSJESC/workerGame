@@ -630,7 +630,7 @@
 
         "fillenergy": {
             "text": "You spend the day relaxing and catching up with your family on the phone and at the end of the day you already feel much better.",
-            "image": "filler.png",
+            "image": "fillenergy.png",
             "a1": {
                 "text": "&yen;200 are deducted from your wage.",
                 "money": 0,
@@ -643,7 +643,7 @@
 
         "fillenergy2": {
             "text": "You spend the day relaxing and catching up with your family on the phone and at the end of the day you already feel much better.",
-            "image": "filler.png",
+            "image": "fillenergy.png",
             "a1": {
                 "text": "&yen;200 are deducted from your wage.",
                 "money": 0,
@@ -656,7 +656,7 @@
 
         "firedfill": {
             "text": "You haven't been to work on three occasions. The company has had enough and fired you. You don't receive this month wage. What will you do next?",
-            "image": "filler.png",
+            "image": "goinghome2.png",
             "a1": {},
             "a2": {},
             "a3": {}

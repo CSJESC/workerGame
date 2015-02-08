@@ -271,7 +271,7 @@
                 } else { // https://www.youtube.com/watch?v=sdl658l5TTQ
                     moneyImgElem.attr('src','image/money/money5.png');
                 }
-                moneyElem.html ((money * 6.25) + ' &#65509; / ' + money + ' $');
+                moneyElem.html (money + ' &#65509; / ' + (money / 6.25) + ' $');
             }
 
             // setup initial view

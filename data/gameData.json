@@ -805,6 +805,21 @@
       },
       "a3": {
       }
+    },
+
+    "bills" : {
+      "text":  "You have to pay your monthly expenses of %s &yen;.",
+      "image": "filler.png",
+      "a1": {
+        "text":   "You pay the bills.",
+        "money":  "Random",
+        "energy": 0,
+        "next":   "workcircle"
+      },
+      "a2": {
+      },
+      "a3": {
+      }
     }
 
   }

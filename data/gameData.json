@@ -26,7 +26,7 @@
       "image": "start1.png",
       "a1": {
         "text":   "Your family purchased your bus tickets and hand you &yen500 so you could go to work and send money back home.",
-        "money": 3000,
+        "money": 500,
         "energy": 0,
         "next":   "start2"
       },

@@ -799,7 +799,7 @@
         "text":   "After a month and 20 days you finally receive your paycheck.",
         "money":  1520,
         "energy": 0,
-        "next":   "workcircle"
+        "next":   "bills"
       },
       "a2": {
       },

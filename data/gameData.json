@@ -69,10 +69,6 @@
                 "next": "test"
             },
             "a2": {
-                "text": "to look for a job somewhere else",
-                "money": 0,
-                "energy": 0,
-                "next": "start2"
             },
             "a3": {}
         },

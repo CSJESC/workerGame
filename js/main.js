@@ -163,6 +163,9 @@
                     else if ((question === questions["workcircle"] || question === questions["workcircle2"]) && answer == question.a1 && workhard == true) {
                         answer.energy = answer.energy * 2;
                     }
+                    else if (question == questions["wagecircle"] && workhard == true) {
+                        answer.money += 300;
+                    }
 
 
 

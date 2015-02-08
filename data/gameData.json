@@ -268,7 +268,7 @@
       "image": "filler.png",
       "a1": {
         "text":   "You feel so tired and go back to the dorms.",
-        "money":  30,
+        "money":  -30,
         "energy": 1,
         "next":   "minus"
       },
@@ -283,7 +283,7 @@
     },
 
     "minusdesc" : {
-      "text":  "Every time you leave earlier, 4.87 will be deducted from your attandance award. You leave early even though you know you could use the extra money..",
+      "text":  "You leave early. Your coworkers are surprised and explain to you the attendance award: the average wage they earn is &yen3000, but this is including any awards you may earn such as the attendance award. Every time you leave early,  &yen30 is deducted from a possible &yen120. If you leave early or come late three times, you forfeit the award entirely.",
       "image": "minus-reg.png",
       "a1": {
         "text":   "Worried, you go to bed.",
@@ -407,7 +407,7 @@
       "image": "wage.png",
       "a1": {
         "text":   "After the probation period your wage will be &yen;1400 when you will finally be able to send some money back home!",
-        "money":  1300,
+        "money":  1360,
         "energy": 0,
         "next":   "drinking"
       },
@@ -750,13 +750,13 @@
       "text": "Your parents ask you to help them financially. Your grandmother used to bring some money in by the little work she was doing. You feel sorry for them, so:",
       "image": "exhausted.png",
       "a1": {
-        "text": "you send them &yen;50.",
+        "text": "you send them &yen;350.",
         "money":  -50,
         "energy": 0,
         "next":   "workcircle"
       },
       "a2": {
-        "text": "you send them &yen;100.",
+        "text": "you send them &yen;700.",
         "money":  -100,
         "energy": 0,
         "next":   "workcircle"
@@ -793,7 +793,7 @@
       "image": "wagecircle.png",
       "a1": {
         "text":   "After a month and 20 days you finally receive your paycheck.",
-        "money":  227.35,
+        "money":  1520,
         "energy": 0,
         "next":   "workcircle"
       },

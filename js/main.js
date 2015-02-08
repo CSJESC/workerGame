@@ -269,16 +269,16 @@
             function applyMoney(money) {
                 if (money < 0) {
                     moneyImgElem.attr('src','image/money/moneyDebt.png');
-                } else if (money < 5) {
+                } else if (money < 10) {
                     moneyImgElem.attr('src','image/money/money0.png');
                 } else if (money < 100) {
                     moneyImgElem.attr('src','image/money/money1.png');
-                } else if (money < 200) {
+                } else if (money < 500) {
                     moneyImgElem.attr('src','image/money/money2.png');
-                } else if (money < 300) {
+                } else if (money < 1000) {
                     moneyImgElem.attr('src','image/money/money3.png');
-                } else if (money < 400) {
-                    moneyImgElem.attr('src','image/money/money5.png');
+                } else if (money < 1500) {
+                    moneyImgElem.attr('src','image/money/money4.png');
                 } else { // https://www.youtube.com/watch?v=sdl658l5TTQ
                     moneyImgElem.attr('src','image/money/money5.png');
                 }
@@ -286,7 +286,7 @@
             }
 
             // setup initial view
-            goToQuestion(questions['decisionwork'])
+            goToQuestion(questions['index'])
         })
     })
 })();

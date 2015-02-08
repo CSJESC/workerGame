@@ -237,7 +237,7 @@
             "a1": {
                 "text": "You feel so tired and go back to the dorms.",
                 "money": -30,
-                "energy": 1,
+                "energy": 0,
                 "next": "minus"
             },
             "a2": {
@@ -347,7 +347,7 @@
             "a2": {
                 "text": "You go home with a bad feeling.",
                 "money": -30,
-                "energy": 1,
+                "energy": 0,
                 "next": "minusbusy"
             },
             "a3": {}
@@ -586,7 +586,7 @@
             "a3": {
                 "text": "to leave earlier.",
                 "money": -30,
-                "energy": 1,
+                "energy": 0,
                 "next": "minuscircle"
             }
         },
@@ -718,7 +718,7 @@
             "a3": {
                 "text": "You go home with a bad feeling.",
                 "money": -30,
-                "energy": 1,
+                "energy": 0,
                 "next": "minuscircle2"
             }
         },

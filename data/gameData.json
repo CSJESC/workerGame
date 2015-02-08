@@ -268,14 +268,14 @@
       "image": "filler.png",
       "a1": {
         "text":   "You feel so tired and go back to the dorms.",
-        "money":  0,
-        "energy": 0,
+        "money":  -4.87,
+        "energy": 1,
         "next":   "minus"
       },
       "a2": {
         "text":   "You fulfill the obligation to stay and work at least two hours more.",
         "money":  0,
-        "energy": 0,
+        "energy": -1,
         "next":   "exhausted"
       },
       "a3": {
@@ -287,8 +287,8 @@
       "image": "minus-reg.png",
       "a1": {
         "text":   "Worried, you go to bed.",
-        "money":  -4.87,
-        "energy": 1,
+        "money":  0,
+        "energy": 0,
         "next":   "workbusy"
       },
       "a2": {
@@ -302,8 +302,8 @@
       "image": "minus-reg.png",
       "a1": {
         "text":   "Worried, you go to bed.",
-        "money":  -4.87,
-        "energy": 1,
+        "money":  0,
+        "energy": 0,
         "next":   "workbusy"
       },
       "a2": {
@@ -317,8 +317,8 @@
       "image": "minus-reg.png",
       "a1": {
         "text":   "Worried, you go to bed.",
-        "money":  -4.87,
-        "energy": 1,
+        "money":  0,
+        "energy": 0,
         "next":   "wage"
       },
       "a2": {
@@ -333,7 +333,7 @@
       "a1": {
         "text":   "You finally arrive at the dorms and you just fall completly exhausted in your bed.",
         "money":  0,
-        "energy": -1,
+        "energy": 0,
         "next":   "workbusy"
       },
       "a2": {
@@ -348,7 +348,7 @@
       "a1": {
         "text":   "You finally arrive at the dorms and you just fall completly exhausted in your bed.",
         "money":  0,
-        "energy": -2,
+        "energy": 0,
         "next":   "wage"
       },
       "a2": {
@@ -389,13 +389,13 @@
       "a1": {
         "text":   "You decide to stay longer.",
         "money":  0,
-        "energy": 0,
+        "energy": -2,
         "next":   "exhaustedbusy"
       },
       "a2": {
         "text":   "You go home with a bad feeling.",
-        "money":  0,
-        "energy": 0,
+        "money": -4.87,
+        "energy": 1,
         "next":   "minusbusy"
       },
       "a3": {
@@ -516,14 +516,14 @@
       "image": "studentsadvice.png",
       "a1": {
         "text":   "to take care of himself and quit.",
-        "money":  0,
+        "money":  -40,
         "energy": 0,
         "next":   "studentsunpaid"
       },
       "a2": {
         "text":   "to be responsible and keep the job - it's only two months left anyway.",
         "money":  0,
-        "energy": 0,
+        "energy": -1,
         "next":   "studentsexhausted"
       },
       "a3": {
@@ -535,7 +535,7 @@
       "image": "studentsunpaid.png",
       "a1": {
         "text":   "You give Yong and two other students money for the bus back home and heavy-hearted you say good bye to them.",
-        "money":  -40,
+        "money":  0,
         "energy": 0,
         "next":   "decisionwork"
       },
@@ -550,14 +550,14 @@
       "image": "filler.png",
       "a1": {
         "text":   "You try to convince them to leave their jobs, the students should not be working that much.",
-        "money":  0,
-        "energy": -1,
+        "money":  -40,
+        "energy": 0,
         "next":   "studentsunpaid"
       },
       "a2": {
         "text":   "You worry about the students but you know they need to make ends meet, so you tell them to just try and get as much work done as possible.",
         "money":  0,
-        "energy": -1,
+        "energy": 0,
         "next":   "decisionwork"
       },
       "a3": {
@@ -628,19 +628,19 @@
       "a1": {
         "text":   "to do overtime (2 hours)",
         "money":  0,
-        "energy": 0,
+        "energy": -1,
         "next":   "exhaustedcircle"
       },
       "a2": {
         "text":   "to leave now and stay at home tomorrow to  fill up your energy.",
-        "money":  0,
-        "energy": 0,
+        "money":  -30,
+        "energy": 2,
         "next":   "fillenergy"
       },
       "a3": {
         "text":   "to leave earlier.",
-        "money":  0,
-        "energy": 0,
+        "money":  -4.87,
+        "energy": 1,
         "next":   "minuscircle"
       }
     },
@@ -650,8 +650,8 @@
       "image": "minus-reg.png",
       "a1": {
         "text":   "You are tired and go to bed early.",
-        "money":  -4.87,
-        "energy": 1,
+        "money":  0,
+        "energy": 0,
         "next":   "workcircle2"
       },
       "a2": {
@@ -665,8 +665,8 @@
       "image": "minus-reg.png",
       "a1": {
         "text":   "You are tired and go to bed early.",
-        "money":  -4.87,
-        "energy": 1,
+        "money":  0,
+        "energy": 0,
         "next":   "granny"
       },
       "a2": {
@@ -681,7 +681,7 @@
       "a1": {
         "text": "When you finally arrive at the dorms you collapse from exhaustion.",
         "money":  0,
-        "energy": -1,
+        "energy": 0,
         "next":   "workcircle2"
       },
       "a2": {
@@ -696,7 +696,7 @@
       "a1": {
         "text": "When you finally arrive at the dorms you collapse from exhaustion.",
         "money":  0,
-        "energy": -2,
+        "energy": 0,
         "next":   "granny"
       },
       "a2": {
@@ -710,8 +710,8 @@
       "image": "filler.png",
       "a1": {
         "text":   "$30 are deducted from your wage.",
-        "money":  -30,
-        "energy": 2,
+        "money":  0,
+        "energy": 0,
         "next":   "workcircle2"
       },
       "a2": {
@@ -725,8 +725,8 @@
       "image": "filler.png",
       "a1": {
         "text":   "$30 are deducted from your wage.",
-        "money":  -30,
-        "energy": 2,
+        "money":  0,
+        "energy": 0,
         "next":   "granny"
       },
       "a2": {
@@ -771,19 +771,19 @@
       "a1": {
         "text":   "to do overtime (4 hours)",
         "money":  0,
-        "energy": 0,
+        "energy": -2,
         "next":   "exhaustedcircle2"
       },
       "a2": {
         "text":   "to leave now and stay at home tomorrow to fill up your energy.",
-        "money":  0,
-        "energy": 0,
+        "money":  -30,
+        "energy": 2,
         "next":   "fillenergy2"
       },
       "a3": {
         "text":   "You go home with a bad feeling.",
-        "money":  0,
-        "energy": 0,
+        "money":  -4.87,
+        "energy": 1,
         "next":   "minuscircle2"
       }
     },

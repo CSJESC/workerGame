@@ -129,7 +129,7 @@
                     else if (question === questions["granny"] && (answer == question.a1 || answer == question.a3)) {
                         wage = false;
                     }
-                    else if ((question === questions["exhaustedcircle"] || question === questions["exhaustedcircle2"]) && workhard == true) {
+                    else if ((question === questions["workcircle"] || question === questions["workcircle2"]) && answer == question.a1 && workhard == true) {
                         answer.energy = answer.energy * 2;        
                     } 
                     

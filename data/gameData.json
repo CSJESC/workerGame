@@ -37,17 +37,17 @@
     },
 
     "start2" : {
-      "text":  "After you rent a room for 40$ you hear one of the factories is hiring workers aged 16 to 30. Since you meet these qualifications, you decide to apply. You just have to fill in a form and decide:",
+      "text":  "After you rent a room for 250&yen; you hear one of the factories is hiring workers aged 16 to 30. Since you meet these qualifications, you decide to apply. You just have to fill in a form and decide:",
       "image": "start2.png",
       "a1": {
         "text":   "not to wait for the call back, just go home",
-        "money":  -40,
+        "money":  -250,
         "energy": 0,
         "next":   "goinghome"
       },
       "a2": {
         "text":   "wait for them to call back",
-        "money":  -40,
+        "money":  -250,
         "energy": 0,
         "next":   "contract1"
       },
@@ -151,11 +151,11 @@
     },
 
     "dorms" : {
-      "text":  "Your colleague Li Yan shows you the way to your dormitory. She explains: there are different dormitories, but only one is close to the factory. Yours, unfortunately, is far away. You stay with 8 other people in one room. The rent is free, but you have to pay 4$ for facilities in advance.",
+      "text":  "Your colleague Li Yan shows you the way to your dormitory. She explains: there are different dormitories, but only one is close to the factory. Yours, unfortunately, is far away. You stay with 8 other people in one room. The rent is free, but you have to pay 100&yen; for facilities in advance.",
       "image": "dorms.png",
       "a1": {
         "text":   "You’ve had an exhausting day and go to bed.",
-        "money":  -15,
+        "money":  -100,
         "energy": 0,
         "next":   "dorms-morning"
       },
@@ -268,7 +268,7 @@
       "image": "filler.png",
       "a1": {
         "text":   "You feel so tired and go back to the dorms.",
-        "money":  -4.87,
+        "money":  30,
         "energy": 1,
         "next":   "minus"
       },
@@ -361,8 +361,8 @@
       "text":  "You collapse. You can barely see and your whole body hurts. Li Yan brings you to the hospital since there is no way you could go on your own.",
       "image": "exhausted.png",
       "a1": {
-        "text": "Since the company doesn’t cover your health insurance, you have to pay $150.",
-        "money":  -150,
+        "text": "Since the company doesn’t cover your health insurance, you have to pay &yen;950.",
+        "money":  -950,
         "energy": 0,
         "next":   "quit"
       },
@@ -394,7 +394,7 @@
       },
       "a2": {
         "text":   "You go home with a bad feeling.",
-        "money": -4.87,
+        "money": 30,
         "energy": 1,
         "next":   "minusbusy"
       },
@@ -403,11 +403,11 @@
     },
 
    "wage" : {
-      "text":  "After working almost a month, Li Yan tells you your wage will be paid on the 20th of the following month. Since you are still in your probation period, you earn $211 and the rest of the attendance award twenty days later.",
+      "text":  "After working almost a month, Li Yan tells you your wage will be paid on the 20th of the following month. Since you are still in your probation period, you earn &yen;1300 and the rest of the attendance award twenty days later.",
       "image": "wage.png",
       "a1": {
-        "text":   "After the probation period your wage will be $228 when you will finally be able to send some money back home!",
-        "money":  227.35,
+        "text":   "After the probation period your wage will be &yen;1400 when you will finally be able to send some money back home!",
+        "money":  1300,
         "energy": 0,
         "next":   "drinking"
       },
@@ -516,7 +516,7 @@
       "image": "studentsadvice.png",
       "a1": {
         "text":   "to take care of himself and quit.",
-        "money":  -40,
+        "money":  -250,
         "energy": 0,
         "next":   "studentsunpaid"
       },
@@ -585,7 +585,7 @@
 
 
    "granny" : {
-      "text":  "Your parents tell you that your grandmother is sick and cannot afford her health care. They request that you send money to help pay for her medication. They need $240.",
+      "text":  "Your parents tell you that your grandmother is sick and cannot afford her health care. They request that you send money to help pay for her medication. They need &yen;1000.",
       "image": "filler.png",
       "a1": {
         "text":   "You send them nothing.",
@@ -594,14 +594,14 @@
         "next":   "grannydead"
       },
       "a2": {
-        "text":   "You send them $100.",
-        "money":  -100,
+        "text":   "You send them &yen;600.",
+        "money":  -600,
         "energy": 0,
         "next":   "workcircle"
       },
       "a3": {
-        "text":   "You send them $240.",
-        "money":  -240,
+        "text":   "You send them &yen;1000.",
+        "money":  -1000,
         "energy": 0,
         "next":   "workcircle"
       }
@@ -633,13 +633,13 @@
       },
       "a2": {
         "text":   "to leave now and stay at home tomorrow to  fill up your energy.",
-        "money":  -30,
+        "money":  -200,
         "energy": 2,
         "next":   "fillenergy"
       },
       "a3": {
         "text":   "to leave earlier.",
-        "money":  -4.87,
+        "money":  30,
         "energy": 1,
         "next":   "minuscircle"
       }
@@ -709,7 +709,7 @@
       "text":  "You spend the day relaxing and catching up with your family on the phone and at the end of the day you already feel much better.",
       "image": "filler.png",
       "a1": {
-        "text":   "$30 are deducted from your wage.",
+        "text":   "&yen;200 are deducted from your wage.",
         "money":  0,
         "energy": 0,
         "next":   "workcircle2"
@@ -724,7 +724,7 @@
       "text":  "You spend the day relaxing and catching up with your family on the phone and at the end of the day you already feel much better.",
       "image": "filler.png",
       "a1": {
-        "text":   "$30 are deducted from your wage.",
+        "text":   "&yen;200 are deducted from your wage.",
         "money":  0,
         "energy": 0,
         "next":   "granny"
@@ -750,13 +750,13 @@
       "text": "Your parents ask you to help them financially. Your grandmother used to bring some money in by the little work she was doing. You feel sorry for them, so:",
       "image": "exhausted.png",
       "a1": {
-        "text": "you send them $50.",
+        "text": "you send them &yen;50.",
         "money":  -50,
         "energy": 0,
         "next":   "workcircle"
       },
       "a2": {
-        "text": "you send them $100.",
+        "text": "you send them &yen;100.",
         "money":  -100,
         "energy": 0,
         "next":   "workcircle"
@@ -776,13 +776,13 @@
       },
       "a2": {
         "text":   "to leave now and stay at home tomorrow to fill up your energy.",
-        "money":  -30,
+        "money":  -200,
         "energy": 2,
         "next":   "fillenergy2"
       },
       "a3": {
         "text":   "You go home with a bad feeling.",
-        "money":  -4.87,
+        "money":  30,
         "energy": 1,
         "next":   "minuscircle2"
       }

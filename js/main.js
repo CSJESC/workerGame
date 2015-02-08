@@ -87,45 +87,47 @@
                 var extraText = "";
                 // set button text if specified, if a2t use standard
                 if(question.a1.text) {
-                    if (question.a1.money < 0) {
-                        extraText = '<span class="losing-money">' + question.a1.money + '</span>';
-                    } else if (question.a1.money > 0)  {
-                        extraText = '<span class="gaining-money">+' + question.a1.money + '</span>';
+                    if (question.a1.money < 0 && ((status.money + question.a1.money) < 0)) {
+                        extraText = '<span class="losing-money">' + Math.round((question.a1.money * 6.25)) + ' &#65509;</span>';
+                        $a1Button.addClass('disabledButton');
                     } else {
                         extraText = '';
+                        $a1Button.removeClass('disabledButton');
                     }
                     $a1Button.html('&bull; ' + question.a1.text + extraText);
                 } else {
                     $a1Button.html('');
                 }
                 if(question.a2.text){
-                    if (question.a2.money < 0) {
-                        extraText = '<span class="losing-money">' + question.a2.money + '</span>';
-                    } else if (question.a2.money > 0)  {
-                        extraText = '<span class="gaining-money">+' + question.a2.money + '</span>';
+                    if (question.a2.money < 0 && ((status.money + question.a2.money) < 0)) {
+                        extraText = '<span class="losing-money">' + Math.round((question.a2.money * 6.25)) + ' &#65509;</span>';
+                        $a2Button.addClass('disabledButton');
                     } else {
                         extraText = '';
+                        $a2Button.removeClass('disabledButton');
                     }
                     $a2Button.html('&bull; ' + question.a2.text + extraText);
                 } else {
                     $a2Button.html('');
                 }
                 if(question.a3.text){
-                    if (question.a3.money < 0) {
-                        extraText = '<span class="losing-money">' + question.a3.money + '</span>';
-                    } else if (question.a3.money > 0)  {
-                        extraText = '<span class="gaining-money">+' + question.a3.money + '</span>';
+                    if (question.a3.money < 0 && ((status.money + question.a3.money) < 0)) {
+                        extraText = '<span class="losing-money">' + Math.round((question.a3.money * 6.25)) + ' &#65509;</span>';
+                        $a3Button.addClass('disabledButton');
                     } else {
                         extraText = '';
+                        $a3Button.removeClass('disabledButton');
                     }
                     $a3Button.html('&bull; ' + question.a3.text + extraText);
                 } else {
                     $a3Button.text('');
                 }
-
                 // set actions for answers
                 $bothButtons.unbind('click');
                 $bothButtons.click(function (event) {
+                    if ($(this).hasClass('disabledButton')) {
+                        return false;
+                    }
                     var answer;
                     if (event.target.dataset.answer == 'a1')
                         answer = question.a1;
@@ -269,7 +271,7 @@
                 } else { // https://www.youtube.com/watch?v=sdl658l5TTQ
                     moneyImgElem.attr('src','image/money/money5.png');
                 }
-                moneyElem.html ((money * 6.25) + ' ¥ / ' + money + ' $');
+                moneyElem.html ((money * 6.25) + ' &#65509; / ' + money + ' $');
             }
 
             // setup initial view

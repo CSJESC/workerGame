@@ -403,7 +403,7 @@
 
         "complainhealth": {
             "text": "You raise your concerns to your supervisor and ask for better safety equipment. He tells you not to worry and to get back to work.",
-            "image": "health.png",
+            "image": "complainhealth.png",
             "a1": {
                 "text": "You insist on having the matter looked into.",
                 "money": 0,
@@ -421,7 +421,7 @@
 
         "firedhealth": {
             "text": "The supervisor becomes angry and tells you to mind your own business. He fires you on the spot.",
-            "image": "health.png",
+            "image": "firedhealth.png",
             "a1": {},
             "a2": {},
             "a3": {}

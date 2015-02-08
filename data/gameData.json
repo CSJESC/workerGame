@@ -519,7 +519,7 @@
 
         "granny": {
             "text": "Your parents tell you that your grandmother is sick and cannot afford her health care. They request that you send money to help pay for her medication. They need &yen;1000.",
-            "image": "filler.png",
+            "image": "grannysick.png",
             "a1": {
                 "text": "You send them nothing.",
                 "money": 0,
@@ -728,7 +728,7 @@
                 "text": "You pay the bills.",
                 "money": "Random",
                 "random_min": -1400,
-                "random_max": -400,
+                "random_max": -1000,
                 "energy": 0,
                 "next": "workcircle"
             },

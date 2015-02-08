@@ -367,13 +367,11 @@
         },
 
         "billsstart": {
-            "text": "You have to pay your monthly expenses of %s &yen;.",
+            "text": "You have to pay your monthly expenses of 400 &yen;.",
             "image": "filler.png",
             "a1": {
                 "text": "You pay the bills.",
-                "money": "Random",
-                "random_min": -1350,
-                "random_max": -500,
+                "money": -400,
                 "energy": 0,
                 "next": "drinking"
             },
@@ -679,7 +677,7 @@
 
         "helpparents": {
             "text": "Your parents ask you to help them financially. Your grandmother used to bring some money in by the little work she was doing. You feel sorry for them, so:",
-            "image": "exhausted.png",
+            "image": "filler.png",
             "a1": {
                 "text": "you send them &yen;350.",
                 "money": -350,
@@ -742,8 +740,8 @@
             "a1": {
                 "text": "You pay the bills.",
                 "money": "Random",
-                "random_min": -1400,
-                "random_max": -1000,
+                "random_min": -1000,
+                "random_max": -300,
                 "energy": 0,
                 "next": "workcircle"
             },

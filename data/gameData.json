@@ -25,8 +25,8 @@
       "text":  "Your name is Mei. In order to support your family you have decided to move to Huizhou in the Guangdong province- a city in southern China which has seen its population grow from a mere 300,000 in 1990 to over 1.8 million today supported by its well-known technology sector.",
       "image": "start1.png",
       "a1": {
-        "text":   "Your family purchased your bus tickets so you could go to work and send money back home.",
-        "money":  0,
+        "text":   "Your family purchased your bus tickets and hand you &yen500 so you could go to work and send money back home.",
+        "money": 3000,
         "energy": 0,
         "next":   "start2"
       },
@@ -37,17 +37,17 @@
     },
 
     "start2" : {
-      "text":  "After you rent a room for 40$ you hear one of the factories is hiring workers aged 16 to 30. Since you meet these qualifications, you decide to apply. You just have to fill in a form and decide:",
+      "text":  "After you rent a room for 250&yen; you hear one of the factories is hiring workers aged 16 to 30. Since you meet these qualifications, you decide to apply. You just have to fill in a form and decide:",
       "image": "start2.png",
       "a1": {
         "text":   "not to wait for the call back, just go home",
-        "money":  -40,
+        "money":  -250,
         "energy": 0,
         "next":   "goinghome"
       },
       "a2": {
         "text":   "wait for them to call back",
-        "money":  -40,
+        "money":  -250,
         "energy": 0,
         "next":   "contract1"
       },
@@ -66,7 +66,7 @@
       }
     },
 
-    
+
    "contract1" : {
       "text":  "You are called back and invited to have a training session. You are shown circuit boards that the factory produces for two big companies. The job seems very exhausting, especially because you are required to stand on your feet all day long. You decide:",
       "image": "contract1.png",
@@ -151,11 +151,11 @@
     },
 
     "dorms" : {
-      "text":  "Your colleague Li Yan shows you the way to your dormitory. She explains: there are different dormitories, but only one is close to the factory. Yours, unfortunately, is far away. You stay with 8 other people in one room. The rent is free, but you have to pay 4$ for facilities in advance.",
+      "text":  "Your colleague Li Yan shows you the way to your dormitory. She explains: there are different dormitories, but only one is close to the factory. Yours, unfortunately, is far away. You stay with 8 other people in one room. The rent is free, but you have to pay 100&yen; for facilities in advance.",
       "image": "dorms.png",
       "a1": {
         "text":   "You’ve had an exhausting day and go to bed.",
-        "money":  -4,
+        "money":  -100,
         "energy": 0,
         "next":   "dorms-morning"
       },
@@ -234,7 +234,7 @@
     },
 
     "advicetelefon" : {
-      "text":  "As the security guard walks away, Li Yan explains to you that phones in the factory are not allowed. ",
+      "text":  "The security guard doesn’t listen to you and as he walks away, Li Yan explains to you that phones in the factory are not allowed.",
       "image": "advicetelefon.png",
       "a1": {
         "text":   "start working",
@@ -265,17 +265,17 @@
 
    "firstday" : {
       "text":  "The factory is huge and there are a lot of people around you. Since you are in charge of the circuit boards you are only allowed to take a break every two hours for ten minutes. You can’t really talk with coworkers, you have to concentrate as to not make mistakes. After eight hours, your feet and back hurt. Other workers notify you that you are supposed to work at least two more hours  over time.",
-      "image": "firstday.png",
+      "image": "filler.png",
       "a1": {
         "text":   "You feel so tired and go back to the dorms.",
-        "money":  0,
-        "energy": 0,
+        "money":  30,
+        "energy": 1,
         "next":   "minus"
       },
       "a2": {
         "text":   "You fulfill the obligation to stay and work at least two hours more.",
         "money":  0,
-        "energy": 0,
+        "energy": -1,
         "next":   "exhausted"
       },
       "a3": {
@@ -283,11 +283,11 @@
     },
 
     "minusdesc" : {
-      "text":  "You leave early even though you know you could use the extra money..",
+      "text":  "Every time you leave earlier, 4.87 will be deducted from your attandance award. You leave early even though you know you could use the extra money..",
       "image": "minus-reg.png",
       "a1": {
         "text":   "Worried, you go to bed.",
-        "money":  -4.87,
+        "money":  0,
         "energy": 0,
         "next":   "workbusy"
       },
@@ -302,7 +302,7 @@
       "image": "minus-reg.png",
       "a1": {
         "text":   "Worried, you go to bed.",
-        "money":  -4.87,
+        "money":  0,
         "energy": 0,
         "next":   "workbusy"
       },
@@ -317,7 +317,7 @@
       "image": "minus-reg.png",
       "a1": {
         "text":   "Worried, you go to bed.",
-        "money":  -4.87,
+        "money":  0,
         "energy": 0,
         "next":   "wage"
       },
@@ -333,7 +333,7 @@
       "a1": {
         "text":   "You finally arrive at the dorms and you just fall completly exhausted in your bed.",
         "money":  0,
-        "energy": -1,
+        "energy": 0,
         "next":   "workbusy"
       },
       "a2": {
@@ -348,7 +348,7 @@
       "a1": {
         "text":   "You finally arrive at the dorms and you just fall completly exhausted in your bed.",
         "money":  0,
-        "energy": -2,
+        "energy": 0,
         "next":   "wage"
       },
       "a2": {
@@ -361,8 +361,8 @@
       "text":  "You collapse. You can barely see and your whole body hurts. Li Yan brings you to the hospital since there is no way you could go on your own.",
       "image": "exhausted.png",
       "a1": {
-        "text": "Since the company doesn’t cover your health insurance, you have to pay $150.",
-        "money":  -150,
+        "text": "Since the company doesn’t cover your health insurance, you have to pay &yen;950.",
+        "money":  -950,
         "energy": 0,
         "next":   "quit"
       },
@@ -389,13 +389,13 @@
       "a1": {
         "text":   "You decide to stay longer.",
         "money":  0,
-        "energy": 0,
+        "energy": -2,
         "next":   "exhaustedbusy"
       },
       "a2": {
         "text":   "You go home with a bad feeling.",
-        "money":  0,
-        "energy": 0,
+        "money": 30,
+        "energy": 1,
         "next":   "minusbusy"
       },
       "a3": {
@@ -403,11 +403,11 @@
     },
 
    "wage" : {
-      "text":  "After working almost a month, Li Yan tells you your wage will be paid on the 20th of the following month. Since you are still in your probation period, you earn $211 and the rest of the attendance award twenty days later.",
+      "text":  "After working almost a month, Li Yan tells you your wage will be paid on the 20th of the following month. Since you are still in your probation period, you earn &yen;1300 and the rest of the attendance award twenty days later.",
       "image": "wage.png",
       "a1": {
-        "text":   "After the probation period your wage will be $228 when you will finally be able to send some money back home!",
-        "money":  227.35,
+        "text":   "After the probation period your wage will be &yen;1400 when you will finally be able to send some money back home!",
+        "money":  1300,
         "energy": 0,
         "next":   "drinking"
       },
@@ -453,7 +453,7 @@
 
     "complainhealth" : {
       "text": "You raise your concerns to your supervisor and ask for better safety equipment. He tells you not to worry and to get back to work.",
-        "image": "leaMask.png",
+        "image": "health.png",
       "a1": {
         "text":   "You insist on having the matter looked into.",
         "money":  0,
@@ -472,7 +472,7 @@
 
     "firedhealth" : {
       "text": "The supervisor becomes angry and tells you to mind your own business. He fires you on the spot.",
-        "image": "leaMask.png",
+        "image": "health.png",
       "a1": {
       },
       "a2": {
@@ -516,14 +516,14 @@
       "image": "studentsadvice.png",
       "a1": {
         "text":   "to take care of himself and quit.",
-        "money":  0,
+        "money":  -250,
         "energy": 0,
         "next":   "studentsunpaid"
       },
       "a2": {
         "text":   "to be responsible and keep the job - it's only two months left anyway.",
         "money":  0,
-        "energy": 0,
+        "energy": -1,
         "next":   "studentsexhausted"
       },
       "a3": {
@@ -535,7 +535,7 @@
       "image": "studentsunpaid.png",
       "a1": {
         "text":   "You give Yong and two other students money for the bus back home and heavy-hearted you say good bye to them.",
-        "money":  -40,
+        "money":  0,
         "energy": 0,
         "next":   "decisionwork"
       },
@@ -550,14 +550,14 @@
       "image": "filler.png",
       "a1": {
         "text":   "You try to convince them to leave their jobs, the students should not be working that much.",
-        "money":  0,
-        "energy": -1,
+        "money":  -40,
+        "energy": 0,
         "next":   "studentsunpaid"
       },
       "a2": {
         "text":   "You worry about the students but you know they need to make ends meet, so you tell them to just try and get as much work done as possible.",
         "money":  0,
-        "energy": -1,
+        "energy": 0,
         "next":   "decisionwork"
       },
       "a3": {
@@ -565,7 +565,7 @@
     },
 
    "decisionwork" : {
-      "text":  "It has been a few months since you have started working at the factory. It is a tiring job, but you have not lost sight of sending money back home.\nLi Yan passes by at your dorm after work and you have a chat. She recently switched over to a different department and earns a bit more than before, but tells you that the working conditions are worse. She has no breaks at all and her overtime is much longer than yours. She mentions that the department is hiring and asks you if you were interested in applying.",
+      "text":  "It has been a while since you have started working at the factory. It is a tiring job, but you have not lost sight of sending money back home.\nLi Yan passes by at your dorm after work and you have a chat. She recently switched over to a different department and earns a bit more than before, but tells you that the working conditions are worse. She has no breaks at all and her overtime is much longer than yours. She mentions that the department is hiring and asks you if you were interested in applying.",
       "image": "decisionwork.png",
       "a1": {
         "text":   "You decide to switch over to her department as well.",
@@ -585,23 +585,23 @@
 
 
    "granny" : {
-      "text":  "Your parents are telling you that your grandmother is sick and she cannot afford her health care, they are asking if you could send them some money to help her pay for her medication.",
+      "text":  "Your parents tell you that your grandmother is sick and cannot afford her health care. They request that you send money to help pay for her medication. They need &yen;1000.",
       "image": "filler.png",
       "a1": {
-        "text":   "You send them $100.",
-        "money":  0,
-        "energy": 0,
-        "next":   "workcircle"
-      },
-      "a2": {
         "text":   "You send them nothing.",
         "money":  0,
         "energy": 0,
         "next":   "grannydead"
       },
+      "a2": {
+        "text":   "You send them &yen;600.",
+        "money":  -600,
+        "energy": 0,
+        "next":   "workcircle"
+      },
       "a3": {
-        "text":   "You send them $200.",
-        "money":  0,
+        "text":   "You send them &yen;1000.",
+        "money":  -1000,
         "energy": 0,
         "next":   "workcircle"
       }
@@ -628,29 +628,29 @@
       "a1": {
         "text":   "to do overtime (2 hours)",
         "money":  0,
-        "energy": 0,
+        "energy": -1,
         "next":   "exhaustedcircle"
       },
       "a2": {
         "text":   "to leave now and stay at home tomorrow to  fill up your energy.",
-        "money":  0,
-        "energy": 9,
-        "next":   "workcircle2"
+        "money":  -200,
+        "energy": 2,
+        "next":   "fillenergy"
       },
       "a3": {
         "text":   "to leave earlier.",
-        "money":  0,
-        "energy": 0,
+        "money":  30,
+        "energy": 1,
         "next":   "minuscircle"
       }
     },
 
    "minuscircle" : {
-      "text":  "You leave early, even though you know you could use the extra money.", 
+      "text":  "You leave early, even though you know you could use the extra money.",
       "image": "minus-reg.png",
       "a1": {
         "text":   "You are tired and go to bed early.",
-        "money":  -4.87,
+        "money":  0,
         "energy": 0,
         "next":   "workcircle2"
       },
@@ -661,11 +661,11 @@
     },
 
    "minuscircle2" : {
-      "text":  "You leave early, even though you know you could use the extra money.", 
+      "text":  "You leave early, even though you know you could use the extra money.",
       "image": "minus-reg.png",
       "a1": {
         "text":   "You are tired and go to bed early.",
-        "money":  -4.87,
+        "money":  0,
         "energy": 0,
         "next":   "granny"
       },
@@ -677,11 +677,11 @@
 
    "exhaustedcircle" : {
       "text":  "Your body hurts, you are tired and you really need some rest.",
-      "image": "firstday.png",
+      "image": "exhausted.png",
       "a1": {
-        "text": "YWhen you finally arrive at the dorms you collapse from exhaustion.",
+        "text": "When you finally arrive at the dorms you collapse from exhaustion.",
         "money":  0,
-        "energy": -1,
+        "energy": 0,
         "next":   "workcircle2"
       },
       "a2": {
@@ -696,7 +696,7 @@
       "a1": {
         "text": "When you finally arrive at the dorms you collapse from exhaustion.",
         "money":  0,
-        "energy": -2,
+        "energy": 0,
         "next":   "granny"
       },
       "a2": {
@@ -707,11 +707,11 @@
 
     "fillenergy": {
       "text":  "You spend the day relaxing and catching up with your family on the phone and at the end of the day you already feel much better.",
-      "image": "workbusy.png",
+      "image": "filler.png",
       "a1": {
-        "text":   "$30 are deducted from your wage.",
-        "money":  -30,
-        "energy": 2,
+        "text":   "&yen;200 are deducted from your wage.",
+        "money":  0,
+        "energy": 0,
         "next":   "workcircle2"
       },
       "a2": {
@@ -722,11 +722,11 @@
 
     "fillenergy2": {
       "text":  "You spend the day relaxing and catching up with your family on the phone and at the end of the day you already feel much better.",
-      "image": "workbusy.png",
+      "image": "filler.png",
       "a1": {
-        "text":   "$30 are deducted from your wage.",
-        "money":  -30,
-        "energy": 2,
+        "text":   "&yen;200 are deducted from your wage.",
+        "money":  0,
+        "energy": 0,
         "next":   "granny"
       },
       "a2": {
@@ -737,7 +737,7 @@
 
     "firedfill": {
       "text": "You haven't been to work on three occasions. The company has had enough and fired you. You don't receive this month wage. What will you do next?",
-      "image": "workbusy.png",
+      "image": "filler.png",
       "a1": {
       },
       "a2": {
@@ -750,13 +750,13 @@
       "text": "Your parents ask you to help them financially. Your grandmother used to bring some money in by the little work she was doing. You feel sorry for them, so:",
       "image": "exhausted.png",
       "a1": {
-        "text": "you send them $50.",
+        "text": "you send them &yen;50.",
         "money":  -50,
         "energy": 0,
         "next":   "workcircle"
       },
       "a2": {
-        "text": "you send them $100.",
+        "text": "you send them &yen;100.",
         "money":  -100,
         "energy": 0,
         "next":   "workcircle"
@@ -771,28 +771,28 @@
       "a1": {
         "text":   "to do overtime (4 hours)",
         "money":  0,
-        "energy": 0,
+        "energy": -2,
         "next":   "exhaustedcircle2"
       },
       "a2": {
         "text":   "to leave now and stay at home tomorrow to fill up your energy.",
-        "money":  0,
-        "energy": 0,
+        "money":  -200,
+        "energy": 2,
         "next":   "fillenergy2"
       },
       "a3": {
         "text":   "You go home with a bad feeling.",
-        "money":  0,
-        "energy": 0,
+        "money":  30,
+        "energy": 1,
         "next":   "minuscircle2"
       }
     },
 
    "wagecircle" : {
-      "text":  "After working almost a month, you ask L when you will get your wage. She tells you, it will be paid on the 20th of the next month. Twenty days later, they pay you. Since you are still in your probation period, you earn $211 and the rest of the attendance award. After the probation period your wage will be $228.",
+      "text":  "",
       "image": "wagecircle.png",
       "a1": {
-        "text":   "Now you are finally able to send some money back home!",
+        "text":   "After a month and 20 days you finally receive your paycheck.",
         "money":  227.35,
         "energy": 0,
         "next":   "workcircle"

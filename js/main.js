@@ -17,6 +17,8 @@
 
     var grannydead = false;
 
+    var grannymoney = 0;
+
     var leavingcounter = 0;
 
     var wage = true;
@@ -71,6 +73,7 @@
                     else if ((question === questions["minus"] || question === questions["minusbusy"] || question === questions["minuscircle"] || question === questions["minuscircle2"]) && minusDesc == false) {
                         question.text = questions["minusdesc"].text;
                         imgBlock.attr('src', 'image/minus.png');  
+                        minusDesc = true;
                     }
                     else if (question === questions["workcircle2"] && workhard == true) {
                         imgBlock.attr('src', 'image/work3.png');
@@ -79,35 +82,52 @@
                         imgBlock.attr('src', 'image/' + question.image);
                     }
                 }
-                
-                if ((question === questions["minus"] || question === questions["minusbusy"] || question === questions["minuscircle"] || question === questions["minuscircle2"]) && minusDesc == false) {
-                        $textElem.html(nl2br(questions["minusdesc"].text));
-                        minusDesc = true;  
-                } 
-                else {
-                    $textElem.html(nl2br(question.text));
-                }   
 
+                $textElem.html(nl2br(question.text));
+                var extraText = "";
                 // set button text if specified, if a2t use standard
                 if(question.a1.text) {
-                    $a1Button.html('&bull; ' + question.a1.text);
+                    if (question.a1.money < 0 && ((status.money + question.a1.money) < 0)) {
+                        extraText = '<span class="losing-money">' + Math.round((question.a1.money * 6.25)) + ' &#65509;</span>';
+                        $a1Button.addClass('disabledButton');
+                    } else {
+                        extraText = '';
+                        $a1Button.removeClass('disabledButton');
+                    }
+                    $a1Button.html('&bull; ' + question.a1.text + extraText);
                 } else {
                     $a1Button.html('');
                 }
                 if(question.a2.text){
-                    $a2Button.html('&bull; ' + question.a2.text);
+                    if (question.a2.money < 0 && ((status.money + question.a2.money) < 0)) {
+                        extraText = '<span class="losing-money">' + Math.round((question.a2.money * 6.25)) + ' &#65509;</span>';
+                        $a2Button.addClass('disabledButton');
+                    } else {
+                        extraText = '';
+                        $a2Button.removeClass('disabledButton');
+                    }
+                    $a2Button.html('&bull; ' + question.a2.text + extraText);
                 } else {
                     $a2Button.html('');
                 }
                 if(question.a3.text){
-                    $a3Button.html('&bull; ' + question.a3.text);
+                    if (question.a3.money < 0 && ((status.money + question.a3.money) < 0)) {
+                        extraText = '<span class="losing-money">' + Math.round((question.a3.money * 6.25)) + ' &#65509;</span>';
+                        $a3Button.addClass('disabledButton');
+                    } else {
+                        extraText = '';
+                        $a3Button.removeClass('disabledButton');
+                    }
+                    $a3Button.html('&bull; ' + question.a3.text + extraText);
                 } else {
                     $a3Button.text('');
                 }
-
                 // set actions for answers
                 $bothButtons.unbind('click');
                 $bothButtons.click(function (event) {
+                    if ($(this).hasClass('disabledButton')) {
+                        return false;
+                    }
                     var answer;
                     if (event.target.dataset.answer == 'a1')
                         answer = question.a1;
@@ -125,12 +145,18 @@
                     else if (question === questions["fillenergy"] || question === questions["fillenergy2"] ) {
                         leavingcounter++;
                     }
-                    else if (question === questions["granny"]) {
+                    else if (question === questions["granny"] && grannydead == false && answer == question.a2) {
+                        grannymoney += 1;
                         wage = false;
                     }
-                    else if ((question === questions["exhaustedcircle"] || question === questions["exhaustedcircle2"]) && workhard == true) {
+                    else if (question === questions["granny"] && (answer == question.a1 || answer == question.a3)) {
+                        wage = false;
+                    }
+                    else if ((question === questions["workcircle"] || question === questions["workcircle2"]) && answer == question.a1 && workhard == true) {
                         answer.energy = answer.energy * 2;        
                     } 
+                    
+
 
                     status.money += Math.round(answer.money);
                     status.energy += answer.energy;
@@ -147,8 +173,11 @@
                     if (!alreadyExausted && status.energy <= 0) {
                         alreadyExausted = true;
                         goToQuestion(questions['exhaustedquit']);
-                    }      
-                    else if ((question === questions["workcircle2"]) && !wage){
+                    }   
+                    else if (grannydead == false && grannymoney >= 3) {
+                        goToQuestion(questions['grannydead']);
+                    }   
+                    else if ((question === questions["exhaustedcircle2"] || question === questions["minuscircle2"] || question === questions["fillenergy2"]) && !wage){
                         wage = true;
                        goToQuestion(questions['wagecircle']);
                     }
@@ -242,7 +271,7 @@
                 } else { // https://www.youtube.com/watch?v=sdl658l5TTQ
                     moneyImgElem.attr('src','image/money/money5.png');
                 }
-                moneyElem.html (money + ' $ / ' + (money * 6.25) + ' ¥');
+                moneyElem.html (money + ' &#65509; / ' + (money / 6.25) + ' $');
             }
 
             // setup initial view

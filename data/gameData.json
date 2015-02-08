@@ -176,7 +176,7 @@
       },
       "a2": {
         "text":   "to take the taxi and see a bit more of Huizhou.",
-        "money":  0,
+        "money":  -20,
         "energy": 0,
         "next":   "taxi"
       },
@@ -200,7 +200,7 @@
     },
 
     "taxi" : {
-      "text":  "",
+      "text":  "You pay 20 &yen; for the ride.",
       "video": "<iframe width=\"700\" height=\"300\" src=\"http:\/\/www.youtube.com/embed/vPR7RyTS8DY?autoplay=1&rel=0\" frameborder=\"0\" allowfullscreen><\/iframe>",
       "a1": {
         "text":   "You arrive!",

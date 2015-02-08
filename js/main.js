@@ -88,7 +88,7 @@
                 if(question.a1.text) {
                     if (question.a1.money == 'Random') {
                         question.a1.money = Math.round((Math.random() * (question.a1.random_max - question.a1.random_min) + question.a1.random_min));
-                        question.text = question.text.replace('%s', Math.abs(question.a1.money));
+                        question.text = question.text.replace('%s', ((Math.abs(Math.round(question.a1.money * 6.25)))));
                     }
                     if (question.a1.money < 0 && ((status.money + question.a1.money) < 0)) {
                         extraText = '<span class="losing-money">' + Math.round((question.a1.money * 6.25)) + ' &#65509;</span>';

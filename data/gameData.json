@@ -13,7 +13,7 @@
                 "text": "Start",
                 "money": 0,
                 "energy": 0,
-                "next": "bills"
+                "next": "start1"
             },
             "a2": {},
             "a3": {}

@@ -609,7 +609,7 @@
 
     "grannydead" : {
       "text":  "Your grandmother wasn’t able to afford the medicamentation on her own. Since you weren’t able to help she died.",
-      "image": "filler.png",
+      "image": "grannydead.png",
       "a1": {
         "text":   "There is no time for grieve, you have to go back to work!",
         "money":  0,

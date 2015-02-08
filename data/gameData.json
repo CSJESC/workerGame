@@ -66,7 +66,7 @@
       }
     },
 
-    
+
    "contract1" : {
       "text":  "You are called back and invited to have a training session. You are shown circuit boards that the factory produces for two big companies. The job seems very exhausting, especially because you are required to stand on your feet all day long. You decide:",
       "image": "contract1.png",
@@ -646,7 +646,7 @@
     },
 
    "minuscircle" : {
-      "text":  "You leave early, even though you know you could use the extra money.", 
+      "text":  "You leave early, even though you know you could use the extra money.",
       "image": "minus-reg.png",
       "a1": {
         "text":   "You are tired and go to bed early.",
@@ -661,7 +661,7 @@
     },
 
    "minuscircle2" : {
-      "text":  "You leave early, even though you know you could use the extra money.", 
+      "text":  "You leave early, even though you know you could use the extra money.",
       "image": "minus-reg.png",
       "a1": {
         "text":   "You are tired and go to bed early.",

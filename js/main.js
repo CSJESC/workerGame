@@ -84,20 +84,41 @@
                 }
 
                 $textElem.html(nl2br(question.text));
-
+                var extraText = "";
                 // set button text if specified, if a2t use standard
                 if(question.a1.text) {
-                    $a1Button.html('&bull; ' + question.a1.text);
+                    if (question.a1.money < 0) {
+                        extraText = '<span class="losing-money">' + question.a1.money + '</span>';
+                    } else if (question.a1.money > 0)  {
+                        extraText = '<span class="gaining-money">+' + question.a1.money + '</span>';
+                    } else {
+                        extraText = '';
+                    }
+                    $a1Button.html('&bull; ' + question.a1.text + extraText);
                 } else {
                     $a1Button.html('');
                 }
                 if(question.a2.text){
-                    $a2Button.html('&bull; ' + question.a2.text);
+                    if (question.a2.money < 0) {
+                        extraText = '<span class="losing-money">' + question.a2.money + '</span>';
+                    } else if (question.a2.money > 0)  {
+                        extraText = '<span class="gaining-money">+' + question.a2.money + '</span>';
+                    } else {
+                        extraText = '';
+                    }
+                    $a2Button.html('&bull; ' + question.a2.text + extraText);
                 } else {
                     $a2Button.html('');
                 }
                 if(question.a3.text){
-                    $a3Button.html('&bull; ' + question.a3.text);
+                    if (question.a3.money < 0) {
+                        extraText = '<span class="losing-money">' + question.a3.money + '</span>';
+                    } else if (question.a3.money > 0)  {
+                        extraText = '<span class="gaining-money">+' + question.a3.money + '</span>';
+                    } else {
+                        extraText = '';
+                    }
+                    $a3Button.html('&bull; ' + question.a3.text + extraText);
                 } else {
                     $a3Button.text('');
                 }

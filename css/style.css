@@ -181,3 +181,14 @@ footer .left {
   filter: none;
   -webkit-filter: none;
 }
+
+.losing-money {
+    color: #FF5555;
+    float: right;
+}
+
+
+.gaining-money {
+    color: #55FF55;
+    float: right;
+}

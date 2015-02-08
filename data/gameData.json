@@ -360,6 +360,21 @@
                 "text": "After the probation period your wage will be &yen;1400 when you will finally be able to send some money back home!",
                 "money": 1360,
                 "energy": 0,
+                "next": "billsstart"
+            },
+            "a2": {},
+            "a3": {}
+        },
+
+        "billsstart": {
+            "text": "You have to pay your monthly expenses of %s &yen;.",
+            "image": "filler.png",
+            "a1": {
+                "text": "You pay the bills.",
+                "money": "Random",
+                "random_min": -1350,
+                "random_max": -500,
+                "energy": 0,
                 "next": "drinking"
             },
             "a2": {},

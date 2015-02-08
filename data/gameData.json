@@ -1,826 +1,744 @@
 {
-  "status": {
-    "money":  0,
-    "energy": 10
-  },
-
-  "questions": {
-
-    "index" : {
-      "text":  "This is a game based on the working conditions in the electronic supply chain. It’s a fictional story based on a factual <a href=\"http://www.chinalaborwatch.org/report/98\">report about HEG technologies by China Labour Watch</a> and <a href=\"http://www.bbc.com/news/business-30532463\">the BBC report on Pegatron</a> in China. \n Your decisions in the game will not only influence your story, but also your energy level and the money you have.",
-      "image": "groupPhoto.png",
-      "a1": {
-        "text":   "Start",
-        "money":  0,
-        "energy": 0,
-        "next":   "start1"
-      },
-      "a2": {
-      },
-      "a3": {
-      }
+    "status": {
+        "money": 0,
+        "energy": 10
     },
 
-    "start1" : {
-      "text":  "Your name is Mei. In order to support your family you have decided to move to Huizhou in the Guangdong province- a city in southern China which has seen its population grow from a mere 300,000 in 1990 to over 1.8 million today supported by its well-known technology sector.",
-      "image": "start1.png",
-      "a1": {
-        "text":   "Your family purchased your bus tickets and hand you &yen500 so you could go to work and send money back home.",
-        "money": 500,
-        "energy": 0,
-        "next":   "start2"
-      },
-      "a2": {
-      },
-      "a3": {
-      }
-    },
+    "questions": {
 
-    "start2" : {
-      "text":  "After you rent a room for 250&yen; you hear one of the factories is hiring workers aged 16 to 30. Since you meet these qualifications, you decide to apply. You just have to fill in a form and decide:",
-      "image": "start2.png",
-      "a1": {
-        "text":   "not to wait for the call back, just go home",
-        "money":  -250,
-        "energy": 0,
-        "next":   "goinghome"
-      },
-      "a2": {
-        "text":   "wait for them to call back",
-        "money":  -250,
-        "energy": 0,
-        "next":   "contract1"
-      },
-      "a3": {
-	  }
-    },
+        "index": {
+            "text": "This is a game based on the working conditions in the electronic supply chain. It’s a fictional story based on a factual <a href=\"http://www.chinalaborwatch.org/report/98\">report about HEG technologies by China Labour Watch</a> and <a href=\"http://www.bbc.com/news/business-30532463\">the BBC report on Pegatron</a> in China. \n Your decisions in the game will not only influence your story, but also your energy level and the money you have.",
+            "image": "groupPhoto.png",
+            "a1": {
+                "text": "Start",
+                "money": 0,
+                "energy": 0,
+                "next": "bills"
+            },
+            "a2": {},
+            "a3": {}
+        },
 
-    "goinghome" : {
-      "text": "You return to your hometown without a job and you spent all the money your parents lent you to find a job. What are you going to do now?",
-      "image": "goinghome.png",
-      "a1": {
-      },
-      "a2": {
-      },
-      "a3": {
-      }
-    },
+        "start1": {
+            "text": "Your name is Mei. In order to support your family you have decided to move to Huizhou in the Guangdong province- a city in southern China which has seen its population grow from a mere 300,000 in 1990 to over 1.8 million today supported by its well-known technology sector.",
+            "image": "start1.png",
+            "a1": {
+                "text": "Your family purchased your bus tickets and hand you &yen500 so you could go to work and send money back home.",
+                "money": 500,
+                "energy": 0,
+                "next": "start2"
+            },
+            "a2": {},
+            "a3": {}
+        },
 
+        "start2": {
+            "text": "After you rent a room for 250&yen; you hear one of the factories is hiring workers aged 16 to 30. Since you meet these qualifications, you decide to apply. You just have to fill in a form and decide:",
+            "image": "start2.png",
+            "a1": {
+                "text": "not to wait for the call back, just go home",
+                "money": -250,
+                "energy": 0,
+                "next": "goinghome"
+            },
+            "a2": {
+                "text": "wait for them to call back",
+                "money": -250,
+                "energy": 0,
+                "next": "contract1"
+            },
+            "a3": {}
+        },
 
-   "contract1" : {
-      "text":  "You are called back and invited to have a training session. You are shown circuit boards that the factory produces for two big companies. The job seems very exhausting, especially because you are required to stand on your feet all day long. You decide:",
-      "image": "contract1.png",
-      "a1": {
-        "text":   "to start working there",
-        "money":  0,
-        "energy": 0,
-        "next":   "test"
-      },
-      "a2": {
-        "text":   "to look for a job somewhere else",
-        "money":  0,
-        "energy": 0,
-        "next":   "start2"
-      },
-      "a3": {
-      }
-    },
-
-   "test" : {
-      "text":  "The introductory training lasts three days and concludes with a short exam.",
-      "video": "<iframe width=\"700\" height=\"300\" src=\"https://www.youtube.com/embed/kSvT02q4h40?start=74&end=104&version=3&rel=0&autoplay=1\" frameborder=\"0\" allowfullscreen></iframe>",
-      "a1": {
-        "text":   "You pass.",
-        "money":  0,
-        "energy": 0,
-        "next":   "contract2"
-      },
-      "a2": {
-      },
-      "a3": {
-      }
-    },
-
-    "contract2" : {
-      "text":  "It's time to sign the employment contract. You and a dozen of your new possible colleagues meet with one of the plant managers. You barely have time to skim through the contract before being asked to sign  multiple pages. You decide:",
-      "image": "contract2.png",
-      "a1": {
-        "text":   "This is unacceptable. You don't sign it and go back home. ",
-        "money":  0,
-        "energy": 0,
-        "next":   "goinghome2"
-      },
-      "a2": {
-        "text":   "You don't really have any other option but to sign in order to support your family.",
-        "money":  0,
-        "energy": 0,
-        "next":   "id"
-      },
-      "a3": {
-      }
-    },
-
-    "goinghome2" : {
-      "text": "You are back home without any money nor a job. So what do you do now?",
-      "image": "goinghome2.png",
-      "a1": {
-      },
-      "a2": {
-      },
-      "a3": {
-      }
-    },
-
-    "id" : {
-      "text":  "The manager asks you for your ID. You feel very uncomfortable handing it over to someone else, but they insist on it. You know they are probably not going to give it back to you until you resign. So you:",
-      "video": "<iframe width=\"700\" height=\"300\" src=\"https://www.youtube.com/embed/kSvT02q4h40?start=51&end=69&version=3&rel=0&autoplay=1\" frameborder=\"0\" allowfullscreen></iframe>",
-      "a1": {
-        "text":   "give them your ID anyway. You really need the job.",
-        "money":  0,
-        "energy": 0,
-        "next":   "dorms"
-      },
-      "a2": {
-        "text":   "keep it and decide to leave as this makes you uncomfortable.",
-        "money":  0,
-        "energy": 0,
-        "next":   "goinghome"
-      },
-      "a3": {
-      }
-    },
-
-    "dorms" : {
-      "text":  "Your colleague Li Yan shows you the way to your dormitory. She explains: there are different dormitories, but only one is close to the factory. Yours, unfortunately, is far away. You stay with 8 other people in one room. The rent is free, but you have to pay 100&yen; for facilities in advance.",
-      "image": "dorms.png",
-      "a1": {
-        "text":   "You’ve had an exhausting day and go to bed.",
-        "money":  -100,
-        "energy": 0,
-        "next":   "dorms-morning"
-      },
-      "a2": {
-      },
-      "a3": {
-      }
-    },
-
-    "dorms-morning" : {
-      "text":  "On your first day you awake before the others and get dressed quietly.Some of them worked the night shift and just went to bed while others have not yet returned. You meet Li Yan outside your room and she tells you to take either the shuttle bus or the motorcycle taxi. They all try to take the bus, but it's up to you as long as you're on time. You decide:",
-      "image": "dorms-morning.png",
-      "a1": {
-        "text":   "to take the bus with everyone else.",
-        "money":  0,
-        "energy": 0,
-        "next":   "bus"
-      },
-      "a2": {
-        "text":   "to take the taxi and see a bit more of Huizhou.",
-        "money":  -20,
-        "energy": 0,
-        "next":   "taxi"
-      },
-      "a3": {
-      }
-    },
-
-    "bus" : {
-      "text":  "The bus is crowded, but it's fine. You have the opportunity to chat with some of your coworkers and get to know them a bit...",
-      "image": "bus.png",
-      "a1": {
-        "text":   "You arrive!",
-        "money":  0,
-        "energy": 0,
-        "next":   "telefon"
-      },
-      "a2": {
-      },
-      "a3": {
-      }
-    },
-
-    "taxi" : {
-      "text":  "You pay 20 &yen; for the ride.",
-      "video": "<iframe width=\"700\" height=\"300\" src=\"http:\/\/www.youtube.com/embed/vPR7RyTS8DY?autoplay=1&rel=0\" frameborder=\"0\" allowfullscreen><\/iframe>",
-      "a1": {
-        "text":   "You arrive!",
-        "money":  0,
-        "energy": 0,
-        "next":   "telefon"
-      },
-      "a2": {
-      },
-      "a3": {
-      }
-    },
-
-    "telefon" : {
-      "text":  "You arrive at the factory. Since your grandmother isn't feeling well you promised to call her today. \n But one of the security guards  sees your phone and takes it from you. You proceed to:",
-      "image": "telefon.png",
-      "a1": {
-        "text":   " ask him to give it back to you.",
-        "money":  0,
-        "energy": 0,
-        "next":   "advicetelefon"
-      },
-      "a2": {
-        "text":   "just let him go. It's your first day and you don't want to cause trouble.",
-        "money":  0,
-        "energy": 0,
-        "next":   "givetelefon"
-      },
-      "a3": {
-      }
-    },
-
-    "advicetelefon" : {
-      "text":  "The security guard doesn’t listen to you and as he walks away, Li Yan explains to you that phones in the factory are not allowed.",
-      "image": "advicetelefon.png",
-      "a1": {
-        "text":   "start working",
-        "money":  0,
-        "energy": 0,
-        "next":   "firstday"
-      },
-      "a2": {
-      },
-      "a3": {
-      }
-    },
-
-    "givetelefon" : {
-      "text":  "You hand him the telephone and he walks away.",
-      "image": "givetelefon.png",
-      "a1": {
-        "text":   "start working",
-        "money":  0,
-        "energy": 0,
-        "next":   "firstday"
-      },
-      "a2": {
-      },
-      "a3": {
-      }
-    },
-
-   "firstday" : {
-      "text":  "The factory is huge and there are a lot of people around you. Since you are in charge of the circuit boards you are only allowed to take a break every two hours for ten minutes. You can’t really talk with coworkers, you have to concentrate as to not make mistakes. After eight hours, your feet and back hurt. Other workers notify you that you are supposed to work at least two more hours  over time.",
-      "image": "filler.png",
-      "a1": {
-        "text":   "You feel so tired and go back to the dorms.",
-        "money":  -30,
-        "energy": 1,
-        "next":   "minus"
-      },
-      "a2": {
-        "text":   "You fulfill the obligation to stay and work at least two hours more.",
-        "money":  0,
-        "energy": -1,
-        "next":   "exhausted"
-      },
-      "a3": {
-      }
-    },
-
-    "minusdesc" : {
-      "text":  "You leave early. Your coworkers are surprised and explain to you the attendance award: the average wage they earn is &yen3000, but this is including any awards you may earn such as the attendance award. Every time you leave early,  &yen30 is deducted from a possible &yen120. If you leave early or come late three times, you forfeit the award entirely.",
-      "image": "minus-reg.png",
-      "a1": {
-        "text":   "Worried, you go to bed.",
-        "money":  0,
-        "energy": 0,
-        "next":   "workbusy"
-      },
-      "a2": {
-      },
-      "a3": {
-      }
-    },
-
-   "minus" : {
-      "text":  "You leave early even though you know you could use the extra money..",
-      "image": "minus-reg.png",
-      "a1": {
-        "text":   "Worried, you go to bed.",
-        "money":  0,
-        "energy": 0,
-        "next":   "workbusy"
-      },
-      "a2": {
-      },
-      "a3": {
-      }
-    },
-
-   "minusbusy" : {
-      "text":  "You leave early even though you know you could use the extra money.",
-      "image": "minus-reg.png",
-      "a1": {
-        "text":   "Worried, you go to bed.",
-        "money":  0,
-        "energy": 0,
-        "next":   "wage"
-      },
-      "a2": {
-      },
-      "a3": {
-      }
-    },
-
-   "exhausted" : {
-      "text":  "Your body hurts, you are tired and you really need some rest. When you finally arrive at the dorms you collapse from exhaustion.",
-      "image": "exhausted.png",
-      "a1": {
-        "text":   "You finally arrive at the dorms and you just fall completly exhausted in your bed.",
-        "money":  0,
-        "energy": 0,
-        "next":   "workbusy"
-      },
-      "a2": {
-      },
-      "a3": {
-      }
-    },
-
-       "exhaustedbusy" : {
-      "text":  "Your body hurts, you are tired and you really need some rest. When you finally arrive at the dorms you collapse from exhaustion.",
-      "image": "exhausted.png",
-      "a1": {
-        "text":   "You finally arrive at the dorms and you just fall completly exhausted in your bed.",
-        "money":  0,
-        "energy": 0,
-        "next":   "wage"
-      },
-      "a2": {
-      },
-      "a3": {
-      }
-    },
-
-   "exhaustedquit" : {
-      "text":  "You collapse. You can barely see and your whole body hurts. Li Yan brings you to the hospital since there is no way you could go on your own.",
-      "image": "exhausted.png",
-      "a1": {
-        "text": "Since the company doesn’t cover your health insurance, you have to pay &yen;950.",
-        "money":  -950,
-        "energy": 0,
-        "next":   "quit"
-      },
-      "a2": {
-      },
-      "a3": {
-      }
-    },
-
-   "quit" : {
-      "text":  "When you try to resign, they make it so hard for you. It is practically impossible. They refuse to give you your ID. After a lot of hassle you leave without getting paid and return to your family. You spent more of their money than you were able to earn.",
-      "image": "arrivingBackAtHome.gif",
-      "a1": {
-      },
-      "a2": {
-      },
-      "a3": {
-      }
-    },
-
-   "workbusy" : {
-      "text":  "The next day you are back to work. Li Yan tells you it is a busy day, it is delivery day and you have to perform accordingly. Your work is exhausting and after working ten hours you are asked to stay longer. ",
-      "video": "<iframe width=\"700\" height=\"300\" src=\"https://www.youtube.com/embed/kSvT02q4h40?start=13&end=31&version=3&rel=0&autoplay=1\" frameborder=\"0\" allowfullscreen></iframe>",
-      "a1": {
-        "text":   "You decide to stay longer.",
-        "money":  0,
-        "energy": -2,
-        "next":   "exhaustedbusy"
-      },
-      "a2": {
-        "text":   "You go home with a bad feeling.",
-        "money": -30,
-        "energy": 1,
-        "next":   "minusbusy"
-      },
-      "a3": {
-      }
-    },
-
-   "wage" : {
-      "text":  "After working almost a month, Li Yan tells you your wage will be paid on the 20th of the following month. Since you are still in your probation period, you earn &yen;1300 and the rest of the attendance award twenty days later.",
-      "image": "wage.png",
-      "a1": {
-        "text":   "After the probation period your wage will be &yen;1400 when you will finally be able to send some money back home!",
-        "money":  1360,
-        "energy": 0,
-        "next":   "drinking"
-      },
-      "a2": {
-      },
-      "a3": {
-      }
-    },
-
-   "drinking" : {
-      "text":  "As you slowly adjust to your working conditions, one thing is still hard to get used to: you are not allowed to drink while working. You have breaks, but are still often thirsty. If you want to go to the restroom, you need to get a pass.",
-      "image": "drinking.png",
-      "a1": {
-        "text":   "Otherwise you are not allowed to use the restroom.",
-        "money":  0,
-        "energy": 0,
-        "next":   "health"
-      },
-      "a2": {
-      },
-      "a3": {
-      }
-    },
-
-    "health" : {
-      "text": "You talk with coworkers who use acid to make the circuit boards you are working on. It seems they were never trained for safety hazards or potential health risks. \n That makes you feel confused about whether or not you really understand what potential risks this job poses for your health.",
-        "image": "health.png",
-      "a1": {
-        "text":   "You decide to complain to your superior, since you do not want to take any risks concerning your health.",
-        "money":  0,
-        "energy": 0,
-        "next":   "complainhealth"
-      },
-      "a2": {
-        "text":   "You ignore your gut feeling and just continue your day.",
-        "money":  0,
-        "energy": 0,
-        "next":   "studentsintro"
-      },
-      "a3": {
-      }
-      },
-
-    "complainhealth" : {
-      "text": "You raise your concerns to your supervisor and ask for better safety equipment. He tells you not to worry and to get back to work.",
-        "image": "health.png",
-      "a1": {
-        "text":   "You insist on having the matter looked into.",
-        "money":  0,
-        "energy": 0,
-        "next":   "firedhealth"
-      },
-      "a2": {
-        "text":   "You follow his orders and go back to work.",
-        "money":  0,
-        "energy": 0,
-        "next":   "studentsintro"
-      },
-      "a3": {
-      }
-    },
-
-    "firedhealth" : {
-      "text": "The supervisor becomes angry and tells you to mind your own business. He fires you on the spot.",
-        "image": "health.png",
-      "a1": {
-      },
-      "a2": {
-      },
-      "a3": {
-      }
-    },
-
-   "studentsintro" : {
-      "text":  "You get to know a group of students from three different provinces: Hubei, Hunan and Guizhou. You talk with Yong, one of the students you meet on the way back to the dorms after work. He studies at a technical school and signed a three month contract at a labor dispatch company. They were not trained before starting work, they don't get paid for over hours or subsidy for the night shift. Yong tells you they are freshmen and junior students at college.",
-      "image": "studentsintro.png",
-      "a1": {
-        "text":   "You are astonished at how hard these young college students work.",
-        "money":  0,
-        "energy": 0,
-        "next":   "childworker"
-      },
-      "a2": {
-      },
-      "a3": {
-      }
-    },
-
-    "childworker" : {
-      "text": "Another issue that troubles you is that of the child workers. They work extremely hard too. They are also hired by a labor dispatch company and the management tries to make everyone believe that they are of legal age when clearly they are not.",
-      "image": "childworker.png",
-      "a1": {
-        "text":   "You know it’s common to have children working even though it is illegal, but there is not much you can do about it.",
-        "money":  0,
-        "energy": 0,
-        "next":   "studentsadvice"
-      },
-      "a2": {
-      },
-      "a3": {
-      }
-      },
-
-   "studentsadvice" : {
-      "text":  "After a month, Yong approaches you to ask for your advice. He says the work is too difficult for him and a lot of other students. He spoke with almost 50 students who said they couldn't tolerate the harsh conditions any longer. His supervisor already told him he would not allow students to leave no matter how many quit together. You tell him:",
-      "image": "studentsadvice.png",
-      "a1": {
-        "text":   "to take care of himself and quit.",
-        "money":  -250,
-        "energy": 0,
-        "next":   "studentsunpaid"
-      },
-      "a2": {
-        "text":   "to be responsible and keep the job - it's only two months left anyway.",
-        "money":  0,
-        "energy": -1,
-        "next":   "studentsexhausted"
-      },
-      "a3": {
-      }
-    },
-
-   "studentsunpaid" : {
-      "text":  "Yong and the others decide to take your advice and quit the next day. The supervisor, however,  does not accept their resignations. As a result, they don't get paid their wages or their way back home.",
-      "image": "studentsunpaid.png",
-      "a1": {
-        "text":   "You give Yong and two other students money for the bus back home and heavy-hearted you say good bye to them.",
-        "money":  0,
-        "energy": 0,
-        "next":   "decisionwork"
-      },
-      "a2": {
-      },
-      "a3": {
-      }
-    },
-
-   "studentsexhausted" : {
-      "text":  "Yong and the others stay at the factory. They are extremely exhausted in the evenings and you try to cover their shift for them as often as you can. It is pretty exhausting for you.",
-      "image": "filler.png",
-      "a1": {
-        "text":   "You try to convince them to leave their jobs, the students should not be working that much.",
-        "money":  -40,
-        "energy": 0,
-        "next":   "studentsunpaid"
-      },
-      "a2": {
-        "text":   "You worry about the students but you know they need to make ends meet, so you tell them to just try and get as much work done as possible.",
-        "money":  0,
-        "energy": 0,
-        "next":   "decisionwork"
-      },
-      "a3": {
-      }
-    },
-
-   "decisionwork" : {
-      "text":  "It has been a while since you have started working at the factory. It is a tiring job, but you have not lost sight of sending money back home.\nLi Yan passes by at your dorm after work and you have a chat. She recently switched over to a different department and earns a bit more than before, but tells you that the working conditions are worse. She has no breaks at all and her overtime is much longer than yours. She mentions that the department is hiring and asks you if you were interested in applying.",
-      "image": "decisionwork.png",
-      "a1": {
-        "text":   "You decide to switch over to her department as well.",
-        "money":  0,
-        "energy": 0,
-        "next":   "granny"
-      },
-      "a2": {
-        "text":   "You decide stay at your department. The extra money is not worth the grueling conditions.",
-        "money":  0,
-        "energy": 0,
-        "next":   "granny"
-      },
-      "a3": {
-      }
-    },
+        "goinghome": {
+            "text": "You return to your hometown without a job and you spent all the money your parents lent you to find a job. What are you going to do now?",
+            "image": "goinghome.png",
+            "a1": {},
+            "a2": {},
+            "a3": {}
+        },
 
 
-   "granny" : {
-      "text":  "Your parents tell you that your grandmother is sick and cannot afford her health care. They request that you send money to help pay for her medication. They need &yen;1000.",
-      "image": "filler.png",
-      "a1": {
-        "text":   "You send them nothing.",
-        "money":  0,
-        "energy": 0,
-        "next":   "grannydead"
-      },
-      "a2": {
-        "text":   "You send them &yen;600.",
-        "money":  -600,
-        "energy": 0,
-        "next":   "workcircle"
-      },
-      "a3": {
-        "text":   "You send them &yen;1000.",
-        "money":  -1000,
-        "energy": 0,
-        "next":   "workcircle"
-      }
-    },
+        "contract1": {
+            "text": "You are called back and invited to have a training session. You are shown circuit boards that the factory produces for two big companies. The job seems very exhausting, especially because you are required to stand on your feet all day long. You decide:",
+            "image": "contract1.png",
+            "a1": {
+                "text": "to start working there",
+                "money": 0,
+                "energy": 0,
+                "next": "test"
+            },
+            "a2": {
+                "text": "to look for a job somewhere else",
+                "money": 0,
+                "energy": 0,
+                "next": "start2"
+            },
+            "a3": {}
+        },
 
-    "grannydead" : {
-      "text":  "Your grandmother wasn’t able to afford the medicamentation on her own. Since you weren’t able to help she died.",
-      "image": "grannydead.png",
-      "a1": {
-        "text":   "There is no time for grieve, you have to go back to work!",
-        "money":  0,
-        "energy": 0,
-        "next":   "workcircle"
-      },
-      "a2": {
-      },
-      "a3": {
-      }
-    },
+        "test": {
+            "text": "The introductory training lasts three days and concludes with a short exam.",
+            "video": "<iframe width=\"700\" height=\"300\" src=\"https://www.youtube.com/embed/kSvT02q4h40?start=74&end=104&version=3&rel=0&autoplay=1\" frameborder=\"0\" allowfullscreen></iframe>",
+            "a1": {
+                "text": "You pass.",
+                "money": 0,
+                "energy": 0,
+                "next": "contract2"
+            },
+            "a2": {},
+            "a3": {}
+        },
 
-   "workcircle" : {
-      "text":  "It’s always the same. Standing on the assembly line and attach this thing to the circuit board. Again and again. As everyday, you have to decide:",
-      "image": "work1.png",
-      "a1": {
-        "text":   "to do overtime (2 hours)",
-        "money":  0,
-        "energy": -1,
-        "next":   "exhaustedcircle"
-      },
-      "a2": {
-        "text":   "to leave now and stay at home tomorrow to  fill up your energy.",
-        "money":  -200,
-        "energy": 2,
-        "next":   "fillenergy"
-      },
-      "a3": {
-        "text":   "to leave earlier.",
-        "money":  -30,
-        "energy": 1,
-        "next":   "minuscircle"
-      }
-    },
+        "contract2": {
+            "text": "It's time to sign the employment contract. You and a dozen of your new possible colleagues meet with one of the plant managers. You barely have time to skim through the contract before being asked to sign  multiple pages. You decide:",
+            "image": "contract2.png",
+            "a1": {
+                "text": "This is unacceptable. You don't sign it and go back home. ",
+                "money": 0,
+                "energy": 0,
+                "next": "goinghome2"
+            },
+            "a2": {
+                "text": "You don't really have any other option but to sign in order to support your family.",
+                "money": 0,
+                "energy": 0,
+                "next": "id"
+            },
+            "a3": {}
+        },
 
-   "minuscircle" : {
-      "text":  "You leave early, even though you know you could use the extra money.",
-      "image": "minus-reg.png",
-      "a1": {
-        "text":   "You are tired and go to bed early.",
-        "money":  0,
-        "energy": 0,
-        "next":   "workcircle2"
-      },
-      "a2": {
-      },
-      "a3": {
-      }
-    },
+        "goinghome2": {
+            "text": "You are back home without any money nor a job. So what do you do now?",
+            "image": "goinghome2.png",
+            "a1": {},
+            "a2": {},
+            "a3": {}
+        },
 
-   "minuscircle2" : {
-      "text":  "You leave early, even though you know you could use the extra money.",
-      "image": "minus-reg.png",
-      "a1": {
-        "text":   "You are tired and go to bed early.",
-        "money":  0,
-        "energy": 0,
-        "next":   "granny"
-      },
-      "a2": {
-      },
-      "a3": {
-      }
-    },
+        "id": {
+            "text": "The manager asks you for your ID. You feel very uncomfortable handing it over to someone else, but they insist on it. You know they are probably not going to give it back to you until you resign. So you:",
+            "video": "<iframe width=\"700\" height=\"300\" src=\"https://www.youtube.com/embed/kSvT02q4h40?start=51&end=69&version=3&rel=0&autoplay=1\" frameborder=\"0\" allowfullscreen></iframe>",
+            "a1": {
+                "text": "give them your ID anyway. You really need the job.",
+                "money": 0,
+                "energy": 0,
+                "next": "dorms"
+            },
+            "a2": {
+                "text": "keep it and decide to leave as this makes you uncomfortable.",
+                "money": 0,
+                "energy": 0,
+                "next": "goinghome"
+            },
+            "a3": {}
+        },
 
-   "exhaustedcircle" : {
-      "text":  "Your body hurts, you are tired and you really need some rest.",
-      "image": "exhausted.png",
-      "a1": {
-        "text": "When you finally arrive at the dorms you collapse from exhaustion.",
-        "money":  0,
-        "energy": 0,
-        "next":   "workcircle2"
-      },
-      "a2": {
-      },
-      "a3": {
-      }
-    },
+        "dorms": {
+            "text": "Your colleague Li Yan shows you the way to your dormitory. She explains: there are different dormitories, but only one is close to the factory. Yours, unfortunately, is far away. You stay with 8 other people in one room. The rent is free, but you have to pay 100&yen; for facilities in advance.",
+            "image": "dorms.png",
+            "a1": {
+                "text": "You’ve had an exhausting day and go to bed.",
+                "money": -100,
+                "energy": 0,
+                "next": "dorms-morning"
+            },
+            "a2": {},
+            "a3": {}
+        },
 
-   "exhaustedcircle2" : {
-      "text": "Your body hurts, you are tired and you really need some rest. When you finally arrive at the dorms you collapse from exhaustion.",
-      "image": "exhausted.png",
-      "a1": {
-        "text": "When you finally arrive at the dorms you collapse from exhaustion.",
-        "money":  0,
-        "energy": 0,
-        "next":   "granny"
-      },
-      "a2": {
-      },
-      "a3": {
-      }
-    },
+        "dorms-morning": {
+            "text": "On your first day you awake before the others and get dressed quietly.Some of them worked the night shift and just went to bed while others have not yet returned. You meet Li Yan outside your room and she tells you to take either the shuttle bus or the motorcycle taxi. They all try to take the bus, but it's up to you as long as you're on time. You decide:",
+            "image": "dorms-morning.png",
+            "a1": {
+                "text": "to take the bus with everyone else.",
+                "money": 0,
+                "energy": 0,
+                "next": "bus"
+            },
+            "a2": {
+                "text": "to take the taxi and see a bit more of Huizhou.",
+                "money": -20,
+                "energy": 0,
+                "next": "taxi"
+            },
+            "a3": {}
+        },
 
-    "fillenergy": {
-      "text":  "You spend the day relaxing and catching up with your family on the phone and at the end of the day you already feel much better.",
-      "image": "filler.png",
-      "a1": {
-        "text":   "&yen;200 are deducted from your wage.",
-        "money":  0,
-        "energy": 0,
-        "next":   "workcircle2"
-      },
-      "a2": {
-      },
-      "a3": {
-      }
-    },
+        "bus": {
+            "text": "The bus is crowded, but it's fine. You have the opportunity to chat with some of your coworkers and get to know them a bit...",
+            "image": "bus.png",
+            "a1": {
+                "text": "You arrive!",
+                "money": 0,
+                "energy": 0,
+                "next": "telefon"
+            },
+            "a2": {},
+            "a3": {}
+        },
 
-    "fillenergy2": {
-      "text":  "You spend the day relaxing and catching up with your family on the phone and at the end of the day you already feel much better.",
-      "image": "filler.png",
-      "a1": {
-        "text":   "&yen;200 are deducted from your wage.",
-        "money":  0,
-        "energy": 0,
-        "next":   "granny"
-      },
-      "a2": {
-      },
-      "a3": {
-      }
-    },
+        "taxi": {
+            "text": "You pay 20 &yen; for the ride.",
+            "video": "<iframe width=\"700\" height=\"300\" src=\"http:\/\/www.youtube.com/embed/vPR7RyTS8DY?autoplay=1&rel=0\" frameborder=\"0\" allowfullscreen><\/iframe>",
+            "a1": {
+                "text": "You arrive!",
+                "money": 0,
+                "energy": 0,
+                "next": "telefon"
+            },
+            "a2": {},
+            "a3": {}
+        },
 
-    "firedfill": {
-      "text": "You haven't been to work on three occasions. The company has had enough and fired you. You don't receive this month wage. What will you do next?",
-      "image": "filler.png",
-      "a1": {
-      },
-      "a2": {
-      },
-      "a3": {
-      }
-    },
+        "telefon": {
+            "text": "You arrive at the factory. Since your grandmother isn't feeling well you promised to call her today. \n But one of the security guards  sees your phone and takes it from you. You proceed to:",
+            "image": "telefon.png",
+            "a1": {
+                "text": " ask him to give it back to you.",
+                "money": 0,
+                "energy": 0,
+                "next": "advicetelefon"
+            },
+            "a2": {
+                "text": "just let him go. It's your first day and you don't want to cause trouble.",
+                "money": 0,
+                "energy": 0,
+                "next": "givetelefon"
+            },
+            "a3": {}
+        },
 
-    "helpparents" : {
-      "text": "Your parents ask you to help them financially. Your grandmother used to bring some money in by the little work she was doing. You feel sorry for them, so:",
-      "image": "exhausted.png",
-      "a1": {
-        "text": "you send them &yen;350.",
-        "money":  -350,
-        "energy": 0,
-        "next":   "workcircle"
-      },
-      "a2": {
-        "text": "you send them &yen;700.",
-        "money":  -700,
-        "energy": 0,
-        "next":   "workcircle"
-      },
-      "a3": {
-        "text": "you are not able to send them anything and feel bad about it.",
-        "money":  0,
-        "energy": -1,
-        "next":   "workcircle"
-      }
-    },
+        "advicetelefon": {
+            "text": "The security guard doesn’t listen to you and as he walks away, Li Yan explains to you that phones in the factory are not allowed.",
+            "image": "advicetelefon.png",
+            "a1": {
+                "text": "start working",
+                "money": 0,
+                "energy": 0,
+                "next": "firstday"
+            },
+            "a2": {},
+            "a3": {}
+        },
 
-   "workcircle2" : {
-      "text":  "It’s always the same. Standing on the assembly line and attach this thing to the circuit board. Again and again. As everyday, you have to decide:",
-      "image": "work2.png",
-      "a1": {
-        "text":   "to do overtime (4 hours)",
-        "money":  0,
-        "energy": -2,
-        "next":   "exhaustedcircle2"
-      },
-      "a2": {
-        "text":   "to leave now and stay at home tomorrow to fill up your energy.",
-        "money":  -200,
-        "energy": 2,
-        "next":   "fillenergy2"
-      },
-      "a3": {
-        "text":   "You go home with a bad feeling.",
-        "money":  -30,
-        "energy": 1,
-        "next":   "minuscircle2"
-      }
-    },
+        "givetelefon": {
+            "text": "You hand him the telephone and he walks away.",
+            "image": "givetelefon.png",
+            "a1": {
+                "text": "start working",
+                "money": 0,
+                "energy": 0,
+                "next": "firstday"
+            },
+            "a2": {},
+            "a3": {}
+        },
 
-   "wagecircle" : {
-      "text":  "",
-      "image": "wagecircle.png",
-      "a1": {
-        "text":   "After a month and 20 days you finally receive your paycheck.",
-        "money":  1520,
-        "energy": 0,
-        "next":   "bills"
-      },
-      "a2": {
-      },
-      "a3": {
-      }
-    },
+        "firstday": {
+            "text": "The factory is huge and there are a lot of people around you. Since you are in charge of the circuit boards you are only allowed to take a break every two hours for ten minutes. You can’t really talk with coworkers, you have to concentrate as to not make mistakes. After eight hours, your feet and back hurt. Other workers notify you that you are supposed to work at least two more hours  over time.",
+            "image": "filler.png",
+            "a1": {
+                "text": "You feel so tired and go back to the dorms.",
+                "money": -30,
+                "energy": 1,
+                "next": "minus"
+            },
+            "a2": {
+                "text": "You fulfill the obligation to stay and work at least two hours more.",
+                "money": 0,
+                "energy": -1,
+                "next": "exhausted"
+            },
+            "a3": {}
+        },
 
-    "bills" : {
-      "text":  "You have to pay your monthly expenses of %s &yen;.",
-      "image": "filler.png",
-      "a1": {
-        "text":   "You pay the bills.",
-        "money":  "Random",
-        "energy": 0,
-        "next":   "workcircle"
-      },
-      "a2": {
-      },
-      "a3": {
-      }
+        "minusdesc": {
+            "text": "You leave early. Your coworkers are surprised and explain to you the attendance award: the average wage they earn is &yen3000, but this is including any awards you may earn such as the attendance award. Every time you leave early,  &yen30 is deducted from a possible &yen120. If you leave early or come late three times, you forfeit the award entirely.",
+            "image": "minus-reg.png",
+            "a1": {
+                "text": "Worried, you go to bed.",
+                "money": 0,
+                "energy": 0,
+                "next": "workbusy"
+            },
+            "a2": {},
+            "a3": {}
+        },
+
+        "minus": {
+            "text": "You leave early even though you know you could use the extra money..",
+            "image": "minus-reg.png",
+            "a1": {
+                "text": "Worried, you go to bed.",
+                "money": 0,
+                "energy": 0,
+                "next": "workbusy"
+            },
+            "a2": {},
+            "a3": {}
+        },
+
+        "minusbusy": {
+            "text": "You leave early even though you know you could use the extra money.",
+            "image": "minus-reg.png",
+            "a1": {
+                "text": "Worried, you go to bed.",
+                "money": 0,
+                "energy": 0,
+                "next": "wage"
+            },
+            "a2": {},
+            "a3": {}
+        },
+
+        "exhausted": {
+            "text": "Your body hurts, you are tired and you really need some rest. When you finally arrive at the dorms you collapse from exhaustion.",
+            "image": "exhausted.png",
+            "a1": {
+                "text": "You finally arrive at the dorms and you just fall completly exhausted in your bed.",
+                "money": 0,
+                "energy": 0,
+                "next": "workbusy"
+            },
+            "a2": {},
+            "a3": {}
+        },
+
+        "exhaustedbusy": {
+            "text": "Your body hurts, you are tired and you really need some rest. When you finally arrive at the dorms you collapse from exhaustion.",
+            "image": "exhausted.png",
+            "a1": {
+                "text": "You finally arrive at the dorms and you just fall completly exhausted in your bed.",
+                "money": 0,
+                "energy": 0,
+                "next": "wage"
+            },
+            "a2": {},
+            "a3": {}
+        },
+
+        "exhaustedquit": {
+            "text": "You collapse. You can barely see and your whole body hurts. Li Yan brings you to the hospital since there is no way you could go on your own.",
+            "image": "exhausted.png",
+            "a1": {
+                "text": "Since the company doesn’t cover your health insurance, you have to pay &yen;950.",
+                "money": -950,
+                "energy": 0,
+                "next": "quit"
+            },
+            "a2": {},
+            "a3": {}
+        },
+
+        "quit": {
+            "text": "When you try to resign, they make it so hard for you. It is practically impossible. They refuse to give you your ID. After a lot of hassle you leave without getting paid and return to your family. You spent more of their money than you were able to earn.",
+            "image": "arrivingBackAtHome.gif",
+            "a1": {},
+            "a2": {},
+            "a3": {}
+        },
+
+        "workbusy": {
+            "text": "The next day you are back to work. Li Yan tells you it is a busy day, it is delivery day and you have to perform accordingly. Your work is exhausting and after working ten hours you are asked to stay longer. ",
+            "video": "<iframe width=\"700\" height=\"300\" src=\"https://www.youtube.com/embed/kSvT02q4h40?start=13&end=31&version=3&rel=0&autoplay=1\" frameborder=\"0\" allowfullscreen></iframe>",
+            "a1": {
+                "text": "You decide to stay longer.",
+                "money": 0,
+                "energy": -2,
+                "next": "exhaustedbusy"
+            },
+            "a2": {
+                "text": "You go home with a bad feeling.",
+                "money": -30,
+                "energy": 1,
+                "next": "minusbusy"
+            },
+            "a3": {}
+        },
+
+        "wage": {
+            "text": "After working almost a month, Li Yan tells you your wage will be paid on the 20th of the following month. Since you are still in your probation period, you earn &yen;1300 and the rest of the attendance award twenty days later.",
+            "image": "wage.png",
+            "a1": {
+                "text": "After the probation period your wage will be &yen;1400 when you will finally be able to send some money back home!",
+                "money": 1360,
+                "energy": 0,
+                "next": "drinking"
+            },
+            "a2": {},
+            "a3": {}
+        },
+
+        "drinking": {
+            "text": "As you slowly adjust to your working conditions, one thing is still hard to get used to: you are not allowed to drink while working. You have breaks, but are still often thirsty. If you want to go to the restroom, you need to get a pass.",
+            "image": "drinking.png",
+            "a1": {
+                "text": "Otherwise you are not allowed to use the restroom.",
+                "money": 0,
+                "energy": 0,
+                "next": "health"
+            },
+            "a2": {},
+            "a3": {}
+        },
+
+        "health": {
+            "text": "You talk with coworkers who use acid to make the circuit boards you are working on. It seems they were never trained for safety hazards or potential health risks. \n That makes you feel confused about whether or not you really understand what potential risks this job poses for your health.",
+            "image": "health.png",
+            "a1": {
+                "text": "You decide to complain to your superior, since you do not want to take any risks concerning your health.",
+                "money": 0,
+                "energy": 0,
+                "next": "complainhealth"
+            },
+            "a2": {
+                "text": "You ignore your gut feeling and just continue your day.",
+                "money": 0,
+                "energy": 0,
+                "next": "studentsintro"
+            },
+            "a3": {}
+        },
+
+        "complainhealth": {
+            "text": "You raise your concerns to your supervisor and ask for better safety equipment. He tells you not to worry and to get back to work.",
+            "image": "health.png",
+            "a1": {
+                "text": "You insist on having the matter looked into.",
+                "money": 0,
+                "energy": 0,
+                "next": "firedhealth"
+            },
+            "a2": {
+                "text": "You follow his orders and go back to work.",
+                "money": 0,
+                "energy": 0,
+                "next": "studentsintro"
+            },
+            "a3": {}
+        },
+
+        "firedhealth": {
+            "text": "The supervisor becomes angry and tells you to mind your own business. He fires you on the spot.",
+            "image": "health.png",
+            "a1": {},
+            "a2": {},
+            "a3": {}
+        },
+
+        "studentsintro": {
+            "text": "You get to know a group of students from three different provinces: Hubei, Hunan and Guizhou. You talk with Yong, one of the students you meet on the way back to the dorms after work. He studies at a technical school and signed a three month contract at a labor dispatch company. They were not trained before starting work, they don't get paid for over hours or subsidy for the night shift. Yong tells you they are freshmen and junior students at college.",
+            "image": "studentsintro.png",
+            "a1": {
+                "text": "You are astonished at how hard these young college students work.",
+                "money": 0,
+                "energy": 0,
+                "next": "childworker"
+            },
+            "a2": {},
+            "a3": {}
+        },
+
+        "childworker": {
+            "text": "Another issue that troubles you is that of the child workers. They work extremely hard too. They are also hired by a labor dispatch company and the management tries to make everyone believe that they are of legal age when clearly they are not.",
+            "image": "childworker.png",
+            "a1": {
+                "text": "You know it’s common to have children working even though it is illegal, but there is not much you can do about it.",
+                "money": 0,
+                "energy": 0,
+                "next": "studentsadvice"
+            },
+            "a2": {},
+            "a3": {}
+        },
+
+        "studentsadvice": {
+            "text": "After a month, Yong approaches you to ask for your advice. He says the work is too difficult for him and a lot of other students. He spoke with almost 50 students who said they couldn't tolerate the harsh conditions any longer. His supervisor already told him he would not allow students to leave no matter how many quit together. You tell him:",
+            "image": "studentsadvice.png",
+            "a1": {
+                "text": "to take care of himself and quit.",
+                "money": -250,
+                "energy": 0,
+                "next": "studentsunpaid"
+            },
+            "a2": {
+                "text": "to be responsible and keep the job - it's only two months left anyway.",
+                "money": 0,
+                "energy": -1,
+                "next": "studentsexhausted"
+            },
+            "a3": {}
+        },
+
+        "studentsunpaid": {
+            "text": "Yong and the others decide to take your advice and quit the next day. The supervisor, however,  does not accept their resignations. As a result, they don't get paid their wages or their way back home.",
+            "image": "studentsunpaid.png",
+            "a1": {
+                "text": "You give Yong and two other students money for the bus back home and heavy-hearted you say good bye to them.",
+                "money": 0,
+                "energy": 0,
+                "next": "decisionwork"
+            },
+            "a2": {},
+            "a3": {}
+        },
+
+        "studentsexhausted": {
+            "text": "Yong and the others stay at the factory. They are extremely exhausted in the evenings and you try to cover their shift for them as often as you can. It is pretty exhausting for you.",
+            "image": "filler.png",
+            "a1": {
+                "text": "You try to convince them to leave their jobs, the students should not be working that much.",
+                "money": -40,
+                "energy": 0,
+                "next": "studentsunpaid"
+            },
+            "a2": {
+                "text": "You worry about the students but you know they need to make ends meet, so you tell them to just try and get as much work done as possible.",
+                "money": 0,
+                "energy": 0,
+                "next": "decisionwork"
+            },
+            "a3": {}
+        },
+
+        "decisionwork": {
+            "text": "It has been a while since you have started working at the factory. It is a tiring job, but you have not lost sight of sending money back home.\nLi Yan passes by at your dorm after work and you have a chat. She recently switched over to a different department and earns a bit more than before, but tells you that the working conditions are worse. She has no breaks at all and her overtime is much longer than yours. She mentions that the department is hiring and asks you if you were interested in applying.",
+            "image": "decisionwork.png",
+            "a1": {
+                "text": "You decide to switch over to her department as well.",
+                "money": 0,
+                "energy": 0,
+                "next": "granny"
+            },
+            "a2": {
+                "text": "You decide stay at your department. The extra money is not worth the grueling conditions.",
+                "money": 0,
+                "energy": 0,
+                "next": "granny"
+            },
+            "a3": {}
+        },
+
+
+        "granny": {
+            "text": "Your parents tell you that your grandmother is sick and cannot afford her health care. They request that you send money to help pay for her medication. They need &yen;1000.",
+            "image": "filler.png",
+            "a1": {
+                "text": "You send them nothing.",
+                "money": 0,
+                "energy": 0,
+                "next": "grannydead"
+            },
+            "a2": {
+                "text": "You send them &yen;600.",
+                "money": -600,
+                "energy": 0,
+                "next": "workcircle"
+            },
+            "a3": {
+                "text": "You send them &yen;1000.",
+                "money": -1000,
+                "energy": 0,
+                "next": "workcircle"
+            }
+        },
+
+        "grannydead": {
+            "text": "Your grandmother wasn’t able to afford the medicamentation on her own. Since you weren’t able to help she died.",
+            "image": "grannydead.png",
+            "a1": {
+                "text": "There is no time for grieve, you have to go back to work!",
+                "money": 0,
+                "energy": 0,
+                "next": "workcircle"
+            },
+            "a2": {},
+            "a3": {}
+        },
+
+        "workcircle": {
+            "text": "It’s always the same. Standing on the assembly line and attach this thing to the circuit board. Again and again. As everyday, you have to decide:",
+            "image": "work1.png",
+            "a1": {
+                "text": "to do overtime (2 hours)",
+                "money": 0,
+                "energy": -1,
+                "next": "exhaustedcircle"
+            },
+            "a2": {
+                "text": "to leave now and stay at home tomorrow to  fill up your energy.",
+                "money": -200,
+                "energy": 2,
+                "next": "fillenergy"
+            },
+            "a3": {
+                "text": "to leave earlier.",
+                "money": -30,
+                "energy": 1,
+                "next": "minuscircle"
+            }
+        },
+
+        "minuscircle": {
+            "text": "You leave early, even though you know you could use the extra money.",
+            "image": "minus-reg.png",
+            "a1": {
+                "text": "You are tired and go to bed early.",
+                "money": 0,
+                "energy": 0,
+                "next": "workcircle2"
+            },
+            "a2": {},
+            "a3": {}
+        },
+
+        "minuscircle2": {
+            "text": "You leave early, even though you know you could use the extra money.",
+            "image": "minus-reg.png",
+            "a1": {
+                "text": "You are tired and go to bed early.",
+                "money": 0,
+                "energy": 0,
+                "next": "granny"
+            },
+            "a2": {},
+            "a3": {}
+        },
+
+        "exhaustedcircle": {
+            "text": "Your body hurts, you are tired and you really need some rest.",
+            "image": "exhausted.png",
+            "a1": {
+                "text": "When you finally arrive at the dorms you collapse from exhaustion.",
+                "money": 0,
+                "energy": 0,
+                "next": "workcircle2"
+            },
+            "a2": {},
+            "a3": {}
+        },
+
+        "exhaustedcircle2": {
+            "text": "Your body hurts, you are tired and you really need some rest. When you finally arrive at the dorms you collapse from exhaustion.",
+            "image": "exhausted.png",
+            "a1": {
+                "text": "When you finally arrive at the dorms you collapse from exhaustion.",
+                "money": 0,
+                "energy": 0,
+                "next": "granny"
+            },
+            "a2": {},
+            "a3": {}
+        },
+
+        "fillenergy": {
+            "text": "You spend the day relaxing and catching up with your family on the phone and at the end of the day you already feel much better.",
+            "image": "filler.png",
+            "a1": {
+                "text": "&yen;200 are deducted from your wage.",
+                "money": 0,
+                "energy": 0,
+                "next": "workcircle2"
+            },
+            "a2": {},
+            "a3": {}
+        },
+
+        "fillenergy2": {
+            "text": "You spend the day relaxing and catching up with your family on the phone and at the end of the day you already feel much better.",
+            "image": "filler.png",
+            "a1": {
+                "text": "&yen;200 are deducted from your wage.",
+                "money": 0,
+                "energy": 0,
+                "next": "granny"
+            },
+            "a2": {},
+            "a3": {}
+        },
+
+        "firedfill": {
+            "text": "You haven't been to work on three occasions. The company has had enough and fired you. You don't receive this month wage. What will you do next?",
+            "image": "filler.png",
+            "a1": {},
+            "a2": {},
+            "a3": {}
+        },
+
+        "helpparents": {
+            "text": "Your parents ask you to help them financially. Your grandmother used to bring some money in by the little work she was doing. You feel sorry for them, so:",
+            "image": "exhausted.png",
+            "a1": {
+                "text": "you send them &yen;350.",
+                "money": -350,
+                "energy": 0,
+                "next": "workcircle"
+            },
+            "a2": {
+                "text": "you send them &yen;700.",
+                "money": -700,
+                "energy": 0,
+                "next": "workcircle"
+            },
+            "a3": {
+                "text": "you are not able to send them anything and feel bad about it.",
+                "money": 0,
+                "energy": -1,
+                "next": "workcircle"
+            }
+        },
+
+        "workcircle2": {
+            "text": "It’s always the same. Standing on the assembly line and attach this thing to the circuit board. Again and again. As everyday, you have to decide:",
+            "image": "work2.png",
+            "a1": {
+                "text": "to do overtime (4 hours)",
+                "money": 0,
+                "energy": -2,
+                "next": "exhaustedcircle2"
+            },
+            "a2": {
+                "text": "to leave now and stay at home tomorrow to fill up your energy.",
+                "money": -200,
+                "energy": 2,
+                "next": "fillenergy2"
+            },
+            "a3": {
+                "text": "You go home with a bad feeling.",
+                "money": -30,
+                "energy": 1,
+                "next": "minuscircle2"
+            }
+        },
+
+        "wagecircle": {
+            "text": "",
+            "image": "wagecircle.png",
+            "a1": {
+                "text": "After a month and 20 days you finally receive your paycheck.",
+                "money": 1520,
+                "energy": 0,
+                "next": "bills"
+            },
+            "a2": {},
+            "a3": {}
+        },
+
+        "bills": {
+            "text": "You have to pay your monthly expenses of %s &yen;.",
+            "image": "filler.png",
+            "a1": {
+                "text": "You pay the bills.",
+                "money": "Random",
+                "random_min": -1400,
+                "random_max": -400,
+                "energy": 0,
+                "next": "workcircle"
+            },
+            "a2": {},
+            "a3": {}
+        }
+
     }
-
-  }
 }

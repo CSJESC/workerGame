@@ -83,12 +83,15 @@
                     }
                 }
 
-                $textElem.html(nl2br(question.text));
                 var extraText = "";
                 // set button text if specified, if a2t use standard
                 if(question.a1.text) {
+                    if (question.a1.money == 'Random') {
+                        question.a1.money = Math.round((Math.random() * (question.a1.random_max - question.a1.random_min) + question.a1.random_min));
+                        question.text = question.text.replace('%s', Math.abs(question.a1.money));
+                    }
                     if (question.a1.money < 0 && ((status.money + question.a1.money) < 0)) {
-                        extraText = '<span class="losing-money">' + question.a1.money + ' &#65509;</span>';
+                        extraText = '<span class="losing-money">' + Math.round((question.a1.money * 6.25)) + ' &#65509;</span>';
                         $a1Button.addClass('disabledButton');
                     } else {
                         extraText = '';
@@ -100,7 +103,7 @@
                 }
                 if(question.a2.text){
                     if (question.a2.money < 0 && ((status.money + question.a2.money) < 0)) {
-                        extraText = '<span class="losing-money">' + question.a2.money + ' &#65509;</span>';
+                        extraText = '<span class="losing-money">' + Math.round((question.a2.money * 6.25)) + ' &#65509;</span>';
                         $a2Button.addClass('disabledButton');
                     } else {
                         extraText = '';
@@ -110,13 +113,9 @@
                 } else {
                     $a2Button.html('');
                 }
-                
-                if (question.a3.text && question === questions["helpparents"] && status.money >= 350) {
-                    $a3Button.text('');
-                } 
-                else if(question.a3.text){
+                if(question.a3.text){
                     if (question.a3.money < 0 && ((status.money + question.a3.money) < 0)) {
-                        extraText = '<span class="losing-money">' + question.a3.money + ' &#65509;</span>';
+                        extraText = '<span class="losing-money">' + Math.round((question.a3.money * 6.25)) + ' &#65509;</span>';
                         $a3Button.addClass('disabledButton');
                     } else {
                         extraText = '';
@@ -126,6 +125,7 @@
                 } else {
                     $a3Button.text('');
                 }
+                $textElem.html(nl2br(question.text));
                 // set actions for answers
                 $bothButtons.unbind('click');
                 $bothButtons.click(function (event) {
@@ -138,11 +138,11 @@
                     else if (event.target.dataset.answer == 'a2')
                         answer = question.a2;
                     else
-                        answer = question.a3; 
+                        answer = question.a3;
 
                     if (question === questions["decisionwork"] && answer == question.a1) {
                         workhard = true;
-                    } 
+                    }
                     else if (question === questions["grannydead"]) {
                        grannydead = true;
                     }
@@ -157,11 +157,9 @@
                         wage = false;
                     }
                     else if ((question === questions["workcircle"] || question === questions["workcircle2"]) && answer == question.a1 && workhard == true) {
-                        answer.energy = answer.energy * 2;        
-                    } 
-                    else if (question === questions["wagecircle"] && workhard == true) {
-                        answer.money += 100;
+                        answer.energy = answer.energy * 2;
                     }
+
 
 
                     status.money += Math.round(answer.money);
@@ -179,17 +177,17 @@
                     if (!alreadyExausted && status.energy <= 0) {
                         alreadyExausted = true;
                         goToQuestion(questions['exhaustedquit']);
-                    }   
+                    }
                     else if (grannydead == false && grannymoney >= 3) {
                         goToQuestion(questions['grannydead']);
-                    }   
+                    }
                     else if ((question === questions["exhaustedcircle2"] || question === questions["minuscircle2"] || question === questions["fillenergy2"]) && !wage){
                         wage = true;
                        goToQuestion(questions['wagecircle']);
                     }
                     else if (leavingcounter >= 3) {
                         goToQuestion(questions['firedfill']);
-                    }         
+                    }
                     else if (question === questions["minuscircle2"] && grannydead == true && wage == true) {
                         wage = false;
                         goToQuestion(questions['helpparents']);
@@ -277,7 +275,7 @@
                 } else { // https://www.youtube.com/watch?v=sdl658l5TTQ
                     moneyImgElem.attr('src','image/money/money5.png');
                 }
-                moneyElem.html (money + ' &#65509; / ' + (money / 6.25) + ' $');
+                moneyElem.html ((money * 6.25) + ' &#65509; / ' + money + ' $');
             }
 
             // setup initial view

@@ -25,8 +25,8 @@
       "text":  "Your name is Mei. In order to support your family you have decided to move to Huizhou in the Guangdong province- a city in southern China which has seen its population grow from a mere 300,000 in 1990 to over 1.8 million today supported by its well-known technology sector.",
       "image": "start1.png",
       "a1": {
-        "text":   "Your family purchased your bus tickets so you could go to work and send money back home.",
-        "money":  0,
+        "text":   "Your family purchased your bus tickets and hand you &yen500 so you could go to work and send money back home.",
+        "money": 3000,
         "energy": 0,
         "next":   "start2"
       },

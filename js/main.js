@@ -113,7 +113,11 @@
                 } else {
                     $a2Button.html('');
                 }
-                if(question.a3.text){
+
+                if (question.a3.text && question === questions["helpparents"] && status.money >= 350) {
+                    $a3Button.text('');
+                }
+                else if(question.a3.text){
                     if (question.a3.money < 0 && ((status.money + question.a3.money) < 0)) {
                         extraText = '<span class="losing-money">' + question.a3.money + ' &#65509;</span>';
                         $a3Button.addClass('disabledButton');
@@ -279,7 +283,7 @@
             }
 
             // setup initial view
-            goToQuestion(questions['index'])
+            goToQuestion(questions['decisionwork'])
         })
     })
 })();

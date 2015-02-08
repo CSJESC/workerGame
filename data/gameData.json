@@ -751,17 +751,21 @@
       "image": "exhausted.png",
       "a1": {
         "text": "you send them &yen;350.",
-        "money":  -50,
+        "money":  -350,
         "energy": 0,
         "next":   "workcircle"
       },
       "a2": {
         "text": "you send them &yen;700.",
-        "money":  -100,
+        "money":  -700,
         "energy": 0,
         "next":   "workcircle"
       },
       "a3": {
+        "text": "you are not able to send them anything and feel bad about it.",
+        "money":  0,
+        "energy": -1,
+        "next":   "workcircle"
       }
     },
 

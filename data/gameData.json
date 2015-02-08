@@ -316,7 +316,7 @@
 
         "exhaustedquit": {
             "text": "You collapse. You can barely see and your whole body hurts. Li Yan brings you to the hospital since there is no way you could go on your own.",
-            "image": "exhausted.png",
+            "image": "exhaustedquit.png",
             "a1": {
                 "text": "Since the company doesn’t cover your health insurance, you have to pay &yen;950.",
                 "money": -950,

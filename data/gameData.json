@@ -8,7 +8,7 @@
 
     "index" : {
       "text":  "This is a game based on the working conditions in the electronic supply chain. It’s a fictional story based on a factual <a href=\"http://www.chinalaborwatch.org/report/98\">report about HEG technologies by China Labour Watch</a> and <a href=\"http://www.bbc.com/news/business-30532463\">the BBC report on Pegatron</a> in China. \n Your decisions in the game will not only influence your story, but also your energy level and the money you have.",
-      "image": "index.png",
+      "image": "groupPhoto.png",
       "a1": {
         "text":   "Start",
         "money":  0,

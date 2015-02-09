@@ -368,7 +368,7 @@
 
         "billsstart": {
             "text": "You have to pay your monthly expenses of 400 &yen;.",
-            "image": "filler.png",
+            "image": "bills.png",
             "a1": {
                 "text": "You pay the bills.",
                 "money": -400,

@@ -21,6 +21,7 @@
     display: block;
     padding-right: 30px;
     padding-left: 30px;
+    margin-top: 5px;
 }
 
 .button:hover {

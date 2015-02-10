@@ -329,7 +329,7 @@
 
         "quit": {
             "text": "When you try to resign, they make it so hard for you. It is practically impossible. They refuse to give you your ID. After a lot of hassle you leave without getting paid and return to your family. You spent more of their money than you were able to earn.",
-            "image": "arrivingBackAtHome.gif",
+            "image": "quit.png",
             "a1": {},
             "a2": {},
             "a3": {}
@@ -494,8 +494,8 @@
         },
 
         "studentsexhausted": {
-            "text": "Yong and the others stay at the factory. They are extremely exhausted in the evenings and you try to cover their shift for them as often as you can. It is pretty exhausting for you.",
-            "image": "filler.png",
+            "text": "Yong and the others stay at the factory. They are extremely exhausted in the evenings and you try to cover for them as often as you can. It is pretty exhausting for you.",
+            "image": "studentsexhausted.png",
             "a1": {
                 "text": "You try to convince them to leave their jobs, the students should not be working that much.",
                 "money": -40,

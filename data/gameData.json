@@ -677,7 +677,7 @@
 
         "helpparents": {
             "text": "Your parents ask you to help them financially. Your grandmother used to bring some money in by the little work she was doing. You feel sorry for them, so:",
-            "image": "filler.png",
+            "image": "helpparents.png",
             "a1": {
                 "text": "you send them &yen;350.",
                 "money": -350,

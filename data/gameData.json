@@ -749,7 +749,7 @@
             "a3": {}
         },
 		
-		    "win": {
+		"leavingend": {
             "text": "You have found a way to sustain your worklife. But at what cost?",
             "image": "win.png",
             "a1": {

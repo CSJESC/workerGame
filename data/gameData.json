@@ -23,7 +23,7 @@
             "text": "Your name is Mei. In order to support your family you have decided to move to Huizhou in the Guangdong province- a city in southern China which has seen its population grow from a mere 300,000 in 1990 to over 1.8 million today supported by its well-known technology sector.",
             "image": "start1.png",
             "a1": {
-                "text": "Your family purchased your bus ticket and hand you &yen400 for the first few days so you can go to work and send some money back home.",
+                "text": "Your family purchased your bus ticket and hand you 400 &yen for the first few days so you can go to work and send some money back home.",
                 "money": 400,
                 "energy": 0,
                 "next": "start2"
@@ -33,7 +33,7 @@
         },
 
         "start2": {
-            "text": "After you rent a room for 250&yen; you hear that one of the factories is hiring workers aged 16 to 30. Since you meet these qualifications, you decide to apply. You just have to fill in a form and decide:",
+            "text": "After you rent a room for 250 &yen; you hear that one of the factories is hiring workers aged 16 to 30. Since you meet these qualifications, you decide to apply. You just have to fill in a form and decide:",
             "image": "start2.png",
             "a1": {
                 "text": "You don't wait for the call and just go home.",
@@ -131,7 +131,7 @@
         },
 
         "dorms": {
-            "text": "Your colleague Li Yan shows you the way to your dormitory. She explains: there are different dormitories, but only one is close to the factory. Yours, unfortunately, is far away. You stay with 8 other people in one room. The rent is free, but you have to pay 100&yen; for facilities in advance.",
+            "text": "Your colleague Li Yan shows you the way to your dormitory. She explains: there are different dormitories, but only one is close to the factory. Yours, unfortunately, is far away. You stay with 8 other people in one room. The rent is free, but you have to pay 100 &yen; for facilities in advance.",
             "image": "dorms.png",
             "a1": {
                 "text": "You’ve had an exhausting day and go to bed.",
@@ -250,7 +250,7 @@
         },
 
         "minusdesc": {
-            "text": "You leave early. Your co-workers are surprised and explain to you the attendance award: the average wage they earn is &yen3000, but this is including any awards you may earn such as the attendance award. Every time you leave early,  &yen30 are deducted from a possible &yen120. If you leave early or come late three times, you forfeit the award entirely.",
+            "text": "You leave early. Your co-workers are surprised and explain to you the attendance award: the average wage they earn is 3000 &yen, but this is including any awards you may earn such as the attendance award. Every time you leave early, 30 &yen are deducted from a possible 120 &yen. If you leave early or come late three times, you forfeit the award entirely.",
             "image": "minus-reg.png",
             "a1": {
                 "text": "Worried, you go to bed.",
@@ -315,7 +315,7 @@
         },
 
         "exhaustedquit": {
-            "text": "You need help getting to a hospital since you fell unconscious for a while from your exhaustion. Since the company does not cover your health insurance, you have to pay 950  &yen;.",
+            "text": "You need help getting to a hospital since you fell unconscious for a while from your exhaustion. Since the company does not cover your health insurance, you have to pay 950 &yen;.",
             "image": "exhaustedquit.png",
             "a1": {
                 "text": "Your body hurts, you are tired and you really need some rest. There is no way you could imagine working tomorrow again, so you decide to leave the factory. ",
@@ -354,10 +354,10 @@
         },
 
         "wage": {
-            "text": "After working almost a month, Li Yan tells you your wage will be paid on the 20th of the following month. Since you are still in your probation period, you earn &yen;1300 and the rest of the attendance award twenty days later.",
+            "text": "After working almost a month, Li Yan tells you your wage will be paid on the 20th of the following month. Since you are still in your probation period, you earn 1300 &yen; and the rest of the attendance award twenty days later.",
             "image": "wage.png",
             "a1": {
-                "text": "After the probation period your wage will be &yen;1400 and you will finally be able to send some money back home!",
+                "text": "After the probation period your wage will be 1400 &yen; and you will finally be able to send some money back home!",
                 "money": 1360,
                 "energy": 0,
                 "next": "billsstart"
@@ -531,7 +531,7 @@
 
 
         "granny": {
-            "text": "Your parents tell you that your grandmother is sick and can not afford her health care. They request that you send money to help pay for her medication. They need &yen;1000.",
+            "text": "Your parents tell you that your grandmother is sick and can not afford her health care. They request that you send money to help pay for her medication. They need 1000 &yen;.",
             "image": "grannysick.png",
             "a1": {
                 "text": "You send them nothing.",
@@ -540,13 +540,13 @@
                 "next": "grannydead"
             },
             "a2": {
-                "text": "You send them &yen;600.",
+                "text": "You send them 600 &yen;.",
                 "money": -600,
                 "energy": 0,
                 "next": "workcircle"
             },
             "a3": {
-                "text": "You send them &yen;1000.",
+                "text": "You send them 1000 &yen;.",
                 "money": -1000,
                 "energy": 0,
                 "next": "workcircle"
@@ -645,7 +645,7 @@
             "text": "You spend the day relaxing and catching up with your family on the phone. By the end of the day you already feel much better.",
             "image": "fillenergy.png",
             "a1": {
-                "text": "&yen;200 are deducted from your wage.",
+                "text": "200 &yen; are deducted from your wage.",
                 "money": 0,
                 "energy": 0,
                 "next": "workcircle2"
@@ -658,7 +658,7 @@
             "text": "You spend the day relaxing and catching up with your family on the phone. By the end of the day you already feel much better.",
             "image": "fillenergy.png",
             "a1": {
-                "text": "&yen;200 are deducted from your wage.",
+                "text": "200 &yen; are deducted from your wage.",
                 "money": 0,
                 "energy": 0,
                 "next": "granny"
@@ -679,13 +679,13 @@
             "text": "Your parents ask you to help them financially as they no longer obtain the little additional income your grandmother provided. ",
             "image": "helpparents.png",
             "a1": {
-                "text": "You decide to help and send them &yen;350.",
+                "text": "You decide to help and send them 350 &yen;.",
                 "money": -350,
                 "energy": 0,
                 "next": "workcircle"
             },
             "a2": {
-                "text": "You decide to help and send them &yen;700.",
+                "text": "You decide to help and send them 700 &yen;.",
                 "money": -700,
                 "energy": 0,
                 "next": "workcircle"

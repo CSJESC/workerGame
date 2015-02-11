@@ -1,5 +1,5 @@
 (function () {
-    "use strict"
+    "use strict";
 
     // from https://github.com/kvz/phpjs/blob/master/functions/strings/nl2br.js
     var nl2br = function (str, is_xhtml) {
@@ -7,167 +7,165 @@
         return (str + '').replace(/([^>\r\n]?)(\r\n|\n\r|\r|\n)/g, '$1' + breakTag + '$2');
     };
 
-
-    var status;
-    var questions;
-
-    var alreadyExausted = false;
-
-    var workhard = false;
-
-    var grannydead = false;
-
-    var grannymoney = 0;
-
-    var leavingcounter = 0;
-
-    var wage = true;
-
-    var minusDesc = false;
-
-    // get the data
     $.getJSON("data/gameData.json", function (data) {
-        status = data.status;
-        questions = data.questions;
+        //Defining a couple of variables we need
+        var status = data.status; //Current player status
+        var questions = data.questions; //Collection of all questions
+        var exhausted = false; //Is reached when player energy is 0
+        var workhard = false; //Player selected to "work hard"
+        var grannydead = false; //Player let their grandmother die #Aufschrei
+        var grannymoney = 0; //Counting how much money the player sent to their grandma
+        var leavingcounter = 0; //Counting how often the player decided to leave early
+        var wage = true; //Wage block initiator
+        var readAttendanceAwardDesc = false; //Has the player received the
+        var currentQuestion; //Keeps the current question object
 
-        // add poisbility to link to winner
-        questions.winner = {
-            isWinner: true
-        };
+        // find the dom elements
+        var $containerElem = $('.container'), $textElem = $('.text'), $a1Button = $('.a1-button'), $a2Button = $('.a2-button'), $a3Button = $('.a3-button'), $buttonCollection = $a1Button.add($a2Button).add($a3Button);
+        var imgBlock = $('.imgContainer img');
+        var videoBlock = $('#videoBlock');
+        var moneyImgElem = $('#moneyBlock img');
+        var moneyElem = $('#money');
+        var energyElem = $('#energyBlock img');
 
-        // when dom is ready
         $(function () {
-            // find the dom elements
-            var $containerElem = $('.container'), $textElem = $('.text'), $a1Button = $('.a1-button'), $a2Button = $('.a2-button'), $a3Button = $('.a3-button'), $bothButtons = $a1Button.add($a2Button).add($a3Button)
-            var imgBlock = $('.imgContainer img');
-            var videoBlock = $('#videoBlock');
-            var moneyImgElem = $('#moneyBlock img');
-            var moneyElem = $('#money');
-            var energyElem = $('#energyBlock img');
-
             var goToQuestion = function (question) {
-                if (!question) {
-                    // add code to handle game over
-                    alert('game over');
-                    return
-                }
-                if (question.isWinner) {
-                    // add code to handle winner
-                    alert('winner!');
-                    return
-                }
+                currentQuestion = question;
+                // Updating image / video on top of the page
+                applyView();
 
-                // update view
-                if(question.video){
+                // Updating button texts
+                applyButtons();
+
+                //Resetting the event handler for the buttons
+                resetButtonEventHandler();
+
+                //Apply updated energy and money
+                applyEnergy(status.energy);
+                applyMoney(status.money);
+            };
+
+            function applyEnergy(energy) {
+                imgBlock.attr('class', 'energylvl' + energy);
+                energyElem.attr('src', 'image/energy/e0' + energy + '.png');
+            }
+
+            function applyMoney(money) {
+                if (money < 0) { //Obsolete case
+                    moneyImgElem.attr('src', 'image/money/moneyDebt.png');
+                } else if (money < 10) {
+                    moneyImgElem.attr('src', 'image/money/money0.png');
+                } else if (money < 100) {
+                    moneyImgElem.attr('src', 'image/money/money1.png');
+                } else if (money < 500) {
+                    moneyImgElem.attr('src', 'image/money/money2.png');
+                } else if (money < 1000) {
+                    moneyImgElem.attr('src', 'image/money/money3.png');
+                } else if (money < 1500) {
+                    moneyImgElem.attr('src', 'image/money/money4.png');
+                } else { // https://www.youtube.com/watch?v=sdl658l5TTQ
+                    moneyImgElem.attr('src', 'image/money/money5.png');
+                }
+                $('#money').html(money + ' &#65509; / ' + (money / 6.25) + ' $');
+            }
+
+            function applyView() {
+                //Checking if the current view contains a video
+                if (currentQuestion.video) {
+                    //Hidding image block and showing video block
                     imgBlock.css('display', 'none');
                     videoBlock.css('display', 'inline');
-                    videoBlock.html(question.video);
 
+                    videoBlock.html(currentQuestion.video);
                 } else {
+                    //Current view has an image, hiding video block
                     videoBlock.css('display', 'none');
                     videoBlock.html('');
                     imgBlock.css('display', 'inline');
-                    if (question === questions["workcircle"] && workhard == true){
+
+                    if (currentQuestion === questions["workcircle"] && workhard == true) { //Did the player choose to "work hard"? We'll show a different image in that case
                         imgBlock.attr('src', 'image/work2.png');
-                    }
-                    else if ((question === questions["minus"] || question === questions["minusbusy"] || question === questions["minuscircle"] || question === questions["minuscircle2"]) && minusDesc == false) {
-                        question.text = questions["minusdesc"].text;
-                        imgBlock.attr('src', 'image/minus.png');  
-                        minusDesc = true;
-                    }
-                    else if (question === questions["workcircle2"] && workhard == true) {
+                    } else if ((currentQuestion === questions["minus"] || currentQuestion === questions["minusbusy"] || currentQuestion === questions["minuscircle"] || currentQuestion === questions["minuscircle2"]) && readAttendanceAwardDesc == false) {
+                        //Showing an explanation of the attendance award
+                        currentQuestion.text = questions["minusdesc"].text;
+                        imgBlock.attr('src', 'image/minus.png');
+                        readAttendanceAwardDesc = true;
+                    } else if (currentQuestion === questions["workcircle2"] && workhard == true) {
+                        //Different image for the second "work hard" work circle
                         imgBlock.attr('src', 'image/work3.png');
-                    }
-                    else {
-                        imgBlock.attr('src', 'image/' + question.image);
+                    } else {
+                        //Default case, just show the image that is used in the JSON file
+                        imgBlock.attr('src', 'image/' + currentQuestion.image);
                     }
                 }
+            }
 
-                var extraText = "";
-                // set button text if specified, if a2t use standard
-                if(question.a1.text) {
-                    if (question.a1.money == 'Random') {
-                        question.a1.money = Math.round((Math.random() * (question.a1.random_max - question.a1.random_min) + question.a1.random_min));
-                        question.text = question.text.replace('%s', question.a1.money);
-                    }
-                    if (question.a1.money < 0 && ((status.money + question.a1.money) < 0)) {
-                        extraText = '<span class="losing-money">' + question.a1.money + ' &#65509;</span>';
-                        $a1Button.addClass('disabledButton');
-                    } else {
-                        extraText = '';
-                        $a1Button.removeClass('disabledButton');
-                    }
-                    $a1Button.html('&bull; ' + question.a1.text + extraText);
-                } else {
-                    $a1Button.html('');
-                }
-                if(question.a2.text){
-                    if (question.a2.money < 0 && ((status.money + question.a2.money) < 0)) {
-                        extraText = '<span class="losing-money">' + question.a2.money + ' &#65509;</span>';
-                        $a2Button.addClass('disabledButton');
-                    } else {
-                        extraText = '';
-                        $a2Button.removeClass('disabledButton');
-                    }
-                    $a2Button.html('&bull; ' + question.a2.text + extraText);
-                } else {
-                    $a2Button.html('');
-                }
+            function applyButtons() {
+                //Looping through all answers
+                $.each([currentQuestion.a1, currentQuestion.a2, currentQuestion.a3], function(answerNumber, answer) {
+                    var extraText = "";
+                    var currentButton = $('.a'+(answerNumber+1)+'-button');
+                    if (answer.text) { //Skip answer if text is empty
 
-                if (question.a3.text && question === questions["helpparents"] && status.money >= 350) {
-                    $a3Button.text('');
-                }
-                else if(question.a3.text){
-                    if (question.a3.money < 0 && ((status.money + question.a3.money) < 0)) {
-                        extraText = '<span class="losing-money">' + question.a3.money + ' &#65509;</span>';
-                        $a3Button.addClass('disabledButton');
+                        if (answer.money == 'Random') { //Checking if answer requires a random monetary value
+                            answer.money = Math.round((Math.random() * (answer.random_max - answer.random_min) + answer.random_min));
+                            currentQuestion.text = currentQuestion.text.replace('%s', answer.money);
+                        }
+                        //Checking if player has enough money to use this answer
+                        if (currentQuestion.a1.money < 0 && ((status.money + answer.money) < 0)) {
+                            extraText = '<span class="losing-money">' + answer.money + ' &#65509;</span>';
+                            currentButton.addClass('disabledButton');
+                        } else {
+                            extraText = '';
+                            currentButton.removeClass('disabledButton');
+                        }
+                        //Assigning HTML to button
+                        currentButton.html('&bull; ' + answer.text + extraText);
                     } else {
-                        extraText = '';
-                        $a3Button.removeClass('disabledButton');
+                        currentButton.html('');
                     }
-                    $a3Button.html('&bull; ' + question.a3.text + extraText);
-                } else {
-                    $a3Button.text('');
-                }
-                $textElem.html(nl2br(question.text));
-                // set actions for answers
-                $bothButtons.unbind('click');
-                $bothButtons.click(function (event) {
+                });
+
+                //Updating question text
+                $textElem.html(nl2br(currentQuestion.text));
+            }
+
+            function resetButtonEventHandler() {
+                $buttonCollection.unbind('click');
+                $buttonCollection.click(function (event) {
                     if ($(this).hasClass('disabledButton')) {
                         return false;
                     }
                     var answer;
                     if (event.target.dataset.answer == 'a1')
-                        answer = question.a1;
+                        answer = currentQuestion.a1;
                     else if (event.target.dataset.answer == 'a2')
-                        answer = question.a2;
+                        answer = currentQuestion.a2;
                     else
-                        answer = question.a3;
+                        answer = currentQuestion.a3;
 
-                    if (question === questions["decisionwork"] && answer == question.a1) {
+                    if (currentQuestion === questions["decisionwork"] && answer == currentQuestion.a1) {
                         workhard = true;
                     }
-                    else if (question === questions["grannydead"]) {
-                       grannydead = true;
+                    else if (currentQuestion === questions["grannydead"]) {
+                        grannydead = true;
                     }
-                    else if (question === questions["fillenergy"] || question === questions["fillenergy2"] ) {
+                    else if (currentQuestion === questions["fillenergy"] || currentQuestion === questions["fillenergy2"]) {
                         leavingcounter++;
                     }
-                    else if (question === questions["granny"] && grannydead == false && answer == question.a2) {
+                    else if (currentQuestion === questions["granny"] && grannydead == false && answer == currentQuestion.a2) {
                         grannymoney += 1;
                         wage = false;
                     }
-                    else if (question === questions["granny"] && (answer == question.a1 || answer == question.a3)) {
+                    else if (currentQuestion === questions["granny"] && (answer == currentQuestion.a1 || answer == currentQuestion.a3)) {
                         wage = false;
                     }
-                    else if ((question === questions["workcircle"] || question === questions["workcircle2"]) && answer == question.a1 && workhard == true) {
+                    else if ((currentQuestion === questions["workcircle"] || currentQuestion === questions["workcircle2"]) && answer == currentQuestion.a1 && workhard == true) {
                         answer.energy = answer.energy * 2;
                     }
-                    else if (question == questions["wagecircle"] && workhard == true) {
+                    else if (currentQuestion == questions["wagecircle"] && workhard == true) {
                         answer.money += 300;
                     }
-
-
 
                     status.money += Math.round(answer.money);
                     status.energy += answer.energy;
@@ -178,32 +176,29 @@
                         status.energy = 10;
                     }
 
-                    applyEnergy(status.energy);
-                    applyMoney(status.money);
-
-                    if (!alreadyExausted && status.energy <= 0) {
-                        alreadyExausted = true;
+                    if (!exhausted && status.energy <= 0) {
+                        exhausted = true;
                         goToQuestion(questions['exhaustedquit']);
                     }
                     else if (grannydead == false && grannymoney >= 3) {
                         goToQuestion(questions['grannydead']);
                     }
-                    else if ((question === questions["exhaustedcircle2"] || question === questions["minuscircle2"] || question === questions["fillenergy2"]) && !wage){
+                    else if ((currentQuestion === questions["exhaustedcircle2"] || currentQuestion === questions["minuscircle2"] || currentQuestion === questions["fillenergy2"]) && !wage) {
                         wage = true;
-                       goToQuestion(questions['wagecircle']);
+                        goToQuestion(questions['wagecircle']);
                     }
                     else if (leavingcounter >= 3) {
                         goToQuestion(questions['firedfill']);
                     }
-                    else if (question === questions["minuscircle2"] && grannydead == true && wage == true) {
+                    else if (currentQuestion === questions["minuscircle2"] && grannydead == true && wage == true) {
                         wage = false;
                         goToQuestion(questions['helpparents']);
                     }
-                    else if(question === questions["exhaustedcircle2"] && grannydead == true && wage == true) {
+                    else if (currentQuestion === questions["exhaustedcircle2"] && grannydead == true && wage == true) {
                         wage = false;
                         goToQuestion(questions['helpparents']);
                     }
-                    else if (question === questions["fillenergy2"] && grannydead == true && wage == true) {
+                    else if (currentQuestion === questions["fillenergy2"] && grannydead == true && wage == true) {
                         wage = false;
                         goToQuestion(questions['helpparents']);
                     }
@@ -212,81 +207,10 @@
 
                     }
                 });
-            };
-
-            function applyEnergy(energy) {
-                switch (energy) {
-                    case 0:
-                        imgBlock.attr('class', 'energylvl0');
-                        energyElem.attr('src', 'image/energy/e00.png');
-                        break;
-                    case 1:
-                        imgBlock.attr('class', 'energylvl1');
-                        energyElem.attr('src', 'image/energy/e01.png');
-                        break;
-                    case 2:
-                        imgBlock.attr('class', 'energylvl2');
-                        energyElem.attr('src', 'image/energy/e02.png');
-                        break;
-                    case 3:
-                        imgBlock.attr('class', 'energylvl3');
-                        energyElem.attr('src', 'image/energy/e03.png');
-                        break;
-                    case 4:
-                        imgBlock.attr('class', 'energylvl4');
-                        energyElem.attr('src', 'image/energy/e04.png');
-                        break;
-                    case 5:
-                        imgBlock.attr('class', 'energylvl5');
-                        energyElem.attr('src', 'image/energy/e05.png');
-                        break;
-                    case 6:
-                        imgBlock.attr('class', 'energylvl6');
-                        energyElem.attr('src', 'image/energy/e06.png');
-                        break;
-                    case 7:
-                        imgBlock.attr('class', 'energylvl7');
-                        energyElem.attr('src', 'image/energy/e07.png');
-                        break;
-                    case 8:
-                        imgBlock.attr('class', 'energylvl8');
-                        energyElem.attr('src', 'image/energy/e08.png');
-                        break;
-                    case 9:
-                        imgBlock.attr('class', 'energylvl9');
-                        energyElem.attr('src', 'image/energy/e09.png');
-                        break;
-                    case 10:
-                        imgBlock.attr('class', 'energylvl10');
-                        energyElem.attr('src', 'image/energy/e10.png');
-                        break;
-                    default:
-                        alert('There is something wrong with the blur! REMOVE THIS BEFORE GOING LIVE! RAHHHHHHH!!!!!');
-                        break;
-                }
-            }
-
-            function applyMoney(money) {
-                if (money < 0) {
-                    moneyImgElem.attr('src','image/money/moneyDebt.png');
-                } else if (money < 10) {
-                    moneyImgElem.attr('src','image/money/money0.png');
-                } else if (money < 100) {
-                    moneyImgElem.attr('src','image/money/money1.png');
-                } else if (money < 500) {
-                    moneyImgElem.attr('src','image/money/money2.png');
-                } else if (money < 1000) {
-                    moneyImgElem.attr('src','image/money/money3.png');
-                } else if (money < 1500) {
-                    moneyImgElem.attr('src','image/money/money4.png');
-                } else { // https://www.youtube.com/watch?v=sdl658l5TTQ
-                    moneyImgElem.attr('src','image/money/money5.png');
-                }
-                moneyElem.html (money + ' &#65509; / ' + (money/6.25) + ' $');
             }
 
             // setup initial view
-            goToQuestion(questions['index'])
+            goToQuestion(questions['index']);
         })
     })
 })();

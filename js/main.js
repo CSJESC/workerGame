@@ -225,7 +225,7 @@
                     goToQuestion(questions[answer.next]);
                 }
                 if (!clickableAnswerFound) {
-                    setTimeout(function(){triggerLinkAnimation();}, 3000);
+                    setTimeout(function(){triggerLinkAnimation();}, 2500);
                 }
             }
 

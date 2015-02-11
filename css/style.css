@@ -17,8 +17,9 @@
 }
 
 .button {
-    font-family: 'Open Sans Condensed', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     display: block;
+	font-size: 16;
     padding-right: 30px;
     padding-left: 30px;
     margin-top: 5px;

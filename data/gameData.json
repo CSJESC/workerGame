@@ -36,13 +36,13 @@
             "text": "After you rent a room for 250&yen; you hear that one of the factories is hiring workers aged 16 to 30. Since you meet these qualifications, you decide to apply. You just have to fill in a form and decide:",
             "image": "start2.png",
             "a1": {
-                "text": "You don't wait for the call and just go home",
+                "text": "You don't wait for the call and just go home.",
                 "money": -250,
                 "energy": 0,
                 "next": "goinghome"
             },
             "a2": {
-                "text": "You wait for them to call back",
+                "text": "You wait for them to call back.",
                 "money": -250,
                 "energy": 0,
                 "next": "contract1"
@@ -90,7 +90,7 @@
             "text": "It's time to sign the employment contract. You and a dozen of your new possible colleagues meet with one of the plant managers. You barely have time to skim through the contract before being asked to sign  multiple pages.",
             "image": "contract2.png",
             "a1": {
-                "text": "You find this unacceptable! You don't sign and go back home. ",
+                "text": "You find this unacceptable! You don't sign and go back home.",
                 "money": 0,
                 "energy": 0,
                 "next": "goinghome2"
@@ -209,7 +209,7 @@
             "text": "The security guard ignores you and as he walks away, Li Yan explains to you that phones are not allowed in the factory.",
             "image": "advicetelefon.png",
             "a1": {
-                "text": "start working",
+                "text": "Start working",
                 "money": 0,
                 "energy": 0,
                 "next": "firstday"
@@ -222,7 +222,7 @@
             "text": "You hand him the telephone and he lets you pass.",
             "image": "givetelefon.png",
             "a1": {
-                "text": "start working",
+                "text": "Start working",
                 "money": 0,
                 "energy": 0,
                 "next": "firstday"

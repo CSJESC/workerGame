@@ -8,7 +8,7 @@
 
         "index": {
             "text": "You are about to play a game based on factual reports about the labor conditions in China. It contains <a href=\"http://www.chinalaborwatch.org/report/98\">report about HEG technologies by China Labour Watch</a> and <a href=\"http://www.bbc.com/news/business-30532463\">the BBC report on Pegatron</a> in China. Your decisions in the game will not only influence your story, but also your energy level and the money you have.",
-            "image": "index.png",
+            "image": "win.png",
             "a1": {
                 "text": "Start",
                 "money": 0,
@@ -744,6 +744,19 @@
                 "random_max": -300,
                 "energy": 0,
                 "next": "workcircle"
+            },
+            "a2": {},
+            "a3": {}
+        },
+		
+		    "win": {
+            "text": "You have found a way to sustain your worklife. But at what cost?",
+            "image": "win.png",
+            "a1": {
+                "text": "",
+                "money": 0,
+                "energy": 0,
+                "next": ""
             },
             "a2": {},
             "a3": {}

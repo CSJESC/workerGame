@@ -8,7 +8,7 @@
 
         "index": {
             "text": "You are about to play a game based on factual reports about the labor conditions in China. It contains <a href=\"http://www.chinalaborwatch.org/report/98\">report about HEG technologies by China Labour Watch</a> and <a href=\"http://www.bbc.com/news/business-30532463\">the BBC report on Pegatron</a> in China. Your decisions in the game will not only influence your story, but also your energy level and the money you have.",
-            "image": "win.png",
+            "image": "newindex.png",
             "a1": {
                 "text": "Start",
                 "money": 0,
@@ -497,7 +497,7 @@
             "text": "Yong and the others stay at the factory. They are extremely exhausted in the evenings and you try to cover for them as often as you can. It is pretty exhausting for you.",
             "image": "studentsexhausted.png",
             "a1": {
-                "text": "You try to convince them to leave their jobs. Kids their age should not be working.",
+                "text": "You try to convince them to leave their jobs and take care of themselves.",
                 "money": -40,
                 "energy": 0,
                 "next": "studentsunpaid"
@@ -749,9 +749,9 @@
             "a3": {}
         },
 		
-		    "win": {
+		    "leavingend": {
             "text": "You have found a way to sustain your worklife. But at what cost?",
-            "image": "win.png",
+            "image": "leavingend.png",
             "a1": {
                 "text": "",
                 "money": 0,

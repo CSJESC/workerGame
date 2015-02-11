@@ -497,8 +497,8 @@
             "text": "Yong and the others stay at the factory. They are extremely exhausted in the evenings and you try to cover for them as often as you can. It is pretty exhausting for you.",
             "image": "studentsexhausted.png",
             "a1": {
-                "text": "You try to convince them to leave their jobs and take care of themselves.",
-                "money": -40,
+                "text": "You try to convince them to leave their jobs. Kids their age should not be working.",
+                "money": -250,
                 "energy": 0,
                 "next": "studentsunpaid"
             },
@@ -749,7 +749,8 @@
             "a3": {}
         },
 		
-		    "leavingend": {
+
+		"leavingend": {
             "text": "You have found a way to sustain your worklife. But at what cost?",
             "image": "leavingend.png",
             "a1": {

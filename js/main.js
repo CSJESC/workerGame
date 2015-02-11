@@ -203,7 +203,7 @@
                 if (!exhausted && status.energy <= 0) {
                     exhausted = true;
                     goToQuestion(questions['exhaustedquit']);
-                } else if (justWorkingCounter == 5) {
+                } else if (justWorkingCounter == 6) {
                     goToQuestion(questions['leavingend']);
                 } else if (grannydead == false && grannymoney >= 3) {
                     goToQuestion(questions['grannydead']);
@@ -232,7 +232,7 @@
             function triggerLinkAnimation() {
                 moneyImgElem.animate({opacity: 0}, 1000, function() {
                     $('#energyBlock').animate({top: 200}, 1000, function() {
-                        $('#linkBlock').animate({right: 90}, 1000, function() {
+                        $('#linkBlock').animate({right: 30}, 1000, function() {
                         });
                     });
                 });

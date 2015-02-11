@@ -105,8 +105,19 @@ article {
 
 #linkBlock {
     position: absolute;
-    right: -120px;
-    top: 0;
+    right: -240px;
+    top: -5px;
+    transform: rotate3d( 0, 0, 0, 0);
+}
+#linkBlock img {
+    filter: none;
+    -webkit-filter: none;
+    transition: filter 0.5s, -webkit-filter 0.5s;
+}
+#linkBlock img:hover {
+    filter: saturate(5);
+    -webkit-filter: saturate(5);
+    transition: filter 0.5s, -webkit-filter 0.5s;
 }
 
 #moneyBlock {

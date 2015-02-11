@@ -740,7 +740,7 @@
             "a1": {
                 "text": "You pay the bills.",
                 "money": "Random",
-                "random_min": -1000,
+                "random_min": -1200,
                 "random_max": -300,
                 "energy": 0,
                 "next": "workcircle"

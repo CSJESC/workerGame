@@ -19,6 +19,7 @@
         var wage = true; //Wage block initiator
         var readAttendanceAwardDesc = false; //Has the player received the
         var currentQuestion; //Keeps the current question object
+        var justWorkingCounter = 0; //Counting the amount of times the player has decided to leaver earlier.
         var clickableAnswerFound;
 
         // find the dom elements
@@ -108,7 +109,6 @@
                     var extraText = "";
                     var currentButton = $('.a'+(answerNumber+1)+'-button');
                     if (answer.text) { //Skip answer if text is empty
-
                         if (answer.money == 'Random') { //Checking if answer requires a random monetary value
                             answer.money = Math.round((Math.random() * (answer.random_max - answer.random_min) + answer.random_min));
                             currentQuestion.text = currentQuestion.text.replace('%s', answer.money);
@@ -183,6 +183,8 @@
                     answer.energy = answer.energy * 2;
                 } else if (currentQuestion == questions["wagecircle"] && workhard == true) {
                     answer.money += 300;
+                } else if (currentQuestion == questions["workcircle"]) {
+                    justWorkingCounter++;
                 }
 
                 //Updating the money and energy accordingly
@@ -201,6 +203,8 @@
                 if (!exhausted && status.energy <= 0) {
                     exhausted = true;
                     goToQuestion(questions['exhaustedquit']);
+                } else if (justWorkingCounter == 5) {
+                    goToQuestion(questions['leavingend']);
                 } else if (grannydead == false && grannymoney >= 3) {
                     goToQuestion(questions['grannydead']);
                 } else if ((currentQuestion === questions["exhaustedcircle2"] || currentQuestion === questions["minuscircle2"] || currentQuestion === questions["fillenergy2"]) && !wage) {
@@ -226,7 +230,7 @@
             }
 
             function triggerLinkAnimation() {
-                $('#moneyBlock img').animate({opacity: 0}, 1000, function() {
+                moneyImgElem.animate({opacity: 0}, 1000, function() {
                     $('#energyBlock').animate({top: 200}, 1000, function() {
                         $('#linkBlock').animate({right: 90}, 1000, function() {
                         });

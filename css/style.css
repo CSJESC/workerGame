@@ -91,6 +91,7 @@ article {
     padding: 10px;
     width: 70%;
     position: relative;
+    text-align: justify;
 }
 
 #statusBlock {
@@ -101,8 +102,14 @@ article {
     margin-top: 25px;
 }
 
+#linkBlock {
+    position: absolute;
+    right: -120px;
+    top: -20px;
+}
+
 #moneyBlock {
-    margin-top: 25px;
+    margin-top: 14px;
 }
 
 #videoBlock {

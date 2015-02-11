@@ -383,7 +383,7 @@
             "text": "Even as you are slowly adjusting to your working conditions, you often feel thirsty, as you are not allowed to drink unless you are on break. If you want to go to the restroom, you need to get a pass, otherwise you may not use the restroom.",
             "image": "drinking.png",
             "a1": {
-                "text": "There is nothing you can do about this.",
+                "text": "There is not much you can do about this.",
                 "money": 0,
                 "energy": 0,
                 "next": "health"
@@ -453,7 +453,7 @@
             "text": "Another issue that troubles you is that of the child workers. They work extremely hard too. They are also hired by a labor dispatch company and the management tries to make everyone believe that they are of legal age when clearly they are not.",
             "image": "childworker.png",
             "a1": {
-                "text": "You know it’s common to have children working even though it is illegal. There is not much you can do about it.",
+                "text": "You know it’s common to have children working even though it is illegal. There is nothing you can do about it.",
                 "money": 0,
                 "energy": 0,
                 "next": "studentsadvice"

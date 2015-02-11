@@ -498,7 +498,7 @@
             "image": "studentsexhausted.png",
             "a1": {
                 "text": "You try to convince them to leave their jobs. Kids their age should not be working.",
-                "money": -40,
+                "money": -250,
                 "energy": 0,
                 "next": "studentsunpaid"
             },

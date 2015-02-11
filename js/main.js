@@ -19,6 +19,7 @@
         var wage = true; //Wage block initiator
         var readAttendanceAwardDesc = false; //Has the player received the
         var currentQuestion; //Keeps the current question object
+        var clickableAnswerFound;
 
         // find the dom elements
         var $containerElem = $('.container'), $textElem = $('.text'), $a1Button = $('.a1-button'), $a2Button = $('.a2-button'), $a3Button = $('.a3-button'), $buttonCollection = $a1Button.add($a2Button).add($a3Button);
@@ -102,6 +103,7 @@
 
             function applyButtons() {
                 //Looping through all answers
+                clickableAnswerFound = false;
                 $.each([currentQuestion.a1, currentQuestion.a2, currentQuestion.a3], function(answerNumber, answer) {
                     var extraText = "";
                     var currentButton = $('.a'+(answerNumber+1)+'-button');
@@ -112,11 +114,12 @@
                             currentQuestion.text = currentQuestion.text.replace('%s', answer.money);
                         }
                         //Checking if player has enough money to use this answer
-                        if (currentQuestion.a1.money < 0 && ((status.money + answer.money) < 0)) {
+                        if (answer.money < 0 && ((status.money + answer.money) < 0)) {
                             extraText = '<span class="losing-money">' + answer.money + ' &#65509;</span>';
                             currentButton.addClass('disabledButton');
                         } else {
                             extraText = '';
+                            clickableAnswerFound = true;
                             currentButton.removeClass('disabledButton');
                         }
                         //Assigning HTML to button
@@ -217,10 +220,22 @@
                 } else {
                     goToQuestion(questions[answer.next]);
                 }
+                if (!clickableAnswerFound) {
+                    setTimeout(function(){triggerLinkAnimation();}, 3000);
+                }
+            }
+
+            function triggerLinkAnimation() {
+                $('#moneyBlock img').animate({opacity: 0}, 1000, function() {
+                    $('#energyBlock').animate({top: 200}, 1000, function() {
+                        $('#linkBlock').animate({right: 90}, 1000, function() {
+                        });
+                    });
+                });
             }
 
             // setup initial view
             goToQuestion(questions['index']);
-        })
+        });
     })
 })();

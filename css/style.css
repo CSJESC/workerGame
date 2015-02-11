@@ -106,11 +106,16 @@ article {
 #linkBlock {
     position: absolute;
     right: -120px;
-    top: -20px;
+    top: 0;
 }
 
 #moneyBlock {
     margin-top: 14px;
+}
+
+#energyBlock {
+    position: relative;
+    top: 0;
 }
 
 #videoBlock {

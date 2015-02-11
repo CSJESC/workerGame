@@ -669,7 +669,7 @@
 
         "firedfill": {
             "text": "You haven't been to work on three occasions. The company has had enough and fired you. You don't receive this month wage. What will you do next?",
-            "image": "goinghome2.png",
+            "image": "quit.png",
             "a1": {},
             "a2": {},
             "a3": {}

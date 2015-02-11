@@ -1,7 +1,7 @@
 (function () {
     "use strict";
 
-    // from https://github.com/kvz/phpjs/blob/master/functions/strings/nl2br.js
+    // Source: https://github.com/kvz/phpjs/blob/master/functions/strings/nl2br.js
     var nl2br = function (str, is_xhtml) {
         var breakTag = (is_xhtml || typeof is_xhtml === 'undefined') ? '<br />' : '<br>';
         return (str + '').replace(/([^>\r\n]?)(\r\n|\n\r|\r|\n)/g, '$1' + breakTag + '$2');
@@ -14,7 +14,7 @@
         var exhausted = false; //Is reached when player energy is 0
         var workhard = false; //Player selected to "work hard"
         var grannydead = false; //Player let their grandmother die #Aufschrei
-        var grannymoney = 0; //Counting how much money the player sent to their grandma
+        var grannymoney = 0; //Counting how often the player has only sent a small amount of money to the grandma
         var leavingcounter = 0; //Counting how often the player decided to leave early
         var wage = true; //Wage block initiator
         var readAttendanceAwardDesc = false; //Has the player received the
@@ -125,7 +125,6 @@
                         currentButton.html('');
                     }
                 });
-
                 //Updating question text
                 $textElem.html(nl2br(currentQuestion.text));
             }
@@ -133,80 +132,91 @@
             function resetButtonEventHandler() {
                 $buttonCollection.unbind('click');
                 $buttonCollection.click(function (event) {
-                    if ($(this).hasClass('disabledButton')) {
+                    //Answer button click event
+                    if (isButtonDisabled($(this))) {
                         return false;
                     }
-                    var answer;
-                    if (event.target.dataset.answer == 'a1')
-                        answer = currentQuestion.a1;
-                    else if (event.target.dataset.answer == 'a2')
-                        answer = currentQuestion.a2;
-                    else
-                        answer = currentQuestion.a3;
-
-                    if (currentQuestion === questions["decisionwork"] && answer == currentQuestion.a1) {
-                        workhard = true;
-                    }
-                    else if (currentQuestion === questions["grannydead"]) {
-                        grannydead = true;
-                    }
-                    else if (currentQuestion === questions["fillenergy"] || currentQuestion === questions["fillenergy2"]) {
-                        leavingcounter++;
-                    }
-                    else if (currentQuestion === questions["granny"] && grannydead == false && answer == currentQuestion.a2) {
-                        grannymoney += 1;
-                        wage = false;
-                    }
-                    else if (currentQuestion === questions["granny"] && (answer == currentQuestion.a1 || answer == currentQuestion.a3)) {
-                        wage = false;
-                    }
-                    else if ((currentQuestion === questions["workcircle"] || currentQuestion === questions["workcircle2"]) && answer == currentQuestion.a1 && workhard == true) {
-                        answer.energy = answer.energy * 2;
-                    }
-                    else if (currentQuestion == questions["wagecircle"] && workhard == true) {
-                        answer.money += 300;
-                    }
-
-                    status.money += Math.round(answer.money);
-                    status.energy += answer.energy;
-
-                    if (status.energy < 0) {
-                        status.energy = 0;
-                    } else if (status.energy > 10) {
-                        status.energy = 10;
-                    }
-
-                    if (!exhausted && status.energy <= 0) {
-                        exhausted = true;
-                        goToQuestion(questions['exhaustedquit']);
-                    }
-                    else if (grannydead == false && grannymoney >= 3) {
-                        goToQuestion(questions['grannydead']);
-                    }
-                    else if ((currentQuestion === questions["exhaustedcircle2"] || currentQuestion === questions["minuscircle2"] || currentQuestion === questions["fillenergy2"]) && !wage) {
-                        wage = true;
-                        goToQuestion(questions['wagecircle']);
-                    }
-                    else if (leavingcounter >= 3) {
-                        goToQuestion(questions['firedfill']);
-                    }
-                    else if (currentQuestion === questions["minuscircle2"] && grannydead == true && wage == true) {
-                        wage = false;
-                        goToQuestion(questions['helpparents']);
-                    }
-                    else if (currentQuestion === questions["exhaustedcircle2"] && grannydead == true && wage == true) {
-                        wage = false;
-                        goToQuestion(questions['helpparents']);
-                    }
-                    else if (currentQuestion === questions["fillenergy2"] && grannydead == true && wage == true) {
-                        wage = false;
-                        goToQuestion(questions['helpparents']);
-                    }
-                    else {
-                        goToQuestion(questions[answer.next]);
-
-                    }
+                    var answer = getCurrentAnswer($(this).data().answer); //Checking which button was clicked
+                    handleSpecialEvents(answer); //Handling some events that affect some global status variable
+                    handleNextQuestionCall(answer); //Deciding what to do next
                 });
+            }
+
+            function isButtonDisabled(button) {
+                return button.hasClass('disabledButton');
+            }
+
+            function getCurrentAnswer(answerElem){
+                switch(answerElem) {
+                    case 'a1':
+                        return currentQuestion.a1;
+                        break;
+                    case 'a2':
+                        return currentQuestion.a2;
+                        break;
+                    case 'a3':
+                        return currentQuestion.a3;
+                        break;
+                    default:
+                        return null;
+                        break;
+                }
+            }
+
+            function handleSpecialEvents(answer) {
+                //Handling various special answers / conditions in the game
+                if (currentQuestion === questions["decisionwork"] && answer == currentQuestion.a1) {
+                    workhard = true;
+                } else if (currentQuestion === questions["grannydead"]) {
+                    grannydead = true;
+                } else if (currentQuestion === questions["fillenergy"] || currentQuestion === questions["fillenergy2"]) {
+                    leavingcounter++;
+                } else if (currentQuestion === questions["granny"] && grannydead == false && answer == currentQuestion.a2) {
+                    grannymoney += 1;
+                    wage = false;
+                } else if (currentQuestion === questions["granny"] && (answer == currentQuestion.a1 || answer == currentQuestion.a3)) {
+                    wage = false;
+                } else if ((currentQuestion === questions["workcircle"] || currentQuestion === questions["workcircle2"]) && answer == currentQuestion.a1 && workhard == true) {
+                    answer.energy = answer.energy * 2;
+                } else if (currentQuestion == questions["wagecircle"] && workhard == true) {
+                    answer.money += 300;
+                }
+
+                //Updating the money and energy accordingly
+                status.money += Math.round(answer.money);
+                status.energy += answer.energy;
+
+                //Failsafe boundaries for energy
+                if (status.energy < 0) {
+                    status.energy = 0;
+                } else if (status.energy > 10) {
+                    status.energy = 10;
+                }
+            }
+
+            function handleNextQuestionCall(answer){
+                if (!exhausted && status.energy <= 0) {
+                    exhausted = true;
+                    goToQuestion(questions['exhaustedquit']);
+                } else if (grannydead == false && grannymoney >= 3) {
+                    goToQuestion(questions['grannydead']);
+                } else if ((currentQuestion === questions["exhaustedcircle2"] || currentQuestion === questions["minuscircle2"] || currentQuestion === questions["fillenergy2"]) && !wage) {
+                    wage = true;
+                    goToQuestion(questions['wagecircle']);
+                } else if (leavingcounter >= 3) {
+                    goToQuestion(questions['firedfill']);
+                } else if (currentQuestion === questions["minuscircle2"] && grannydead == true && wage == true) {
+                    wage = false;
+                    goToQuestion(questions['helpparents']);
+                } else if (currentQuestion === questions["exhaustedcircle2"] && grannydead == true && wage == true) {
+                    wage = false;
+                    goToQuestion(questions['helpparents']);
+                } else if (currentQuestion === questions["fillenergy2"] && grannydead == true && wage == true) {
+                    wage = false;
+                    goToQuestion(questions['helpparents']);
+                } else {
+                    goToQuestion(questions[answer.next]);
+                }
             }
 
             // setup initial view

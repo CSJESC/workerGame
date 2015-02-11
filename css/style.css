@@ -41,7 +41,7 @@
 
 body {
     background-color: rgb(54, 47, 45);
-    height: 100vh; /*100% of the screen size*/
+    height: 100%; /*100% of the screen size*/
 }
 
 header {

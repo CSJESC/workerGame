@@ -75,7 +75,7 @@
 
         "test": {
             "text": "The introductory training lasts three days and concludes with a short exam.",
-            "video": "<iframe id=\"ytplayer\" width=\"700\" height=\"300\" src=\"https://www.youtube.com/embed/kSvT02q4h40?start=74&end=104&version=3&rel=0&autoplay=1&showinfo=0\" frameborder=\"0\" allowfullscreen></iframe>",
+            "video": "<iframe id=\"ytplayer\" width=\"700\" height=\"300\" src=\"https://www.youtube.com/embed/kSvT02q4h40?start=75&end=104&version=3&rel=0&autoplay=1&showinfo=0\" frameborder=\"0\" allowfullscreen></iframe>",
             "a1": {
                 "text": "You pass.",
                 "money": 0,

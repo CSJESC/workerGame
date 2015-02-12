@@ -219,7 +219,7 @@
         },
 
         "givetelefon": {
-            "text": "You hand him the telephone and he lets you pass.",
+            "text": "You hand him the phone and he lets you pass.",
             "image": "givetelefon.png",
             "a1": {
                 "text": "Start working",
@@ -619,7 +619,7 @@
             "text": "Your body hurts, you are tired and you really need some rest.",
             "image": "exhausted.png",
             "a1": {
-                "text": "When you finally arrive at the dorms you collapse from exhaustion.",
+                "text": "When you finally arrive at the dorms you are completely exhausted.",
                 "money": 0,
                 "energy": 0,
                 "next": "workcircle2"
@@ -632,7 +632,7 @@
             "text": "Your body hurts, you are tired and you really need some rest. When you finally arrive at the dorms you collapse from exhaustion.",
             "image": "exhausted.png",
             "a1": {
-                "text": "When you finally arrive at the dorms you collapse from exhaustion.",
+                "text": "When you finally arrive at the dorms you are completely exhausted.",
                 "money": 0,
                 "energy": 0,
                 "next": "granny"

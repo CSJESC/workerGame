@@ -108,6 +108,9 @@
                     var extraText = "";
                     var currentButton = $('.a'+(answerNumber+1)+'-button');
                     if (answer.text) { //Skip answer if text is empty
+                        if (answerNumber == 2 && status.money > 350 && questions['helpparents'] == currentQuestion) {
+                            return true;
+                        }
                         if (answer.money == 'Random') { //Checking if answer requires a random monetary value
                             answer.money = Math.round((Math.random() * (answer.random_max - answer.random_min) + answer.random_min));
                             currentQuestion.text = currentQuestion.text.replace('%s', answer.money);

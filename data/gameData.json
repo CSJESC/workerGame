@@ -251,7 +251,7 @@
 
         "minusdesc": {
             "text": "You leave early. Your co-workers are surprised and explain to you the attendance award: the average wage they earn is 3000 &yen, but this is including any awards you may earn such as the attendance award. Every time you leave early, 30 &yen are deducted from a possible 120 &yen. If you leave early or come late three times, you forfeit the award entirely.",
-            "image": "minus-reg.png",
+            "image": "minus.png",
             "a1": {
                 "text": "Worried, you go to bed.",
                 "money": 0,
@@ -557,7 +557,7 @@
             "text": "Your grandmother was not able to afford the medication on her own and got progressively worse. She passed away...",
             "image": "grannydead.png",
             "a1": {
-                "text": "There is no time to grieve, you have to go back to work!",
+                "text": "There is no time to grieve, you have to get back to work!",
                 "money": 0,
                 "energy": 0,
                 "next": "workcircle"

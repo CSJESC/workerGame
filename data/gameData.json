@@ -75,7 +75,7 @@
 
         "test": {
             "text": "The introductory training lasts three days and concludes with a short exam.",
-            "video": "<iframe width=\"700\" height=\"300\" src=\"https://www.youtube.com/embed/kSvT02q4h40?start=74&end=104&version=3&rel=0&autoplay=1\" frameborder=\"0\" allowfullscreen></iframe>",
+            "video": "<iframe id=\"ytplayer\" width=\"700\" height=\"300\" src=\"https://www.youtube.com/embed/kSvT02q4h40?start=74&end=104&version=3&rel=0&autoplay=1&showinfo=0&html5=1\" frameborder=\"0\" allowfullscreen></iframe>",
             "a1": {
                 "text": "You pass.",
                 "money": 0,
@@ -114,7 +114,7 @@
 
         "id": {
             "text": "The manager asks you for your ID. You feel very uncomfortable handing it over to someone else, but they insist on it. You know they are probably not going to give it back to you until you resign.",
-            "video": "<iframe width=\"700\" height=\"300\" src=\"https://www.youtube.com/embed/kSvT02q4h40?start=51&end=69&version=3&rel=0&autoplay=1\" frameborder=\"0\" allowfullscreen></iframe>",
+            "video": "<iframe id=\"ytplayer\" width=\"700\" height=\"300\" src=\"https://www.youtube.com/embed/kSvT02q4h40?start=51&end=69&version=3&rel=0&autoplay=1&html5=1\" frameborder=\"0\" allowfullscreen></iframe>",
             "a1": {
                 "text": "You give them your ID anyway. You really need the job.",
                 "money": 0,
@@ -176,7 +176,7 @@
 
         "taxi": {
             "text": "You pay 20 &yen; for the ride.",
-            "video": "<iframe width=\"700\" height=\"300\" src=\"http:\/\/www.youtube.com/embed/vPR7RyTS8DY?autoplay=1&rel=0\" frameborder=\"0\" allowfullscreen><\/iframe>",
+            "video": "<iframe id=\"ytplayer\" width=\"700\" height=\"300\" src=\"http:\/\/www.youtube.com/embed/vPR7RyTS8DY?autoplay=1&rel=0&enablejsapi=1&showinfo=0&html5=1\" frameborder=\"0\" allowfullscreen><\/iframe>",
             "a1": {
                 "text": "You arrive!",
                 "money": 0,
@@ -337,7 +337,7 @@
 
         "workbusy": {
             "text": "The next day you are back to work. Li Yan tells you it is a busy day since new shipments are coming in and you have to perform accordingly. Your work is exhausting and after working ten hours, you are asked to stay longer.  ",
-            "video": "<iframe width=\"700\" height=\"300\" src=\"https://www.youtube.com/embed/kSvT02q4h40?start=13&end=31&version=3&rel=0&autoplay=1\" frameborder=\"0\" allowfullscreen></iframe>",
+            "video": "<iframe id=\"ytplayer\" width=\"700\" height=\"300\" src=\"https://www.youtube.com/embed/kSvT02q4h40?start=13&end=31&version=3&rel=0&autoplay=1&html5=1\" frameborder=\"0\" allowfullscreen></rame>",
             "a1": {
                 "text": "You decide to stay longer.",
                 "money": 0,

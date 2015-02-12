@@ -77,7 +77,6 @@
                     //Hidding image block and showing video block
                     imgBlock.css('display', 'none');
                     videoBlock.css('display', 'inline');
-
                     videoBlock.html(currentQuestion.video);
                 } else {
                     //Current view has an image, hiding video block
@@ -203,7 +202,7 @@
                 if (!exhausted && status.energy <= 0) {
                     exhausted = true;
                     goToQuestion(questions['exhaustedquit']);
-                } else if (justWorkingCounter == 6) {
+                } else if (justWorkingCounter == 8) {
                     goToQuestion(questions['leavingend']);
                 } else if (grannydead == false && grannymoney >= 3) {
                     goToQuestion(questions['grannydead']);

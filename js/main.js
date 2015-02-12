@@ -22,13 +22,6 @@
         var justWorkingCounter = 0; //Counting the amount of times the player has decided to leaver earlier.
         var clickableAnswerFound;
 
-        //YouTube API for muting the taxi video
-        var tag = document.createElement('script');
-        tag.src = "//www.youtube.com/iframe_api";
-        var firstScriptTag = document.getElementsByTagName('script')[0];
-        firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-        var player;
-
         // find the dom elements
         var $containerElem = $('.container'), $textElem = $('.text'), $a1Button = $('.a1-button'), $a2Button = $('.a2-button'), $a3Button = $('.a3-button'), $buttonCollection = $a1Button.add($a2Button).add($a3Button);
         var imgBlock = $('.imgContainer img');
@@ -78,14 +71,6 @@
                 $('#money').html(money + ' &#65509; / ' + (money / 6.25) + ' $');
             }
 
-            function onPlayerReady() {
-                if (currentQuestion === questions["taxi"]) {
-                    player.mute();
-                } else {
-                    player.setVolume(1);
-                }
-            }
-
             function applyView() {
                 //Checking if the current view contains a video
                 if (currentQuestion.video) {
@@ -93,11 +78,6 @@
                     imgBlock.css('display', 'none');
                     videoBlock.css('display', 'inline');
                     videoBlock.html(currentQuestion.video);
-                    player = new YT.Player('ytplayer', {
-                        events: {
-                            'onReady': onPlayerReady
-                        }
-                    });
                 } else {
                     //Current view has an image, hiding video block
                     videoBlock.css('display', 'none');
